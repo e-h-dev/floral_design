@@ -101,3 +101,24 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 ---
 
+
+### Products Page
+
+#### Desktop
+
+![Products Page](assets/wireframes/products-desktop-wireframe.png)
+
+---
+
+#### Tablet
+
+![Products Page](assets/wireframes/products-tablet-wireframe.png)
+
+---
+
+#### Mobile
+
+![Products Page](assets/wireframes/products-mobile-wireframe.png)
+
+---
+
