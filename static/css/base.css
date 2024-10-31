@@ -2,6 +2,16 @@ html{
     height:100%;
 }
 
+header {
+    background-color: #fff;
+}
+
+.logo{
+    background: url('/media/logo.png')no-repeat center center;
+    background-size: contain;
+    height: 180px;
+    width:180px;
+}
 
 .hero {
     position: relative;
