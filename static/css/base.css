@@ -1,0 +1,93 @@
+html{
+    height:100%;
+}
+
+
+.hero {
+    position: relative;
+    background: url('/media/flower-setting.jpg')center center;
+    background-size: cover;
+    height: 95vh;
+    width: 99vw;
+    left:0.5%;
+    top:1%;
+    border-radius: 5px;
+    border: solid white 3px;
+    box-shadow: inset;
+}
+
+.hero-opaque {
+    position: inherit;
+    background-color: rgba(128, 97, 97, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.hero-sentance {
+    position: absolute;
+    top:40%;
+    /* left:10%; */
+    width:80%;
+    left:12%;
+    background-color: rgba(128, 97, 97, 0.1);
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Merienda;
+    font-weight:400;
+    color:#fff;
+}
+
+.arrow-left{
+    position: absolute;
+    left:10px;
+    top:60%;
+    color: #E6423D;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.arrow-right{
+    position: absolute;
+    right:10px;
+    top:60%;
+    color: #E6423D;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* #right-arrow-1{
+    top:40%
+} */
+
+#left-arrow-2,
+#right-arrow-2{
+    display: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+   font-size: 40px;
+}
+
+
+.picture-picker-1,
+.picture-picker-2 {
+    position: absolute;
+    left:45%;
+    top:95%;
+    color: #E6423D;
+    cursor: pointer;
+}
+
+.picture-picker-1 {
+    left:49%;
+}
+
+.picture-picker-2 {
+    left:51%;
+}
