@@ -62,6 +62,7 @@ header {
     position: absolute;
     top:40%;
     /* left:10%; */
+    font-family: Merienda;
     width:80%;
     left:12%;
     background-color: rgba(128, 97, 97, 0.1);
