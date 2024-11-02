@@ -2,6 +2,10 @@ html{
     height:100%;
 }
 
+.fl-d-clr {
+    color:#E6423D;
+}
+
 header {
     background-color: #fff;
 }
@@ -11,6 +15,27 @@ header {
     background-size: contain;
     height: 180px;
     width:180px;
+}
+
+.search-bar {
+    border:#E6423D solid 1px;
+    border-radius: 5px;
+    width:350px;
+    height:45px;
+    color: #E6423D;
+}
+
+.search-btn {
+    background-color: #fff;
+    border: none;
+    position: relative;
+    right:100%;
+    top:20%;
+    height: 20px;
+}
+
+.search-bar:focus, .search-btn:focus {
+    outline: none;
 }
 
 .hero {
