@@ -37,7 +37,7 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-      <div class="row">
+      <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <a href="{% url 'home' %}">
             <div class="logo"></div>
@@ -55,7 +55,7 @@
                     </button>
                 </div>
             </div>
-        </form>
+          </form>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 text-center py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -69,19 +69,19 @@
                       <p class="my-0">Login/Register</p>
                     {% endif %}
                 </div>
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-                        <a href="" class="dropdown-item">Product Management</a>
-                    {% endif %}
-                    <a href="" class="dropdown-item">My Profile</a>
-                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                {% else %}
-                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                {% endif %}
-            </div>
+              </a>
+              <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                  {% if request.user.is_authenticated %}
+                      {% if request.user.is_superuser %}
+                          <a href="" class="dropdown-item">Product Management</a>
+                      {% endif %}
+                      <a href="" class="dropdown-item">My Profile</a>
+                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                  {% else %}
+                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                  {% endif %}
+              </div>
             </li>
             <li class="list-inline-item">
               <a class="{% if grand_total %}text-info font-weight-bold{% else %}{% endif %} nav-link" href="">
@@ -95,10 +95,30 @@
                         {% endif %}
                     </p>
                 </div>
-            </a>
+              </a>
             </li>
           </ul>
         </div>
+        <!-- <div class="row bg-white pt-lg-2 d-none d-lg-flex">
+          <div class="col-12 col-lg-4 my-auto py-1 text-center py-lg-0">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+              <li class="list-inline-item dropdown">
+                I
+              </li>
+              <li class="list-inline-item dropdown">
+                I
+              </li>
+            </ul>
+          </div>
+        </div> -->
+        <div class="row nav-row">
+          <ul class="list-inline list-unstyled text-center mt-5">
+              <li class="list-inline-item mr-5 ml-3">All Products</li>
+              <li class="list-inline-item mr-5 ml-3">Arangements</li>
+              <li class="list-inline-item mr-5 ml-3">Bouquets</li>
+              <li class="list-inline-item mr-5 ml-3">Occasions</li>
+          </ul>
+      </div>
       </div>
     </header>
 
