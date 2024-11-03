@@ -60,7 +60,7 @@ header {
     position: relative;
     background: url('/media/orchid-pink.jpg')center center;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
     width: 99vw;
     left:0.5%;
     top:1%;
@@ -80,6 +80,23 @@ header {
   100% {
     background-size: 110% 110%;
   }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .hero-opaque {
@@ -178,4 +195,19 @@ h1 {
     background-color: var(--white-color);
     color:var(--main-color);
     outline: none;
+}
+
+.shop-now-btn:active,
+.shop-now-btn:focus {
+    color:var(--white-color);
+}
+
+@media (max-width:430px) {
+    .hero{
+        height:60vh;
+      }
+    
+      .opaque{
+        height: 60vh;
+      }
 }
