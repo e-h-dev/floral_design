@@ -1,14 +1,18 @@
+:root{
+    --main-color:#E6423D;
+    --white-color:#fff;
+    --decrative-font:Merienda;
+}
+
 html{
     height:100%;
 }
 
-.fl-d-clr {
-    color:#E6423D;
-}
 
-a, a:hover {
+a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+    outline: none;
 }
 
 /* from Bulma */
@@ -21,7 +25,7 @@ a, a:hover {
 }
 
 header {
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .logo{
@@ -32,15 +36,15 @@ header {
 }
 
 .search-bar {
-    border:#E6423D solid 1px;
+    border:var(--main-color) solid 1px;
     border-radius: 5px;
     width:350px;
     height:45px;
-    color: #E6423D;
+    color:var(--main-color);
 }
 
 .search-btn {
-    background-color: #fff;
+    background-color: var(--white-color);
     border: none;
     position: relative;
     right:100%;
@@ -63,6 +67,19 @@ header {
     border-radius: 5px;
     border: solid white 3px;
     box-shadow: inset;
+    background-size: 100% 100%;
+    background-position: center center;
+    animation: shrink 5s;
+}
+
+/* animation for hero image on load */
+@keyframes shrink {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 110% 110%;
+  }
 }
 
 .hero-opaque {
@@ -76,7 +93,7 @@ header {
     position: absolute;
     top:40%;
     /* left:10%; */
-    font-family: Merienda;
+    font-family: var(--decrative-font);
     width:80%;
     left:12%;
     background-color: rgba(128, 97, 97, 0.1);
@@ -87,16 +104,16 @@ header {
 h1 {
     font-size: 2rem;
     text-align: center;
-    font-family: Merienda;
+    font-family: var(--decrative-font);
     font-weight:400;
-    color:#fff;
+    color:var(--white-color);
 }
 
 .arrow-left{
     position: absolute;
     left:10px;
     top:60%;
-    color: #E6423D;
+    color: var(--main-color);
     font-size: 36px;
     cursor: pointer;
 }
@@ -105,7 +122,7 @@ h1 {
     position: absolute;
     right:10px;
     top:60%;
-    color: #E6423D;
+    color: var(--main-color);
     font-size: 36px;
     cursor: pointer;
 }
@@ -130,7 +147,7 @@ h1 {
     position: absolute;
     left:45%;
     top:95%;
-    color: #E6423D;
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -140,4 +157,25 @@ h1 {
 
 .picture-picker-2 {
     left:51%;
+}
+
+.shop-now-btn {
+    position: absolute;
+    top:80%;
+    left:43%;
+    width:15%;
+    background-color: var(--main-color);
+    color:var(--white-color);
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: var(--decrative-font);
+    padding:5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.shop-now-btn:hover{
+    background-color: var(--white-color);
+    color:var(--main-color);
+    outline: none;
 }
