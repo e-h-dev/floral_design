@@ -1,7 +1,8 @@
 :root{
-    --main-color:#E6423D;
+    --main-color:#e6423d;
     --white-color:#fff;
     --decrative-font:Merienda;
+    --main-color-opaque:rgba(230, 66, 61, 0.5);
 }
 
 html{
@@ -40,7 +41,8 @@ header {
 }
 
 .nav-bar-row {
-    height:10px;
+    height:20px;
+    padding-left: 10px;
 }
 
 .search-bar-container {
@@ -81,8 +83,17 @@ header {
     outline: none;
 }
 
-ul~a{
-    color: var(--main-color);
+.nav-link {
+    color:var(--main-color) !important;
+}
+
+.nav-link:hover {
+    color:var(--main-color-opaque) !important;
+}
+
+.dropdown-style {
+    background-color: #e2736f;
+    border: solid 10px #e6423d;
 }
 
 .hero {
@@ -172,10 +183,6 @@ h1 {
     font-size: 36px;
     cursor: pointer;
 }
-
-/* #right-arrow-1{
-    top:40%
-} */
 
 #left-arrow-2,
 #right-arrow-2{
