@@ -85,6 +85,7 @@ header {
 
 .nav-link {
     color:var(--main-color) !important;
+    font-family: Federo;
 }
 
 .nav-link:hover {
