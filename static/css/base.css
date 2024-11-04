@@ -252,8 +252,13 @@ h1 {
     background-size: contain;
     height: 130px;
     width:130px;
+    }
+
+    .search-bar {
+        width:80%;
+    }
 }
-}
+
 
 
 @media (max-width:430px) {
