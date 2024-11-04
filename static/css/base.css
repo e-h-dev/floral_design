@@ -35,21 +35,39 @@ header {
     width:180px;
 }
 
+.nav-row {
+    margin-top:10px;
+}
+.search-bar-container {
+    width:70%;
+    height:50px;
+}
+
 .search-bar {
-    border:var(--main-color) solid 1px;
-    border-radius: 5px;
-    width:350px;
+    padding-left: 10px;
+    width:70%;
     height:45px;
-    color:var(--main-color);
+    border: solid 1px rgba(230, 66, 61, 0.3);
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px 1px rgba(230, 66, 61, 0.2);
+    background-color: rgba(230, 66, 61, 0.1);
+}
+
+.search-bar:focus {
+    box-shadow: 1px 1px 1px 1px rgba(231, 53, 46, 0.2);
+    border-radius: 40px;
+    outline: none;
+    background-color: #fff;
 }
 
 .search-btn {
-    background-color: var(--white-color);
+    background-color: transparent;
     border: none;
     position: relative;
     right:100%;
     top:20%;
     height: 20px;
+    color:var(--main-color)
 }
 
 .search-bar:focus, .search-btn:focus {
