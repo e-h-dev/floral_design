@@ -81,6 +81,10 @@ header {
     outline: none;
 }
 
+ul~a{
+    color: var(--main-color);
+}
+
 .hero {
     position: relative;
     background: url('/media/orchid-pink.jpg')center center;
