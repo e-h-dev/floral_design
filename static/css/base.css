@@ -38,9 +38,15 @@ header {
 .nav-row {
     margin-top:10px;
 }
+
+.nav-bar-row {
+    height:10px;
+}
+
 .search-bar-container {
     width:70%;
     height:50px;
+    z-index: 1;
 }
 
 .search-bar {
