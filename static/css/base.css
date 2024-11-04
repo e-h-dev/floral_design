@@ -53,8 +53,9 @@ header {
     background-color: rgba(230, 66, 61, 0.1);
 }
 
-.search-bar:focus {
-    box-shadow: 1px 1px 1px 1px rgba(231, 53, 46, 0.2);
+.search-bar:focus,
+.search-bar:active {
+    box-shadow: none;
     border-radius: 40px;
     outline: none;
     background-color: #fff;
