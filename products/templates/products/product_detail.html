@@ -10,9 +10,10 @@
 {% endblock %}
 
 {% block content %}
+    <hr>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="col-12 col-md-6 col-lg-4 push-down offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
                         <div>
@@ -25,17 +26,17 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
-                    <h6 class="mb-0 font-weight-bold">{{ product.name }}</h6>
+                    <h4 class="mb-0 main-print font-weight-bold">{{ product.name }}</h4>
                 </div>
-                <div class="row">
+                <div class="description side-print">
+                    <p style="text-align: justify;">{{ product.description }}</p>
+                </div>
+                <div class="row"></div>
                     <div class="col">
-                        <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                        <p class="lead mb-0 text-left font-weight-bold main-print">£{{ product.price }}</p>
                     </div>
-                </div>
-                <div class="description">
-                    <p>{{ product.description }}</p>
                 </div>
             </div>
         </div>

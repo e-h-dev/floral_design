@@ -25,13 +25,13 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card main-print h-70 border-style mt-3 mb-3">
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-center img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-center img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
                                 {% else %}
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}test-image.png" alt="{{ product.name }}">
-                                </a>
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}test-image.png" alt="{{ product.name }}">
+                                    </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
                                     <h6 class="mb-0 font-weight-bold">{{ product.name }}</h6>

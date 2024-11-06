@@ -19,6 +19,7 @@ html{
 
 .side-print{
     color:var(--side-color);
+    font-family: var(--main-font);
 }
 
 a, a:hover, a:focus, a:active {
@@ -359,6 +360,11 @@ h2{
 
     .nav-top{
         margin-top: 30px;
+    }
+
+    .push-down{
+        position:absolute;
+        top:100px;
     }
 
     .menu-image{
