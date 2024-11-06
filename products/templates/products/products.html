@@ -23,10 +23,10 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-70 border-style mt-1 mb-1">
+                            <div class="card main-print h-70 border-style mt-3 mb-3">
                                 {% if product.image %}
                                 <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="card-img-center img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
                                 <a href="">
@@ -35,6 +35,10 @@
                                 {% endif %}
                                 <div class="card-body pb-0">
                                     <h6 class="mb-0">{{ product.name }}</h6>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <p class="mb-0" style="font-size: x-small;">{{ product.mini_description }}</p>
+                                    <a class="border-1" style="font-size: xx-small;" href="">view more.</a>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
