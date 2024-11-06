@@ -34,9 +34,9 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <h6 class="mb-0">{{ product.name }}</h6>
+                                    <h6 class="mb-0 font-weight-bold">{{ product.name }}</h6>
                                 </div>
-                                <div class="card-body pb-0">
+                                <div class="card-body pb-0 side-print">
                                     <p class="mb-0" style="font-size: x-small;">{{ product.mini_description }}</p>
                                     <a class="border-1" style="font-size: xx-small;" href="">view more.</a>
                                 </div>
@@ -49,6 +49,26 @@
                                 </div>
                             </div>
                         </div>
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-5">
+                                <hr class="product-hr">
+                            </div>
+                        {% endif %}                        
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                                <hr class="product-hr">
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                                <hr class="product-hr">
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block mb-5">
+                                <hr class="product-hr">
+                            </div>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>

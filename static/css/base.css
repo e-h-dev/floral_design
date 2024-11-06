@@ -4,6 +4,8 @@
     --decrative-font:Merienda;
     --main-font:Federo;
     --main-color-opaque:rgba(230, 66, 61, 0.5);
+    --side-color:#806161;
+    --side-color-opaque:rgba(128, 97, 97, 0.4);
 }
 
 html{
@@ -13,6 +15,10 @@ html{
 .main-print{
     color: var(--main-color);
     font-family: var(--main-font);
+}
+
+.side-print{
+    color:var(--side-color);
 }
 
 a, a:hover, a:focus, a:active {
@@ -280,13 +286,17 @@ h2{
 }
 
 
-/* products page styles */
+/* ------------------------------------products app styles */
 
 .border-style {
     border: solid 2px var(--white-color);
-    box-shadow: 1px 1px 1px 1px var(--main-color-opaque);
+    box-shadow: 1px 1px 1px 1px var(--side-color-opaque);
 }
 
+.product-hr{
+    border: solid 2px var(--main-color-opaque);
+    width:90%;
+}
 
 /* -------------------------------- Media Queries */
 
