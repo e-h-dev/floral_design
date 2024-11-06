@@ -10,6 +10,10 @@ html{
     height:100%;
 }
 
+.main-print{
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -279,7 +283,8 @@ h2{
 /* products page styles */
 
 .border-style {
-    border: solid 1px var(--main-color-opaque)
+    border: solid 2px var(--white-color);
+    box-shadow: 1px 1px 1px 1px var(--main-color-opaque);
 }
 
 
