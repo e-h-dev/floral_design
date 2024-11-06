@@ -8,7 +8,7 @@
             "description" : "This elegant floral arrangement stands tall, showcasing a lush array of vibrant green foliage. The centerpiece features striking anthurium blooms, known for their glossy, heart-shaped leaves and bold, red spathes. Interspersed among the anthuriums are delicate, colorful blooms that add a touch of softness and contrast to the arrangement. The overall effect is a stunning display of nature’s beauty, perfect for adding a touch of sophistication and freshness to any space.",
             "price" : 50.00,
             "category" : 7,
-            "image" : "IMG_0001"
+            "image" : "IMG_0001.JPG"
         }
     },
 
@@ -21,7 +21,7 @@
             "description" : "This tall and elegant floral arrangement showcases a harmonious blend of lush greenery and vibrant red gerberas. The greenery provides a rich, verdant backdrop, enhancing the vivid red hues of the gerberas. The red gerberas, with their bold and cheerful petals, stand out beautifully against the green foliage, creating a striking visual contrast. The tall stems add height and sophistication to the arrangement, making it a perfect centerpiece for any setting, bringing a touch of nature’s beauty and a splash of color to the space.",
             "price" : 50.00,
             "category" : 7,
-            "image" : "IMG_0002"
+            "image" : "IMG_0002.JPG"
         }
     },
 
@@ -34,7 +34,7 @@
             "description" : "This stunning floral arrangement is designed in a tall, triangular shape, creating a striking and elegant silhouette. At the base, lush greenery provides a rich, verdant foundation, gradually tapering upwards. The arrangement features vibrant orange roses, their warm hues adding a touch of brightness and cheer. Interspersed among the roses are bold red gerberas, their vivid petals creating a captivating contrast. The combination of orange and red blooms, set against the green foliage, results in a dynamic and eye-catching display. This arrangement is perfect for making a statement, bringing warmth and beauty to any space.",
             "price" : 45.00,
             "category" : 7,
-            "image" : "IMG_0002"
+            "image" : "IMG_0003.JPG"
         }
     },
 
@@ -47,7 +47,7 @@
             "description" : "This vibrant floral arrangement bursts with the warm, cheerful hues of bright orange. At its heart are striking protea flowers, known for their unique, spiky appearance and bold presence. Surrounding the proteas are lush orange roses, their soft petals adding a touch of elegance and romance. The combination of these two flowers creates a dynamic and eye-catching display, with the proteas providing texture and the roses offering classic beauty. This arrangement is perfect for adding a splash of color and a sense of joy to any space.",
             "price" : 25.00,
             "category" : 4,
-            "image" : "IMG_0004"
+            "image" : "IMG_0004.JPG"
         }
     },
 
@@ -60,7 +60,7 @@
             "description" : "This beautiful floral arrangement is designed in a wide, low style, perfect for creating a lush, expansive display. The base is filled with an abundance of rich, green foliage, providing a verdant backdrop that enhances the vibrant colors of the flowers. Nestled among the greenery are clusters of purple and pink carnations, their ruffled petals adding texture and charm. The purple carnations bring a touch of elegance and depth, while the pink carnations add a soft, romantic feel. Together, they create a harmonious blend of colors and textures, making this arrangement a stunning centerpiece for any table or space.",
             "price" : 45.00,
             "category" : 6,
-            "image" : "IMG_0005"
+            "image" : "IMG_0005.JPG"
         }
     },
 
@@ -73,7 +73,7 @@
             "description" : "This unique floral arrangement is designed in a graceful U-shape, creating a dynamic and eye-catching display. The arrangement features striking purple Safari Sunset flowers, known for their rich, deep hues and textured appearance. These flowers are artfully bent to follow the curve of the U-shape, adding a sense of movement and flow to the design. The purple Safari Sunset flowers are complemented by lush greenery, which enhances their vibrant color and adds a natural, verdant backdrop. This arrangement is perfect for making a bold statement, bringing elegance and a touch of the exotic to any space.",
             "price" : 37.50,
             "category" : 4,
-            "image" : "IMG_0006"
+            "image" : "IMG_0006.JPG"
         }
     },
 
@@ -86,7 +86,7 @@
             "description" : "This elegant floral arrangement is designed with a distinctive tilted angle, adding a touch of modern sophistication. The arrangement features an abundance of white roses, their soft, velvety petals exuding classic beauty and romance. Interspersed among the roses are delicate white veronica flowers, their slender, spiky blooms adding texture and a hint of wild charm. The combination of these white flowers creates a harmonious and serene display, perfect for bringing a sense of purity and elegance to any space. The tilted design adds a unique twist, making this arrangement a standout piece.",
             "price" : 34.99,
             "category" : 4,
-            "image" : "IMG_0007"
+            "image" : "IMG_0007.JPG"
         }
     },
 
@@ -99,7 +99,7 @@
             "description" : "This sophisticated floral arrangement is designed with a unique tilted angle, adding a modern twist to its classic beauty. The arrangement features a stunning white hydranga, it's large fluffy blooms creating a lush and voluminous base. Interspersed among the hydrangeas are delicate white veronica flowers, their slender, spiky blooms adding texture and a touch of elegance. The combination of these white flowers results in a harmonious and serene display, perfect for bringing a sense of purity and sophistication to any space. The tilted design adds a dynamic element, making this arrangement a standout piece.",
             "price" : 28.99,
             "category" : 4,
-            "image" : "IMG_0008"
+            "image" : "IMG_0008.JPG"
         }
     },
 
@@ -112,7 +112,7 @@
             "description" : "This elegant floral arrangement is designed in a flat, elongated style, perfect for creating a lush, expansive display. The base is adorned with long, flowing greenery, providing a rich, verdant backdrop that enhances the beauty of the flowers. The arrangement features an array of pink roses in various shades, from soft blush to deep magenta. These roses are artfully arranged to create a harmonious blend of colors, with each shade complementing the others. The combination of the different pink hues and the lush greenery results in a stunning and sophisticated display, perfect for adding a touch of elegance and romance to any space.",
             "price" : 52.99,
             "category" : 4,
-            "image" : "IMG_0009"
+            "image" : "IMG_0009.JPG"
         }
     },
 
@@ -125,7 +125,7 @@
             "description" : "This charming floral arrangement is designed in a graceful bowl shape, creating a lush and inviting display. The centerpiece features large, elegant white roses, their soft, velvety petals exuding timeless beauty and sophistication. Adding a delightful contrast, small yellow blooms are interspersed throughout the arrangement, providing a cheerful pop of color. The combination of the pristine white roses and the vibrant yellow flowers creates a harmonious and eye-catching display. This arrangement is perfect for adding a touch of elegance and a burst of sunshine to any space.",
             "price" : 35.00,
             "category" : 6,
-            "image" : "IMG_0010"
+            "image" : "IMG_0010.JPG"
         }
     },
 
@@ -138,7 +138,7 @@
             "description" : "This elegant floral arrangement features two large hydrangeas as its focal point, their lush, voluminous blooms creating a stunning centerpiece. The hydrangeas are surrounded by upright purple veronica flowers, their slender, spiky blooms adding height and a touch of wild beauty to the arrangement. The deep purple of the veronica contrasts beautifully with the soft, delicate hues of the hydrangeas, creating a harmonious and eye-catching display. This arrangement is perfect for adding a touch of sophistication and natural charm to any space.",
             "price" : 29.99,
             "category" : 4,
-            "image" : "IMG_0011"
+            "image" : "IMG_0011.JPG"
         }
     },
 
@@ -151,7 +151,7 @@
             "description" : "This elegant bouquet features a stunning collection of pink roses, arranged without any greenery to highlight the pure beauty of the blooms. The roses range in shades from soft blush to vibrant pink, creating a harmonious and visually appealing display. Each rose is carefully selected for its perfect petals and rich color, ensuring a uniform and luxurious appearance. The absence of greenery allows the roses to take center stage, showcasing their natural elegance and romantic charm. This bouquet is perfect for making a bold statement of love and admiration, with the simplicity of the design emphasizing the timeless beauty of the roses.",
             "price" : 19.99,
             "category" : 8,
-            "image" : "IMG_0012"
+            "image" : "IMG_0012.jpg"
         }
     },
 
@@ -164,7 +164,7 @@
             "description" : "This exquisite bouquet features a harmonious blend of white and lilac roses, arranged without any greenery to emphasize the pure beauty of the blooms. The white roses, with their pristine petals, exude elegance and grace, while the lilac roses add a touch of soft, romantic color. Each rose is carefully selected for its perfect form and rich hue, ensuring a uniform and luxurious appearance. The absence of greenery allows the delicate interplay of white and lilac to take center stage, creating a sophisticated and serene display. This bouquet is perfect for expressing refined elegance and timeless beauty.",
             "price" : 24.99,
             "category" : 8,
-            "image" : "IMG_0013"
+            "image" : "IMG_0013.jpg"
         }
     },
 
@@ -177,7 +177,7 @@
             "description" : "These breathtaking wedding floral arches create a stunning and romantic entrance, perfect for a grand celebration. Each arch is generously adorned with an abundance of pink roses, their soft, velvety petals adding a touch of classic elegance and romance. Interspersed among the roses are delicate orchids, their exotic blooms bringing a sense of luxury and sophistication. The arches are further enhanced by lush greenery, which provides a rich, verdant backdrop that highlights the vibrant colors of the flowers. The greenery cascades gracefully, adding texture and a natural, organic feel to the design. Together, these elements create a harmonious and visually captivating display, making the arches a perfect focal point for a wedding ceremony.",
             "price" : 459.99,
             "category" : 1,
-            "image" : "IMG_0014"
+            "image" : "IMG_0014.JPG"
         }
     },
 
@@ -190,7 +190,7 @@
             "description" : "This exquisite bridal bouquet is a perfect blend of elegance and romance, featuring a harmonious combination of white and red roses. The white roses, with their pristine petals, symbolize purity and new beginnings, while the red roses, with their deep, rich hues, represent love and passion. The roses are carefully arranged in a hand-tied style, creating a compact and elegant shape that is easy to carry. The bouquet is finished with a delicate ribbon wrap, adding a touch of sophistication and ensuring a comfortable grip. This stunning arrangement is perfect for a bride who wants to make a timeless and romantic statement on her special day.",
             "price" : 49.99,
             "category" : 1,
-            "image" : "IMG_0015"
+            "image" : "IMG_0015.jpg"
         }
     },
 
@@ -203,7 +203,7 @@
             "description" : "This vibrant bouquet is a cheerful celebration of bright yellow sunflowers, each bloom radiating warmth and happiness. The sunflowers, with their large, golden petals and dark centers, create a stunning focal point, exuding a sense of joy and positivity. The bouquet is generously filled with these sunflowers, making it a bold and eye-catching display. The lush green foliage interspersed among the sunflowers adds a fresh, natural backdrop, enhancing the vivid yellow hues. This arrangement is perfect for bringing a burst of sunshine and a touch of nature’s beauty to any space.",
             "price" : 45.99,
             "category" : 10,
-            "image" : "IMG_0016"
+            "image" : "IMG_0016.jpg"
         }
     },
 
@@ -216,7 +216,7 @@
             "description" : "This stunning bouquet is a delightful blend of pink roses and pink gerberas, creating a harmonious and vibrant display. The pink roses, with their soft, velvety petals, exude elegance and romance, while the pink gerberas add a cheerful and playful touch with their bold, daisy-like blooms. The combination of these two flowers results in a bouquet that is both sophisticated and lively. The large size of the bouquet ensures it makes a statement, perfect for any special occasion. The lush green foliage interspersed among the flowers enhances their beauty, providing a fresh and natural backdrop.",
             "price" : 69.99,
             "category" : 5,
-            "image" : "IMG_0017"
+            "image" : "IMG_0017.jpg"
         }
     },
 
@@ -229,7 +229,7 @@
             "description" : "This charming card envelope features a delightful bouquet of bright and fresh yellow flowers, perfect for adding a touch of sunshine to any message. The envelope itself is crafted from high-quality paper, with a soft, pastel background that complements the vibrant yellow blooms. The bouquet includes cheerful sunflowers, delicate daisies, and elegant tulips, all arranged in a miniature, hand-tied style. The flowers are depicted with intricate detail, capturing their natural beauty and radiance. This envelope is ideal for sending warm wishes, heartfelt notes, or simply brightening someone’s day with a burst of floral joy.",
             "price" : 17.99,
             "category" : 9,
-            "image" : "IMG_0018"
+            "image" : "IMG_0018.jpg"
         }
     },
 
@@ -242,7 +242,7 @@
             "description" : "This breathtaking display features two mega-sized rings, each meticulously wrapped in an abundance of fresh pink roses and lush greenery. The rings are set on a giant oasis, providing a sturdy and verdant base that enhances the overall grandeur of the arrangement. The pink roses, with their soft, velvety petals, create a romantic and elegant look, while the greenery adds a rich, natural backdrop. The combination of the vibrant pink blooms and the lush foliage results in a stunning and eye-catching display, perfect for making a bold statement at any event or celebration. The sheer size and beauty of the rings make this arrangement a true masterpiece, exuding elegance and sophistication.",
             "price" : 199.99,
             "category" : 2,
-            "image" : "IMG_0019"
+            "image" : "IMG_0019.jpg"
         }
     },
 
@@ -255,7 +255,7 @@
             "description" : "This elegant tabletop centerpiece showcases a large ring, beautifully wrapped in an abundance of white roses, delicate gypsophila, and lush greenery. The white roses, with their pristine petals, exude timeless beauty and sophistication, creating a stunning focal point. Interspersed among the roses are clusters of gypsophila, their tiny, white blooms adding a soft, airy touch. The fresh greenery provides a rich, verdant backdrop, enhancing the overall elegance of the arrangement. The combination of these elements results in a harmonious and visually captivating display, perfect for adding a touch of refinement and natural beauty to any table setting.",
             "price" : 79.99,
             "category" : 3,
-            "image" : "IMG_0020"
+            "image" : "IMG_0020.jpg"
         }
     },
 
@@ -268,7 +268,7 @@
             "description" : "This impressive standing cutout of a number is transformed into a vibrant floral masterpiece, covered with an abundance of pink, red, and orange flowers. The cutout stands tall, making a bold and eye-catching statement. The pink flowers add a touch of softness and romance, the red flowers bring depth and passion, and the orange flowers infuse the arrangement with warmth and energy. The flowers are densely packed, creating a lush and opulent display that completely covers the surface of the cutout. This stunning floral design is perfect for celebrating a milestone or special occasion, adding a burst of color and elegance to any event.",
             "price" : 29.99,
             "category" : 7,
-            "image" : "IMG_0021"
+            "image" : "IMG_0021.png"
         }
     },
 
@@ -281,7 +281,7 @@
             "description" : "This elegant bouquet features a stunning collection of purple orchids, their exotic and delicate blooms creating a captivating display. The orchids are arranged in a narrow and tall glass vase, which enhances their graceful, elongated stems and allows the flowers to stand tall and proud. The clear glass vase adds a touch of modern sophistication, showcasing the beauty of the orchids from every angle. The rich purple hues of the orchids bring a sense of luxury and elegance, making this arrangement perfect for adding a touch of refinement and natural beauty to any space.",
             "price" : 49.99,
             "category" : 4,
-            "image" : "IMG_0022"
+            "image" : "IMG_0022.jpg"
         }
     }
 ]
