@@ -122,3 +122,9 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 ---
 
+# Bugs
+
+* Navbar not showng in mobile
+
+* Product images not loading
+
