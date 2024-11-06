@@ -7,6 +7,7 @@ class ProductAdmin(admin.ModelAdmin):
         "name",
         "sku",
         "description",
+        "mini_description",
         "price",
         "image",
     )
