@@ -276,6 +276,13 @@ h2{
 }
 
 
+/* products page styles */
+
+.border-style {
+    border: solid 1px var(--main-color-opaque)
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
