@@ -16,7 +16,7 @@
                 <h2 class="headers">Our Floral Designs</h2>
                 {% for c in current_categories %}
                     <a href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="filter-btn p-2 mt-2 badge rounded-1 main-print border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
                 <hr>
@@ -25,9 +25,9 @@
         <div class="row">
             <div class="col-10 product-container offset-1">
                 <div class="row mt-1 mb-2">
-                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="col-12 col-md-6 my-auto order-md-last d-flex main-print justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
-                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <select id="sort-selector" class="custom-select main-print filter-btn custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -39,12 +39,12 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
-                        <p class="text-muted mt-3 text-center text-md-left">
+                        <p class="main-print mt-3 text-center text-md-left">
                             {% if search_term or current_categories or sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                             {% endif %}
-                            {{ products|length }} {% if search_term %} Product found for <strong>"{{ search_term }}"</strong>
-                            {% endif %} Items Found
+                            {{ products|length }} {% if search_term %} Items found for <strong>"{{ search_term }}"</strong>
+                            {% else %} Items Found {% endif %}
                         </p>
                     </div> 
                 </div>
