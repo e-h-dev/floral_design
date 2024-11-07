@@ -149,21 +149,28 @@ header {
   }
 }
 
-.fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1s;
+.van {
+    position:absolute;
+    width:330px;
+	left: 5px;
+	animation-name: drive;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
 }
 
-@keyframes fadeInOpacity {
+@keyframes drive {
 	0% {
-		opacity: 0;
+		left: 5px;
 	}
 	100% {
-		opacity: 1;
+		left: 1350px ;
 	}
+}
+
+.delivery-banner{
+    position: absolute;
+    top:150px;
+    align-items: center;
 }
 
 .hero-opaque {
@@ -380,6 +387,10 @@ h2{
     .push-down{
         position:absolute;
         top:100px;
+    }
+
+    .delivery-banner{
+        display: none;
     }
 
     .menu-image{
