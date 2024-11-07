@@ -128,3 +128,5 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 * Product images not loading
 
+* Dev tools showing error in js file
+
