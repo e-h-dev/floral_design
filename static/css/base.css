@@ -348,6 +348,11 @@ h2{
     width:130px;
     }
 
+    .header-container{
+        padding-top: 120px;
+    }
+    
+
     .mobile-nav-margins{
         margin-left: 50px;
         margin-right: 50px;
