@@ -33,7 +33,14 @@
                 <div class="description side-print">
                     <p style="text-align: justify;">{{ product.description }}</p>
                 </div>
-                <div class="row"></div>
+                {% if product.category %}
+                    <p class="small mt-1 mp-0">
+                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-mute">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                {% endif %}
+                <div class="row">
                     <div class="col">
                         <p class="lead mb-0 text-left font-weight-bold main-print">£{{ product.price }}</p>
                     </div>
