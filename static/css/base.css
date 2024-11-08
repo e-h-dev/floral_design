@@ -159,31 +159,31 @@ header {
 .van {
     position:absolute;
     width:330px;
-	left: 5px;
+	left: -120px;
 	animation-name: drive;
 	animation-iteration-count: infinite;
 	animation-duration: 10s;
+    background-color: var(--white-color);
+    width: 30px;
 }
+
 
 @keyframes drive {
 	0% {
-		left: 5px;
+		left: -700px;
 	}
 	100% {
-		left: 1350px ;
+		left: 800px ;
 	}
 }
 
 .delivery-banner{
     position: absolute;
     top:150px;
+    left:42%;
     align-items: center;
 }
 
-.delivery-flag{
-    background-color: var(--main-color);
-    color: var(--white-color);
-}
 
 .hero-opaque {
     position: inherit;
