@@ -23,7 +23,7 @@
                         <table class="table table-sm table-borderless">
                             <thead class="main-print">
                                 <tr>
-                                    <th scope="col">Produvt Info</th>
+                                    <th scope="col">Product Info</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
@@ -33,19 +33,19 @@
                             {% for item in basket_items %}
                             <tr>
                                 <td class="p-3 w-25">
-                                    <img src="{{ item.product.image.url}}" alt="" class="img-fluid rounded">
+                                    <img src="{{ item.product.image.url}}" alt="" class="img-fluid rounded" style="height:100px; width:100px;">
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                    <p class="my-0 side-print"><strong>{{ item.product.name }}</strong></p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">£{{ item.product.price }}</p>
+                                    <p class="my-0 side-print">£{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">{{ item.quantity }}</p>
+                                    <p class="my-0 side-print pl-4">{{ item.quantity }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">£{{ item.product.price }}</p>
+                                    <p class="my-0 side-print">£{{ item.product.price }}</p>
                                 </td>
                             </tr>
                             {% endfor %}
