@@ -35,6 +35,7 @@ a, a:hover, a:focus, a:active {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    font-size: x-large;
 }
 
 header {
