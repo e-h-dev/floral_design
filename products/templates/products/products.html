@@ -112,13 +112,22 @@
                     {% endfor %}
                 </div>
             </div>
-            
+        </div>
+        <div class="btt-button main-print rounded-1">
+            <a class="btt-link main-print flex h-100">
+                <i class="fa-solid fa-arrow-up-from-bracket mx-auto my-auto"></i>
+            </a>
         </div>
     </div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
+    <script type="text/javascript">
+        $('.btt-link').click(function(e){
+            window.scrollTo(0,0)
+        })
+    </script>
     <script type="text/javascript">
         $('#sort-selector').change(function(){
             var selector = $(this)
