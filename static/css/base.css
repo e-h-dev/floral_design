@@ -359,6 +359,19 @@ h2{
 .fa-arrow-up-from-bracket{
     font-size: x-large;
 }
+
+/*------------------------------- product_detail-page */
+/* override some bootstrap styles */
+.form-control{
+    color:var(--main-color);
+    border: var(--main-color-opaque);
+}
+
+.form-control:active, .form-control:focus{
+    outline:none;
+    border:var(--main-color);
+    color:var(--main-color)
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
