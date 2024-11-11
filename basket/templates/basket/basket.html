@@ -27,7 +27,9 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
+                                    <th scope="col">Update Basket</th>
                                     <th scope="col">Subtotal</th>
+                                    <th scope="col">Remove Item</th>
                                 </tr>
                             </thead>
                             {% for item in basket_items %}
@@ -42,10 +44,43 @@
                                     <p class="my-0 side-print">£{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0 side-print pl-4">{{ item.quantity }}</p>
+                                    <form class="form update-form" action="" method="POST">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="decrement-qty btn-sm border rounded-0"
+                                                        data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                        <span class="main-print">
+                                                            <i class="fas fa-minus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <input type="number" 
+                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99" 
+                                                    data-item_id="{{ item.item_id }}" 
+                                                    id="id_qty_{{ item.item_id }}" 
+                                                    class="form-control form-control-sm qty_input">
+                                                <div class="input-group-append">
+                                                    <button class="increment-qty border btn-sm rounded-0"
+                                                        data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                        <span class="main-print">
+                                                            <i class="fas fa-plus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="py-3">
+                                    <p class="update-link side-print"><i class="fa-regular fa-circle-check"></i></p>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0 side-print">£{{ item.product.price }}</p>
+                                </td>
+                                <td class="py-3">
+                                    <p class="remove-item main-print" id="remove_{{ item.item_id}}"><i class="fa-solid fa-trash-can"></i></p>
                                 </td>
                             </tr>
                             {% endfor %}
@@ -85,5 +120,31 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/qty_input_script.html' %}
+
+<script type="text/javascript">
+    // Update qty
+    $('.update-link').click(function(e){
+        var form = $(this).prev('.update-form');
+        form.submit();
+    });
+
+    $('.remove-item').click(function(e){
+        var csrftoken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken':csrfToken};
+
+        $.post(url, data)
+        .done(function(){
+            location.reload();
+        })
+    });
+
+</script>
 {% endblock %}
 
