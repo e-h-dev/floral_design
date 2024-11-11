@@ -44,7 +44,7 @@
                                     <p class="my-0 side-print">£{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <form class="form update-form" action="" method="POST">
+                                    <form class="form update-form" action="{% url 'adjust_basket' item.item_id %}" method="POST">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
@@ -74,7 +74,7 @@
                                     </form>
                                 </td>
                                 <td class="py-3">
-                                    <p class="update-link side-print"><i class="fa-regular fa-circle-check"></i></p>
+                                    <a class="update-link side-print"><i class="fa-regular fa-circle-check"></i></a>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0 side-print">£{{ item.product.price }}</p>
