@@ -49,17 +49,39 @@
                                 </td>
                             </tr>
                             {% endfor %}
+                            <tr>
+                                <td colspan="5" class="pt-5 side-print text-right">
+                                    <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                                    <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                                    <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                                    {% if remaining_for_free_delivery > 0 %}
+                                        <p class="mb-1 main-print">
+                                            You could get free delivery by spending just <strong>£{{ remaining_for_free_delivery }}</strong> more!
+                                        </p>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="text-right">
+                                    <a href="{% url 'products' %}" class="side-print border rounded-0 btn-lg">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <a href="" class="side-print border rounded-0 btn-lg">
+                                        <span class="text-uppercase">Secure Checkout</span>
+                                        <span class="icon">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
                         </table>
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your Basket is Empty!</p>
                 {% endif %}
-                <a href="{% url 'products' %}" class="btn main-print">
-                    <span class="icon">
-                        <i class="fas fa-chevron left"></i>
-                    </span>
-                    <span>Keep Shopping</span>
-                </a>
             </div>
         </div>
     </div>
