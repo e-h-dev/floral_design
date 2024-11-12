@@ -129,6 +129,24 @@ header {
     border:none;
 }
 
+/* --------------------------message styles */
+
+
+.message-container{
+    position:fixed;
+    top:30vh;
+    right:30vw;
+    z-index: 999999999999999;
+}
+
+.custom-toast{
+    overflow:visible;
+    height:400px;
+}
+
+.toast-capper{
+    height: 2px;
+}
 /* ------------------------------------Home app index page styles */
 
 .hero {
