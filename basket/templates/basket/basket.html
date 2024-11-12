@@ -29,7 +29,7 @@
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Update Basket</th>
                                     <th scope="col">Subtotal</th>
-                                    <!-- <th scope="col">Remove Item</th> -->
+                                    <th scope="col">Remove Item</th>
                                 </tr>
                             </thead>
                             {% for item in basket_items %}
@@ -73,17 +73,13 @@
                                         </div>
                                     </form>
                                     <p class="update-link side-print"><i class="fa-regular fa-circle-check"></i></p>
-                                    <!-- <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a> -->
+                                    <p class="remove-item main-print" id="remove_{{ item.item_id}}"><i class="fa-solid fa-trash-can"></i></p>
                                 </td>
-                                <td class="py-3">
-                                    <!-- <a class="update-link side-print"><i class="fa-regular fa-circle-check"></i></a> -->
-                                </td>
+                                <td class="py-3"></td>
                                 <td class="py-3">
                                     <p class="my-0 side-print">£{{ item.product.price }}</p>
                                 </td>
-                                <!-- <td class="py-3">
-                                    <p class="remove-item main-print" id="remove_{{ item.item_id}}"><i class="fa-solid fa-trash-can"></i></p>
-                                </td> -->
+                                <td class="py-3"></td>
                             </tr>
                             {% endfor %}
                             <tr>
@@ -118,6 +114,12 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your Basket is Empty!</p>
+                    <a href="{% url 'products' %}" class="main-print rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
                 {% endif %}
             </div>
         </div>
@@ -141,8 +143,8 @@
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
-        var url = `/bagremove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+        var url = `/basketremove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
          .done(function() {

@@ -395,6 +395,12 @@ h2{
     bottom:50px;
 }
 
+.remove-item{
+    position:relative;
+    left:350px;
+    bottom:100px;
+}
+
 .update-link:hover{
     color:rgba(0, 128, 0, 0.6);
 }
