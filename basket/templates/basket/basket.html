@@ -29,7 +29,7 @@
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Update Basket</th>
                                     <th scope="col">Subtotal</th>
-                                    <th scope="col">Remove Item</th>
+                                    <!-- <th scope="col">Remove Item</th> -->
                                 </tr>
                             </thead>
                             {% for item in basket_items %}
@@ -72,16 +72,18 @@
                                             </div>
                                         </div>
                                     </form>
+                                    <p class="update-link side-print"><i class="fa-regular fa-circle-check"></i></p>
+                                    <!-- <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a> -->
                                 </td>
                                 <td class="py-3">
-                                    <a class="update-link side-print"><i class="fa-regular fa-circle-check"></i></a>
+                                    <!-- <a class="update-link side-print"><i class="fa-regular fa-circle-check"></i></a> -->
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0 side-print">£{{ item.product.price }}</p>
                                 </td>
-                                <td class="py-3">
+                                <!-- <td class="py-3">
                                     <p class="remove-item main-print" id="remove_{{ item.item_id}}"><i class="fa-solid fa-trash-can"></i></p>
-                                </td>
+                                </td> -->
                             </tr>
                             {% endfor %}
                             <tr>
@@ -127,24 +129,26 @@
 {% include 'products/includes/qty_input_script.html' %}
 
 <script type="text/javascript">
-    // Update qty
-    $('.update-link').click(function(e){
+    // Update quantity on click
+    $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
-    });
+    })
 
-    $('.remove-item').click(function(e){
-        var csrftoken = "{{ csrf_token }}";
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken':csrfToken};
+        var size = $(this).data('product_size');
+        var url = `/bagremove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
         $.post(url, data)
-        .done(function(){
-            location.reload();
-        })
-    });
-
+         .done(function() {
+             location.reload();
+         });
+    })
 </script>
 {% endblock %}
 

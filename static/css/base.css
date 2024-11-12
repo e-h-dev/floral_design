@@ -390,6 +390,9 @@ h2{
     color:var(--side-color);
     font-size: x-large;
     text-align: center;
+    position:relative;
+    left:120px;
+    bottom:50px;
 }
 
 .update-link:hover{
