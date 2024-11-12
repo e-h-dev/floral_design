@@ -134,9 +134,24 @@ header {
 
 .message-container{
     position:fixed;
-    top:30vh;
-    right:30vw;
+    height:100vh;
+    width:100vw;
+    background-color: var(--side-color-opaque);
     z-index: 999999999999999;
+}
+
+.toast{
+    position:relative;
+    top:30%;
+    left:40%;
+    border-radius: 10px;
+}
+
+.close{
+    position:relative;
+    left:20px;
+    bottom:20px;
+    color:var(--white-color);
 }
 
 .custom-toast{
