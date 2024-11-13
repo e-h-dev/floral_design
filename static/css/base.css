@@ -465,6 +465,21 @@ h2{
     color:#921a16;
 }
 
+/*  -----------------------------------------login pages */
+
+.sign-in-block{
+    width:60vw;
+    height:90vh;
+    position:absolute;
+    left:20%;
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+h1{
+    color:#921a16;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
