@@ -8,6 +8,49 @@
         </button>
     </div>
     <div class="toast-body side-print bg-white">
-        {{ message }}        
+        <div class="row">
+            <div class="col">
+                {{ message }}
+                
+            </div>
+        </div>
+        {% if grand_total %}
+            <p class="py-1 text-center main-print">Your Basket</p>
+            <div class="basket-notification-wrapper">
+                {% for item in basket_items %}
+                    <div class="row">
+                        <div class="col">
+                            <hr class="mt1 mb-3">
+                        </div>
+                        <div class="col-3 my-1">
+                            <img src="{{ item.product.image.url }}" alt="" class="w-100">
+                        </div>
+                        <div class="col-9">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        </div>
+                    </div>      
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col">
+                    <strong><p class="mt-3 mb-1">
+                        Total {% if remaining_for_free_delivery > 0 %} (Excluding Delivery) {% endif %}
+                        <span class="float-right">£{{ total|floatformat:2 }}</span>
+                    </p></strong>
+                    {% if remaining_for_free_delivery > 0 %}
+                        <p class="mb-0 p-2 bg-warning shadow sm text-center">
+                            Spend <strong>£{{ remaining_for_free_delivery }}</strong> more to get free delivery!
+                        </p>
+                    {% endif %}
+                    <a href="{% url 'view_basket' %}" class="btn rounded-2">
+                        <span class="text-uppercase"> View your Basket</span>
+                        <span class="icon">
+                            <i class="fa-solid fa-basket-shopping icon"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        {% endif %}    
     </div>
 </div>
