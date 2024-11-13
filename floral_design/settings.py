@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'basket',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -165,6 +166,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 FREE_DELIVERY_AMOUNT = 60
+LOW_COST_DELIVERY_AMOUNT = 40
 STANDARD_DELIVERY_PERCENTAGE = 2
 HIGH_DELIVERY_PERCENTAGE = 5
 
