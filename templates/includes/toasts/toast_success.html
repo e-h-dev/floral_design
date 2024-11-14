@@ -1,11 +1,17 @@
-<div class="toast toast-size custom-toast shadow border-top-0" data-autohide="false">
-    <div class="arrow-up arrow-success"></div>
-    <div class="w-100 toast-capper"></div>
-    <strong class="mr-5 mt-5">Success!</strong>
-        <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
+<!-- <div class="toast toast-size custom-toast shadow border-top-0" data-autohide="false"> -->
+    <!-- <div class="arrow-up arrow-success"></div>
+    <div class="w-100 toast-capper"></div> -->
+    
+    <div class="toast-body side-print bg-white" style="width: 624px;
+    margin-left: 400px;
+    margin-top: 250px;
+    border-radius:10px;
+    padding:20px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 128, 0, 0.3);">
+        <strong class="mr-5 main-print mt-5" style="font-size:30px; text-align: center;">Success!</strong>
+        <button type="button" style="outline:none;" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
         </button>
-    <div class="toast-body side-print bg-white">
         <div class="row">
             <div class="col">
                 {{ message }}
@@ -54,4 +60,4 @@
             </div>
         {% endif %}    
     </div>
-</div>
+<!-- </div> -->
