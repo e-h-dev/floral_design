@@ -130,3 +130,5 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 * Dev tools showing error in js file
 
+* bug in product_count tag
+
