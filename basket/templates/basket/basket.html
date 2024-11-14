@@ -17,7 +17,9 @@
                 <h2 class="main-print mb-4">Your Flower Basket</h2>
             </div>
         </div>
-        <div class="row"></div>
+        <div class="row">
+            <div class="col side-print">You have ({{ product_count }}) items in your Basket</div>
+        </div>
             <div class="col">
                 {% if basket_items %}
                     <div class="table-responsive rounded">

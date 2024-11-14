@@ -14,6 +14,9 @@
         </div>
         {% if grand_total %}
             <p class="py-1 text-center main-print">Your Basket</p>
+            <div class="row">
+                <div class="col side-print">You have ({{ product_count }}) items in your Basket</div>
+            </div>
             <div class="basket-notification-wrapper">
                 {% for item in basket_items %}
                     <div class="row">

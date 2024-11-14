@@ -40,6 +40,7 @@ def basket_contents(request):
         'remaining_for_free_delivery': remaining_for_free_delivery,
         'free_delivery_amount': settings.FREE_DELIVERY_AMOUNT,
         'grand_total': grand_total,
+        'product_count': product_count,
     }
 
     return context
