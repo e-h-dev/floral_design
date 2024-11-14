@@ -144,8 +144,10 @@ header {
     position:relative;
     top:30%;
     left:40%;
+    width:90vw;
     border-radius: 10px;
 }
+
 
 .close{
     position:relative;
