@@ -14,6 +14,7 @@ var hero = document.getElementById("hero");
         rightArrow1.style.display="none"
         picturePicker1.innerHTML='<i class="fa-regular fa-circle"></i>'
         picturePicker2.innerHTML='<i class="fa-solid fa-circle"></i>'
+        $('.hero-sentance').html("<h1>Fresh flowers daily</h1>")
     }
 
     function change2(){
@@ -24,6 +25,7 @@ var hero = document.getElementById("hero");
         rightArrow2.style.display="none"
         picturePicker2.innerHTML='<i class="fa-regular fa-circle"></i>'
         picturePicker1.innerHTML='<i class="fa-solid fa-circle"></i>'
+        $('.hero-sentance').html("<h1>Flowers for all occasions</h1>")
     }
     
     leftArrow2.addEventListener('click', change2);

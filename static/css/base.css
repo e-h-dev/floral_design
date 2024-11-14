@@ -236,21 +236,18 @@ header {
 
 .hero-sentance {
     position: absolute;
-    top:40%;
-    /* left:10%; */
-    font-family: var(--decrative-font);
+    top:45%;
     width:80%;
     left:12%;
-    background-color: rgba(128, 97, 97, 0.1);
 }
 
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     font-family: var(--decrative-font);
-    font-weight:400;
+    font-weight:800;
     color:var(--white-color);
 }
 
@@ -476,10 +473,6 @@ h2{
     left:20%;
     font-family: var(--main-font);
     color: var(--main-color);
-}
-
-h1{
-    color:#921a16;
 }
 
 /* -------------------------------- Media Queries */
