@@ -71,9 +71,9 @@ header {
     outline:none;
     border:none;
     border-radius: 40px;
-    box-shadow: 1px 2px 2px 1px rgba(230, 66, 61, 0.2);
     background-color: rgba(230, 66, 61, 0.1);
 }
+
 
 .search-bar:focus,
 .search-bar:active {
