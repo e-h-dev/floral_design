@@ -32,7 +32,7 @@ class Order(models.Model):
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
-        self.order_total = self.lineitems.aggregate(Sum(lineitem_total))['lineitem_total_sum']
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_AMOUNT:
             if self.order_total < settings.LOW_COST_DELIVERY_AMOUNT:
                 self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
@@ -67,7 +67,7 @@ class OrderLineItem(models.Model):
         Override the original save method to set the order number
         if not set already.
         """
-        self.lineitem_total = self.product_price * self.quantity
+        self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
 
     def __str__(self):
