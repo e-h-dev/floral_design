@@ -1,0 +1,5 @@
+in developement the following should be put into the CLI:
+
+export STRIPE_PUBLIC_KEY=pk_test_51QM5qRGDazVQqN0sTDENZihnFaiLmhBt6h1nH5KqgjjHsYAa0Piv8SyJ4rf5dqOmmQCPtn1XVQizU4yaCkhirmj100VKLMzHJU
+
+export STRIPE_SECRET_KEY=sk_(secret_key)
