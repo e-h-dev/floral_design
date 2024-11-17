@@ -49,7 +49,7 @@
                                 <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                             </div>
                             <div class="col-3 text-right">
-                                <p class="my-0 small text-muted">${{ item.product.price | calculate_subtotal:item.quantity }}</p>
+                                <p class="my-0 small text-muted">£{{ item.product.price | calculate_subtotal:item.quantity }}</p>
                             </div>
                         </div>
                     {% endfor %}
@@ -60,9 +60,9 @@
                             <p class="my-0">Grand Total:</p>
                         </div>
                         <div class="col-3">
-                            <p class="my-0">${{ total | floatformat:2 }}</p>
-                            <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                            <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                            <p class="my-0">£{{ total | floatformat:2 }}</p>
+                            <p class="my-0">£{{ delivery | floatformat:2 }}</p>
+                            <p class="my-0"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
                         {{ order_form.county | as_crispy_field }}
-                        <div class="form-check form-check-inlie float-right mr-0">
+                        <div class="form-check form-check-inline float-right mr-0">
                             {% if user.is_authenticated %}
                                 <label for="id-save-info" class="form-check-label">Save this delivery information to my Profile</label>
                                 <input type="checkbox" class="form-check-input ml-r mr-0" id="id-save-info" name="save_info" checked>
@@ -118,11 +118,18 @@
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
-							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+							<span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
 						</p>
 					</div>
                 </form>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe.js' %}"></script>
 {% endblock %}
