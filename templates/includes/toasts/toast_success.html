@@ -18,7 +18,7 @@
                 
             </div>
         </div>
-        {% if grand_total %}
+        {% if grand_total and not on_profile_page %}
             <p class="py-1 text-center main-print">Your Basket</p>
             <div class="row">
                 <div class="col side-print">You have ({{ product_count }}) items in your Basket</div>
