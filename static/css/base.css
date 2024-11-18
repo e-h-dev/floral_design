@@ -129,6 +129,14 @@ header {
     border:none;
 }
 
+
+footer{
+    border-top: 1px solid rgba(230, 66, 61, 0.5);
+    height:150px; 
+    background-color: rgb(230, 66, 61); 
+    margin-top: 40px;
+}
+
 /* --------------------------message styles */
 
 
@@ -495,7 +503,7 @@ h2{
       }
   
       .header-container {
-          padding-top: 164px;
+          padding-top: 220px;
       }
 
   }
