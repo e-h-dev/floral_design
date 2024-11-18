@@ -132,3 +132,5 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 * bug in product_count tag
 
+* bug in message remove jquery
+
