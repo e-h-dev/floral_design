@@ -195,7 +195,7 @@
             <script type="text/javascript">
                 $('.toast').toast('show');
                 $('.message-container').click(function () {
-                location.reload(true);
+                $(this).css("display", "none");
             });
             </script>
         {% endblock %}
