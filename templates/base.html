@@ -156,22 +156,36 @@
         {% block content %}
         {% endblock %}
         <footer>
-            <div class="container-fluid" style=" border-top: 2px solid rgb(230, 66, 61); height:200px; background-color: rgba(230, 66, 61, 0.3); margin-top: 40px;">
+            <div class="container-fluid" style=" border-top: 1px solid rgba(230, 66, 61, 0.5); height:150px; background-color: rgba(230, 66, 61, 0.1); margin-top: 40px;">
                 <div class="row mt-3 mr-2 ml-2">
                     <div class="col-12 col-md-4">
-                        <h5 class="main-print text-center">Floral Design</h5>
+                        <h5 class="main-print text-center">
+                            <!-- <img src="/media/logo-mobile.png" alt="" style="width:100px; height:60px;"> -->
+                            Floral Design
+                        </h5>
                         <a href="{% url 'privacy' %}" target="_blank" class="side-print text-center pt-5">
-                            <p>Privacy Notice</p>
+                            <p><i class="fa-solid fa-user-lock"></i>Privacy Notice</p>
                         </a>
                         <a href="" class="side-print text-center pt-5">
-                            <p>Delivery Info</p>
+                            <p><i class="fa-solid fa-truck-fast"></i>Delivery Info</p>
                         </a>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h5 class="main-print text-center">Contact Us</h5>
+                        <h5 class="main-print text-center"><i class="fa-regular fa-address-book"></i>Contact Us</h5>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h5 class="main-print text-center">Payments</h5>
+                        <h5 class="main-print text-center"><i class="fa-regular fa-credit-card"></i>Payments</h5>
+                        <p class="text-center side-print">All payments genarated with <a href="https://stripe.com/" target="_blank">Stripe</a></p>
+                        <div class="text-center side-print">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 main-print small text-center">
+                        <i class="fa-regular fa-copyright"></i> Copyright 2024 e-hdev
                     </div>
                 </div>
             </div>
