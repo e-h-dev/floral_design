@@ -84,6 +84,10 @@ header {
     background-color: #fff;
 }
 
+input[name='q'] {
+    color:var(--side-color);
+}
+
 .search-btn {
     background-color: transparent;
     border: none;
@@ -472,15 +476,58 @@ h2{
     color:#921a16;
 }
 
-/*  -----------------------------------------login pages */
+/*  -----------------------------------------allauth login pages */
 
-.sign-in-block{
-    width:60vw;
-    height:90vh;
-    position:absolute;
-    left:20%;
-    font-family: var(--main-font);
-    color: var(--main-color);
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color:var(--main-color)
+}
+
+.allauth-form-inner-content input {
+    border-color: var(--side-color-opaque);
+    border-radius: 5px;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color:var(--side-color);
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color-opaque);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 3px;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: var(--main-color);
+    background-color: var(--white-color);
+    border-color: var(--side-color-opaque);
+}
+
+.allauth-form-inner-content a {
+	color: var(--main-color-opaque)
 }
 
 /* -------------------------------- Media Queries */
