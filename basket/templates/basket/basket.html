@@ -93,7 +93,7 @@
                                     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if remaining_for_free_delivery > 0 %}
-                                        <p class="mb-1 main-print">
+                                        <p class="mb-1">
                                             You could get free delivery by spending just <strong>£{{ remaining_for_free_delivery }}</strong> more!
                                         </p>
                                     {% endif %}
@@ -101,13 +101,13 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="side-print border rounded-0 btn-lg">
+                                    <a href="{% url 'products' %}" class="main-print button btn-lg">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="{% url 'checkout' %}" class="side-print border rounded-0 btn-lg">
+                                    <a href="{% url 'checkout' %}" class="main-print button btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
