@@ -19,7 +19,7 @@ body{
 .wrapper{
     display: flex;
     flex-direction: column;
-    height: vh;
+    height: 100vh;
 }
 
 .main-print{
