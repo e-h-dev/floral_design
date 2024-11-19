@@ -402,7 +402,11 @@ h2{
 }
 
 .filter-btn {
-    border:solid 1px var(--main-color) !important;
+    border-radius: 40px;
+    background-color: rgba(230, 66, 61, 0.1);
+    font-weight: 100;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .filter-btn:hover {
@@ -418,6 +422,24 @@ h2{
     right:10px;
     cursor:pointer;
     z-index: 999999999;
+}
+
+#sort-selector{
+    outline:none !important;
+    border:none !important;
+    border-radius: 40px;
+    background-color: rgba(230, 66, 61, 0.1);
+}
+
+#sort-selector:hover,
+#sort-selector:active,
+#sort-selector:focus{
+    outline:none !important;
+    border:none !important;
+}
+
+option:hover{
+    background-color: var(--main-color);
 }
 
 .fa-arrow-up-from-bracket{
