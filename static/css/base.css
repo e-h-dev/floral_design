@@ -12,6 +12,16 @@ html{
     height:100%;
 }
 
+body{
+    height:100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: vh;
+}
+
 .main-print{
     color: var(--main-color);
     font-family: var(--main-font);
@@ -135,10 +145,13 @@ input[name='q'] {
 
 
 footer{
+    position: static;
+    margin-top: auto;
     border-top: 1px solid rgba(230, 66, 61, 0.5);
     height:150px; 
-    background-color: rgb(230, 66, 61); 
+    background-color: rgba(230, 66, 61, 0.3); 
     margin-top: 40px;
+    margin-bottom: 0;
 }
 
 /* --------------------------message styles */
@@ -404,6 +417,7 @@ h2{
     bottom:10px;
     right:10px;
     cursor:pointer;
+    z-index: 999999999;
 }
 
 .fa-arrow-up-from-bracket{

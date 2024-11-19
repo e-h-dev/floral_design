@@ -40,122 +40,124 @@
         <title>Floral Design {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
-        <header class="container-fluid fixed-top">
-            <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex">
-                <div class="col-2">
-                    <a href="{% url 'home' %}">
-                        <div class="logo"></div>
-                    </a>
-                </div>
-                 {% include 'includes/mobile-nav-header.html' %}
-                 <nav class="navbar navbar-expand-lg d-block d-lg-none navbar-light nav-top w-10">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="toggler nav-top"><i class="fa-solid fa-bars"></i></span>
-                    </button>
-                    {% include 'includes/bottom-header.html' %}
-                </nav>
-                <div class="col-10 my-10 d-none d-lg-block py-1 py-lg-0">
-                    <div class="row nav-row pt-3">
-                        <form method="GET" action="{% url 'products' %}" class="search-bar-container">
-                            <div class="input-group w-100">
-                                <input class="search-bar shadow ml-5" type="text" name="q" placeholder="Search our products">
-                                <div class="input-group-append">
-                                    <button class="search-btn" type="submit">
-                                        <span class="fl-d-clr">
-                                            <i class="fas fa-search"></i>
-                                        </span>
-                                    </button>
+        <div class="wrapper">
+            <header class="container-fluid fixed-top">
+                <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex">
+                    <div class="col-2">
+                        <a href="{% url 'home' %}">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                    {% include 'includes/mobile-nav-header.html' %}
+                    <nav class="navbar navbar-expand-lg d-block d-lg-none navbar-light nav-top w-10">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler nav-top"><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        {% include 'includes/bottom-header.html' %}
+                    </nav>
+                    <div class="col-10 my-10 d-none d-lg-block py-1 py-lg-0">
+                        <div class="row nav-row pt-3">
+                            <form method="GET" action="{% url 'products' %}" class="search-bar-container">
+                                <div class="input-group w-100">
+                                    <input class="search-bar shadow ml-5" type="text" name="q" placeholder="Search our products">
+                                    <div class="input-group-append">
+                                        <button class="search-btn" type="submit">
+                                            <span class="fl-d-clr">
+                                                <i class="fas fa-search"></i>
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
-                        <div class="my-auto py-1 text-center py-lg-0 nav-top account">
-                            <a class=" nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center">
-                                    <div><i class="fas fa-user fa-lg icon"></i></div>
+                            </form>
+                            <div class="my-auto py-1 text-center py-lg-0 nav-top account">
+                                <a class=" nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="text-center">
+                                        <div><i class="fas fa-user fa-lg icon"></i></div>
+                                        {% if request.user.is_authenticated %}
+                                            <p class="my-0">Hello {{ user.username|capfirst }}</p>
+                                        {% else %}
+                                            <p class="my-0">Login/Register</p>
+                                        {% endif %}
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                     {% if request.user.is_authenticated %}
-                                        <p class="my-0">Hello {{ user.username|capfirst }}</p>
+                                        {% if request.user.is_superuser %}
+                                            <a href="" class="dropdown-item nav-link">Product Management</a>
+                                        {% endif %}
+                                        <a href="{% url 'profile' %}" class="dropdown-item nav-link">My Profile</a>
+                                        <a href="{% url 'account_logout' %}" class="dropdown-item nav-link">Logout</a>
                                     {% else %}
-                                        <p class="my-0">Login/Register</p>
+                                        <a href="{% url 'account_signup' %}" class="dropdown-item nav-link">Register</a>
+                                        <a href="{% url 'account_login' %}" class="dropdown-item nav-link">Login</a>
                                     {% endif %}
                                 </div>
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item nav-link">Product Management</a>
-                                    {% endif %}
-                                    <a href="{% url 'profile' %}" class="dropdown-item nav-link">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item nav-link">Logout</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item nav-link">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item nav-link">Login</a>
-                                {% endif %}
+                            </div>
+                            <div class="nav-top basket">
+                                <a class="{% if grand_total %}font-weight-bold{% else %}{% endif %} nav-link" href="{% url 'view_basket' %}">
+                                <div class="text-center">
+                                    <div><i class="fa-solid fa-basket-shopping icon"></i></div>
+                                    <p class="my-0">
+                                        {% if grand_total %}
+                                            £{{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                            £0.00
+                                        {% endif %}
+                                    </p>
+                                </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="nav-top basket">
-                            <a class="{% if grand_total %}font-weight-bold{% else %}{% endif %} nav-link" href="{% url 'view_basket' %}">
-                            <div class="text-center">
-                                <div><i class="fa-solid fa-basket-shopping icon"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                        £{{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        £0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                            </a>
+                        <div class="row bg-white pt-3 pl-5">
+                            <nav class="navbar navbar-expand-lg nav-bar-row navbar-light w-100">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="row lg-d-none d-block bg-white">
+                                    <nav class="navbar navbar-expand-lg navbar-light w-100">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        {% include 'includes/bottom-header.html' %}
+                                    </nav>
+                                </div>
+                            </nav>
                         </div>
-                    </div>
-                    <div class="row bg-white pt-3 pl-5">
-                        <nav class="navbar navbar-expand-lg nav-bar-row navbar-light w-100">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="row lg-d-none d-block bg-white">
-                                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    {% include 'includes/bottom-header.html' %}
-                                </nav>
-                            </div>
-                        </nav>
                     </div>
                 </div>
-            </div>
-            <div id="delivery-banner" class="row delivery-banner">
-                <h4 class="main-print my-1">
-                    <strong><span class="delivery-flag">
-                        Free delivery on orders of £{{ free_delivery_amount }} or more!
-                    </span></strong><i class="fa-solid fa-truck-fast van"></i>
-                </h4>                        
-            </div>
-        </header>
-        {% if messages %}
-            <div class="message-container">
-                {% for message in messages %}
-                    {% with message.level as level %}
-                        {% if level == 40 %}
-                            {% include 'includes/toasts/toast_error.html' %}
-                        {% elif level == 30 %}
-                            {% include 'includes/toasts/toast_warning.html' %}
-                        {% elif level == 25 %}
-                            {% include 'includes/toasts/toast_success.html' %}
-                        {% else %}
-                            {% include 'includes/toasts/toast_info.html' %}
-                        {% endif %}   
-                    {% endwith %}
-                {% endfor %}
-            </div>
-        {% endif %}
+                <div id="delivery-banner" class="row delivery-banner">
+                    <h4 class="main-print my-1">
+                        <strong><span class="delivery-flag">
+                            Free delivery on orders of £{{ free_delivery_amount }} or more!
+                        </span></strong><i class="fa-solid fa-truck-fast van"></i>
+                    </h4>                        
+                </div>
+            </header>
+            {% if messages %}
+                <div class="message-container">
+                    {% for message in messages %}
+                        {% with message.level as level %}
+                            {% if level == 40 %}
+                                {% include 'includes/toasts/toast_error.html' %}
+                            {% elif level == 30 %}
+                                {% include 'includes/toasts/toast_warning.html' %}
+                            {% elif level == 25 %}
+                                {% include 'includes/toasts/toast_success.html' %}
+                            {% else %}
+                                {% include 'includes/toasts/toast_info.html' %}
+                            {% endif %}   
+                        {% endwith %}
+                    {% endfor %}
+                </div>
+            {% endif %}
 
-        {% block page_header %}
-        {% endblock %}
+            {% block page_header %}
+            {% endblock %}
 
-        {% block content %}
-        {% endblock %}
-        <!-- <footer>
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer>
             <div class="container-fluid">
                 <div class="row mt-3 mr-2 ml-2">
                     <div class="col-12 col-md-4">
@@ -188,7 +190,7 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 
         {% block postloadjs %}
             <script type="text/javascript">
