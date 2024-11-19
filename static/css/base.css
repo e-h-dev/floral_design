@@ -16,11 +16,11 @@ body{
     height:100%;
 }
 
-.wrapper{
+/* .wrapper{
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
+} */
 
 .main-print{
     color: var(--main-color);
@@ -145,8 +145,8 @@ input[name='q'] {
 
 
 footer{
-    position: static;
-    margin-top: auto;
+    /* position:absolute;
+    margin-top: auto; */
     border-top: 1px solid rgba(230, 66, 61, 0.5);
     height:150px; 
     background-color: rgba(230, 66, 61, 0.3); 
