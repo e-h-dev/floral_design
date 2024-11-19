@@ -134,3 +134,5 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 * bug in message remove jquery
 
+* opening checkout template rendred form error from checkout/views.py
+

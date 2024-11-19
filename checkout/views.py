@@ -51,10 +51,10 @@ def checkout(request):
             
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
+        else:
+            messages.error(request, 'There was an error with your form. \
+                Please double check your information!')
     else:
-        # messages.error(request, 'There was an error with your form. \
-        #     Please double check your information!')
-
         basket = request.session.get('basket', {})
         if not basket:
             messages.error(request, 'Your Basket is empty!')
