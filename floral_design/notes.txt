@@ -3,3 +3,19 @@ in developement the following should be put into the CLI:
 export STRIPE_PUBLIC_KEY=pk_test_51QM5qRGDazVQqN0sTDENZihnFaiLmhBt6h1nH5KqgjjHsYAa0Piv8SyJ4rf5dqOmmQCPtn1XVQizU4yaCkhirmj100VKLMzHJU
 
 export STRIPE_SECRET_KEY=sk_(secret_key)
+
+style="width: 700px;
+    margin-left: 350px;
+    margin-top: 10%;
+    border-radius:10px;
+    padding:20px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 128, 0, 0.3);
+
+
+{% block postloadjs %}
+            <script type="text/javascript">
+                $('.close').click(function () {
+                    $('.message-container').css("display", "none");
+            });
+            </script>
+        {% endblock %}
