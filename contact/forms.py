@@ -1,10 +1,8 @@
 from django import forms
-from .models import ContactUs
+from .models import ContactForm
 
 class ContactForm(forms.ModelForm):
-    class Meta:
-        model = Order
-        fields = ('full_name', 'email', 'phone', 'messsage', 'added_info')
+    fields = ('full_name', 'email', 'phone', 'messsage', 'added_info')
 
     def __init__(self, *args, **kwargs):
         """

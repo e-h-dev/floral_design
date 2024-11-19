@@ -2,7 +2,7 @@ from django.db import models
 
 
 
-class ContactUs(models.Model):
+class ContactForm(models.Model):
     first_name = models.CharField(max_length=20, null=True, blank=True)
     email = models.EmailField(max_length=20, null=True, blank=True)
     phone = models.CharField(max_length=20, null=True, blank=True)
