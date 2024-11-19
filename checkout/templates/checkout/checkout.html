@@ -91,8 +91,9 @@
                                 <input type="checkbox" class="form-check-input ml-r mr-0" id="id-save-info" name="save_info" checked>
                             {% else %}
                                 <label for="form-check-label" class="id-save-info"></label>
-                                <a href="{% url 'account_signup' %}" class="text-info">Create an Account</a>
-                                <a href="{% url 'account_login' %}" class="text-info">Login</a>to save this information
+                                <a href="{% url 'account_signup' %}" class="main-print"><strong>Create an Account&nbsp</strong></a>
+                                <a href="{% url 'account_login' %}" class="main-print"><strong>/&nbspLogin</strong></a>
+                                <span class="main-print">&nbsp to save this information</span>
                             {% endif %}
                         </div>
                     </fieldset>
@@ -101,23 +102,17 @@
                         <div class="mb-3" id="card-element"></div>
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     </fieldset>
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_basket' %}" class="btn btn-outline-black rounded-0">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
-							</span>
+                    <div class="main-print mt-5 mb-2">                    
+						<a href="{% url 'view_basket' %}" class="button">
+							<i class="fas fa-chevron-left"></i>
 							<span class="font-weight-bold">Adjust Basket</span>
 						</a>
-						<button id="submit-button" class="main-print rounded-2">
+						<button id="submit-button" class="button main-print">
 							<span class="font-weight-bold">Complete Order</span>
-							<span class="icon">
-								<i class="fa-regular fa-credit-card"></i>
-							</span>
+							<i class="fa-regular fa-credit-card"></i>
 						</button>
-						<p class="small text-danger my-0">
-							<span class="icon">
-								<i class="fas fa-exclamation-circle"></i>
-							</span>
+						<p class="small side-print font-weight-bold">
+							<i class="fas fa-exclamation-circle"></i>
 							<span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
 						</p>
 					</div>
