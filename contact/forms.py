@@ -2,7 +2,9 @@ from django import forms
 from .models import ContactForm
 
 class ContactForm(forms.ModelForm):
-    fields = ('full_name', 'email', 'phone', 'messsage', 'added_info')
+    class Meta:
+        model = ContactForm
+        fields = ('full_name', 'email', 'phone', 'message', 'added_info')
 
     def __init__(self, *args, **kwargs):
         """
