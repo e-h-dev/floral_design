@@ -12,7 +12,7 @@ def contact(request):
             contact_form.save()
             return render(request, 'contact/contact.html')
         else:
-            messages.erroe(request, 'You have made an error')
+            messages.error(request, 'You have made an error')
             return redirect('contact')
     else:
         contact_form = ContactForm()
