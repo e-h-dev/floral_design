@@ -688,6 +688,22 @@ option:hover{
       }
 }
 
+/* -------------------------form styles */
+
+.contact-header-h1{
+    font-size: 3rem;
+}
+
+.contact-header-h2{
+    position: relative;
+    left:35%;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--side-color);
+    width:300px;
+    /* border-radius: 20px; */
+    padding-bottom: 10px;
+}
+
 .form-background{
     background-color: var(--main-color-opaque);
     border-radius: 20px;
@@ -702,4 +718,21 @@ option:hover{
 label{
     font-family: var(--main-font);
     color: var(--side-color);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.submit-btn{
+    background-color: var(--main-color-opaque);
+    color:var(--white-color);
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    border-radius: 20px;
+    position: relative;
+    left:40%;
+}
+
+.submit-btn:hover{
+    background-color: var(--white-color);
+    border: solid 1px var(--side-color-opaque);
 }
