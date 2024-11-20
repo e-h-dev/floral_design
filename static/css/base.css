@@ -687,3 +687,19 @@ option:hover{
         height: 60vh;
       }
 }
+
+.form-back{
+    background-color: var(--main-color-opaque);
+    border-radius: 20px;
+}
+
+.form-back:focus,
+.form-back:active{
+    border:solid 1px var(--side-color-opaque);
+    outline:none;
+}
+
+label{
+    font-family: var(--main-font);
+    color: var(--side-color);
+}
