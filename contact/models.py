@@ -10,5 +10,4 @@ class Contact(models.Model):
     added_info = models.TextField(max_length=600, null=True, blank=True)
     date = models.DateField(auto_now=True)
 
-    def __str__():
-        return self.email
+    
