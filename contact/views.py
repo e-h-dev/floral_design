@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse, get_object_or_404
+from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Contact
 from .forms import ContactForm
@@ -16,13 +16,12 @@ def contact(request):
             return redirect('contact')
     else:
         contact_form = ContactForm()
-
     
 
     template = 'contact/contact.html'
 
     context = {
-        'contact': contact_form
+        'contact_form': contact_form
     }
     return render(request, template, context)
 

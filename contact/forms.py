@@ -4,7 +4,7 @@ from .models import Contact
 class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
-        fields = ('name', 'email', 'phone', 'message', 'added_info')
+        fields = '__all__'
 
     def __init__(self, *args, **kwargs):
         """

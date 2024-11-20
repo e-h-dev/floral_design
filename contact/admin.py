@@ -10,6 +10,7 @@ class ContactAdmin(admin.ModelAdmin):
         'message',
         'added_info',
         'date',
+        'time',
     )
 
     fields = (
@@ -19,11 +20,14 @@ class ContactAdmin(admin.ModelAdmin):
         'message',
         'added_info',
         'date',
+        'time',
     )
 
     list_display = (
+        'name',
         'email',
         'date',
+        'time',
     )
 
     ordering = ('-date',)

@@ -9,5 +9,6 @@ class Contact(models.Model):
     message = models.TextField(max_length=600, null=True, blank=True)
     added_info = models.TextField(max_length=600, null=True, blank=True)
     date = models.DateField(auto_now=True)
+    time = models.TimeField(auto_now=True)
 
     
