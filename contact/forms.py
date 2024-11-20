@@ -1,10 +1,10 @@
 from django import forms
-from .models import ContactForm
+from .models import Contact
 
 class ContactForm(forms.ModelForm):
     class Meta:
-        model = ContactForm
-        fields = ('full_name', 'email', 'phone', 'message', 'added_info')
+        model = Contact
+        fields = ('name', 'email', 'phone', 'message', 'added_info')
 
     def __init__(self, *args, **kwargs):
         """
@@ -13,14 +13,14 @@ class ContactForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'full_name': 'Full Name',
+            'name': 'Name',
             'email': 'Email Address',
             'phone': 'Phone Number',
             'message': 'Your Message',
             'added_info': 'Any other Request',
         }
 
-        self.fields['full_name'].widget.attrs['autofocus'] = True
+        self.fields['name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field != 'added_info':
                 if self.fields[field].required:

@@ -2,8 +2,8 @@ from django.db import models
 
 
 
-class ContactForm(models.Model):
-    first_name = models.CharField(max_length=20, null=True, blank=True)
+class Contact(models.Model):
+    name = models.CharField(max_length=20, null=True, blank=True)
     email = models.EmailField(max_length=20, null=True, blank=True)
     phone = models.CharField(max_length=20, null=True, blank=True)
     message = models.TextField(max_length=600, null=True, blank=True)
