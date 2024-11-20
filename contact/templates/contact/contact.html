@@ -29,16 +29,16 @@
                 <form action="{% url 'contact' %}" method="POST" class="mt-3" id="contact-form">
                     {% csrf_token %}
                     <label for="id_name">Full Name *</label>
-                    <input type="text" name="name" maxlength="20" class="shadow form-back textinput textInput form-control" required="True" id="id_name">
+                    <input type="text" name="name" maxlength="20" class="shadow form-background form-control" required="True" id="id_name">
                     <label for="id_email">Email *</label>
-                    <input type="email" name="email" maxlength="20" class="shadow form-back textinput textInput form-control" required="True" id="id_email">
+                    <input type="email" name="email" maxlength="20" class="shadow form-background textinput form-control" required="True" id="id_email">
                     <label for="id_phone">Phone Number *</label>
-                    <input type="text" name="phone" maxlength="254" class="shadow form-back textinput textInput form-control" required="True" id="id_phone">
+                    <input type="text" name="phone" maxlength="254" class="shadow form-background textinput form-control" required="True" id="id_phone">
                     <label for="id_message">Write your message below *</label>
-                    <textarea type="text" name="message" maxlength="600" class="shadow form-back textinput textInput form-control" required="True" id="id_message"></textarea>
+                    <textarea type="text" name="message" maxlength="600" class="shadow form-background textinput form-control" required="True" id="id_message"></textarea>
                     <label for="id_added_info">Any added informaiton fill in below</label>
-                    <textarea type="text" name="added_info" maxlength="600" class="shadow form-back textinput textInput form-control" id="id_added_info"></textarea>
-                    <button class="btn float-right" type="submit">
+                    <textarea type="text" name="added_info" maxlength="600" class="shadow form-background textinput form-control" id="id_added_info"></textarea>
+                    <button class="button side-print" type="submit">
                         Submit
                     </button>
                 </form>

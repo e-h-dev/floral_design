@@ -688,13 +688,13 @@ option:hover{
       }
 }
 
-.form-back{
+.form-background{
     background-color: var(--main-color-opaque);
     border-radius: 20px;
 }
 
-.form-back:focus,
-.form-back:active{
+.form-background:focus,
+.form-background:active{
     border:solid 1px var(--side-color-opaque);
     outline:none;
 }

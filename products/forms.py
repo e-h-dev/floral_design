@@ -14,4 +14,4 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'shadow form-back'
+            field.widget.attrs['class'] = 'shadow form-background'
