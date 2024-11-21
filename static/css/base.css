@@ -721,6 +721,8 @@ label{
     margin-bottom: 5px;
 }
 
+/* contact form */
+
 .submit-btn{
     background-color: var(--main-color-opaque);
     color:var(--white-color);
@@ -737,6 +739,39 @@ label{
 }
 
 /* ------------------------------product form */
+
+.add-edit-btn,
+.add-edit-cancel-btn{
+    color:var(--white-color);
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 20px;
+    position: relative;
+    display:inline-block;
+    height:30px;
+    padding:10px 10px 30px;
+}
+
+.add-edit-btn{
+    background-color: var(--side-color);
+    right:20%;
+    top:3px;
+    width:120px;
+}
+.add-edit-cancel-btn{
+    background-color: var(--main-color);
+    width:80px;
+    right:60%;
+    padding:5px;
+}
+
+.add-edit-btn:hover,
+.add-edit-cancel-btn:hover{
+    background-color: var(--white-color);
+    color:var(--side-color);
+    border: 1px solid var(--side-color-opaque)
+}
 
 .btn-file{
     position: relative;
