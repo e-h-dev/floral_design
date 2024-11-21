@@ -147,6 +147,8 @@ input[name='q'] {
 footer{
     /* position:absolute;
     margin-top: auto; */
+    position: relative;
+    bottom:-25vh;
     border-top: 1px solid rgba(230, 66, 61, 0.5);
     height:150px; 
     background-color: rgba(230, 66, 61, 0.3); 
