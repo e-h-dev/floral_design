@@ -19,3 +19,28 @@ style="width: 700px;
             });
             </script>
         {% endblock %}
+
+
+blank space in forms to be removed
+
+create visibilty option in products
+
+or add another unique fearture to products model
+
+position hero image on mobile with background-position:cover
+
+background-size:center
+
+create reviews app
+
+footer
+
+clean code
+
+comment code
+
+deploy
+
+README.
+
+testing
