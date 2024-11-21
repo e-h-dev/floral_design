@@ -700,7 +700,6 @@ option:hover{
     font-size: 1.5rem;
     border-bottom: 1px solid var(--side-color);
     width:300px;
-    /* border-radius: 20px; */
     padding-bottom: 10px;
 }
 
@@ -735,4 +734,32 @@ label{
 .submit-btn:hover{
     background-color: var(--white-color);
     border: solid 1px var(--side-color-opaque);
+}
+
+/* ------------------------------product form */
+
+.btn-file{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-file input[type="file"]{
+    position: absolute;
+    top: -10px;;
+    right:0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 2px;
+    border-color: var(--side-color);
+}
+
+.custom-checkbox .custom-control-input~.custom-control-label::before {
+    background-color: var(--side-color);
+    border-color: var(--side-color);
+    border-radius: 2px;
 }
