@@ -54,7 +54,7 @@
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card main-print h-70 border-style mt-3 mb-3">
-                                {% if product.visibilty == False %}
+                                {% if product.out_of_stock %}
                                 <div class="image-box" style="height:300px; width:250px; background-color: rgba(128, 97, 97, 0.4);">
                                     <p style="margin-top: 150px; margin-left: 80px;">Out of Stock</p>
                                 </div>

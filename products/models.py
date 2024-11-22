@@ -23,7 +23,7 @@ class Product(models.Model):
     mini_description = models.TextField(null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
-    visibilty = models.BooleanField(default=True)
+    out_of_stock = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
