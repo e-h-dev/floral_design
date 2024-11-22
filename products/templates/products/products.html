@@ -53,13 +53,13 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card main-print h-70 border-style mt-3 mb-3">
+                            <div class="card main-print border-style mt-3 mb-3">
                                 {% if product.out_of_stock %}
                                 <div class="image-box" style="height:300px; width:250px; background-color: rgba(128, 97, 97, 0.4);">
                                     <p style="margin-top: 150px; margin-left: 80px;">Out of Stock</p>
                                 </div>
                                 {% else %}
-                                    <div class="image-box" style="height:300px; width:250px;">
+                                    <div class="image-box" style="height:300px; width:250px; margin-left: 25px; margin-top: 100px;">
                                         {% if product.image %}
                                             <a href="{% url 'product_detail' product.id %}">
                                                 <img class="card-img-center img-fluid" height="250px" width="200px" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -74,9 +74,9 @@
                                 <div class="card-body pb-0">
                                     <h6 class="mb-0 font-weight-bold">{{ product.name }}</h6>
                                 </div>
-                                <div class="card-body pb-0 side-print">
-                                    <p class="mb-0" style="font-size: x-small;">{{ product.mini_description }}</p>
-                                    <a class="border-1" style="font-size: xx-small;" href="">view more.</a>
+                                <div class="card-body pb-0">
+                                    <p class="mb-0 side-print" style="font-size: small;">{{ product.mini_description }}</p>
+                                    <a class="border-1 main-print" style="font-size: large;" href="{% url 'product_detail' product.id %}">view more.</a>
                                 </div>
                                 {% if product.category %}
                                 <p class="small mt-1 mp-0">
@@ -86,26 +86,36 @@
                                 </p>
                                 {% endif %}
                                 <div class="row">
-                                    <div class="col">
-                                        <form action="{% url 'add_to_basket' product.id %}" method="POST" class="form">
-                                            {% csrf_token %}
-                                            <div class="form-row mb-2 d-lg-none">
+                                    {% if product.out_of_stock %}
+                                        <div class="col">
+                                            <div class="form-row">
                                                 <div class="col-12">
-                                                    <div class="form-group w-50">
-                                                        <div class="input-group">
-                                                            <input type="number" name="quantity" value="1" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" class="form-control qty_input">
+                                                    <input type="submit" class="main-print add-basket-btn" value="Add to Basket" style="background-color: rgba(230, 66, 61, 0.3);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% else %}
+                                        <div class="col">
+                                            <form action="{% url 'add_to_basket' product.id %}" method="POST" class="form">
+                                                {% csrf_token %}
+                                                <div class="form-row mb-2 d-lg-none">
+                                                    <div class="col-12">
+                                                        <div class="form-group w-50">
+                                                            <div class="input-group">
+                                                                <input type="number" name="quantity" value="1" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" class="form-control qty_input">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="form-row mt-5">
-                                                <div class="col-12">
-                                                    <input type="submit" class="main-print add-basket-btn" value="Add to Basket">
+                                                <div class="form-row">
+                                                    <div class="col-12">
+                                                        <input type="submit" class="main-print add-basket-btn" value="Add to Basket">
+                                                    </div>
+                                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                                 </div>
-                                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                            </div>
-                                        </form>
-                                    </div>
+                                            </form>
+                                        </div>
+                                    {% endif %}
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
