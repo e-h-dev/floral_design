@@ -1,3 +1,4 @@
+/* -------------------------root styles */
 :root{
     --main-color:#e6423d;
     --white-color:#fff;
@@ -8,19 +9,8 @@
     --side-color-opaque:rgba(128, 97, 97, 0.4);
 }
 
-html{
-    height:100%;
-}
 
-body{
-    height:100%;
-}
-
-/* .wrapper{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-} */
+/* -------------------commonly used classes */
 
 .main-print{
     color: var(--main-color);
@@ -48,8 +38,28 @@ a, a:hover, a:focus, a:active {
     font-size: x-large;
 }
 
+
+/* --------------------------base template styles */
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+
 header {
     background-color: var(--white-color);
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--decrative-font);
+    font-weight:800;
+    color:var(--white-color);
 }
 
 .logo{
@@ -143,10 +153,40 @@ input[name='q'] {
     border:none;
 }
 
+/* delivery icon styles */
+
+.van {
+    position:absolute;
+    width:330px;
+	left: -120px;
+	animation-name: drive;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+    background-color: var(--white-color);
+    width: 30px;
+}
+
+/* animation for delivey icon */
+
+@keyframes drive {
+	0% {
+		left: -700px;
+	}
+	100% {
+		left: 900px ;
+	}
+}
+
+.delivery-banner{
+    position: absolute;
+    top:150px;
+    left:35%;
+    align-items: center;
+}
+
+
 
 footer{
-    /* position:absolute;
-    margin-top: auto; */
     position: relative;
     bottom:-25vh;
     border-top: 1px solid rgba(230, 66, 61, 0.5);
@@ -239,35 +279,6 @@ footer{
   }
 }
 
-.van {
-    position:absolute;
-    width:330px;
-	left: -120px;
-	animation-name: drive;
-	animation-iteration-count: infinite;
-	animation-duration: 10s;
-    background-color: var(--white-color);
-    width: 30px;
-}
-
-
-@keyframes drive {
-	0% {
-		left: -700px;
-	}
-	100% {
-		left: 900px ;
-	}
-}
-
-.delivery-banner{
-    position: absolute;
-    top:150px;
-    left:35%;
-    align-items: center;
-}
-
-
 .hero-opaque {
     position: inherit;
     background-color: rgba(128, 97, 97, 0.4);
@@ -282,15 +293,6 @@ footer{
     left:12%;
 }
 
-
-
-h1 {
-    font-size: 4rem;
-    text-align: center;
-    font-family: var(--decrative-font);
-    font-weight:800;
-    color:var(--white-color);
-}
 
 .arrow-left{
     position: absolute;
@@ -463,6 +465,7 @@ option:hover{
 }
 
 /*------------------------------- product_detail-page */
+
 /* override some bootstrap styles */
 .form-control{
     color:var(--main-color);
