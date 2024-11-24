@@ -12,10 +12,10 @@ def contact(request):
             contact_form.save()
             messages.success(request, 'You message has been sent, we will get back to \
                 within two working days.')
-            return render(request, 'home/index.html')
+            return redirect('home')
         else:
             messages.error(request, 'You have made an error')
-            return redirect('contact')
+            return redirect('home')
     else:
         contact_form = ContactForm()
     
