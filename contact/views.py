@@ -10,7 +10,9 @@ def contact(request):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            return render(request, 'contact/contact.html')
+            messages.success(request, 'You message has been sent, we will get back to \
+                within two working days.')
+            return render(request, 'home/index.html')
         else:
             messages.error(request, 'You have made an error')
             return redirect('contact')
