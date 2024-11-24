@@ -174,7 +174,22 @@ footer{
     margin-top: 10%;
     border-radius:10px;
     padding:20px;
+}
+
+.toast-success{
     box-shadow: 0px 4px 6px 0px rgba(0, 128, 0, 0.3);
+}
+
+.toast-info{
+    box-shadow: 0px 4px 6px 0px rgba(252, 227, 6, 0.7);
+}
+
+.toast-warning{
+    box-shadow: 0px 4px 6px 0px rgba(252, 137, 6, 0.7);
+}
+
+.toast-error{
+    box-shadow: 0px 4px 6px 0px var(--main-color-opaque);
 }
 
 
