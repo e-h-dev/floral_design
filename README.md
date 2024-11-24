@@ -136,3 +136,5 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 * opening checkout template rendred form error from checkout/views.py
 
+* Messages would not close on login and logout
+
