@@ -11,4 +11,7 @@ class Contact(models.Model):
     date = models.DateField(auto_now=True)
     time = models.TimeField(auto_now=True)
 
+    def __str__(self):
+        return self.name
+
     
