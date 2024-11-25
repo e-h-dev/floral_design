@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-#from products.models import Product
 from .models import ReviewsAndRatings
 from .forms import ReviewForm
 
@@ -18,7 +17,7 @@ from .forms import ReviewForm
 
 def reviews(request):
 
-    #product = get_object_or_404(Product, pk=item_id)
+    
     see_reviews = ReviewsAndRatings.objects.all()
     
     if request.method == 'POST':

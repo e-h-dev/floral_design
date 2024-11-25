@@ -3,7 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from reviews.models import ReviewsAndRatings
+from .models import Product, Category, Reviews
 from .forms import ProductForm
 
 # Create your views here.
@@ -63,6 +64,20 @@ def product_detail(request, product_id):
     """ A view to show individual products and details """
 
     product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == 'POST':
+        rating = request.POST.get('rating')
+        comment = request.POST.get('comment', '')
+
+        if comment:
+            reveiw = Reviews.objects.create(
+                product=product,
+                rating=rating,
+                comment=comment,
+                name=request.user
+            )
+
+            return redirect('product', pk=product_id)
 
     context = {
         "product": product,

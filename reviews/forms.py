@@ -13,11 +13,11 @@ class ReviewForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'default_name': 'Name',
-            'default_review': 'Leave your review',
+            'name': 'Name',
+            'review': 'Leave your review',
         }
 
-        # self.fields['default_name'].widget.attrs['autofocus'] = True
+        # self.fields['name'].widget.attrs['autofocus'] = True
         # for field in self.fields:
         #     if self.fields[field].required:
         #         placeholder = f'{placeholders[field]} *'
