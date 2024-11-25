@@ -162,17 +162,17 @@ def delete_product(request, product_id):
 
 
 @login_required
-def review_product(request, product_id):
+def review_product(request):
     """
     A view to to add reviews and tratings to products
     """
-    product = get_object_or_404(Product, pk=product_id)
+    #product = get_object_or_404(Product, pk=product_id)
 
     if request.method == 'POST':
-        form = ReviewForm(request.POST, instance=product)
+        form = ReviewForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'You have sccessfully reviewed this product')
+            messages.success(request, 'You have sucessfully reviewed this product')
             return redirect(reverse('home'))
         else:
             messages.error(request, 'Failed to review product. Please check your form is valid')
@@ -183,7 +183,6 @@ def review_product(request, product_id):
     template = 'products/review_product.html'
     context = {
         'form':form,
-        'product': product,
     }
 
     return render(request, template, context)
