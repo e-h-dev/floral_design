@@ -36,7 +36,7 @@ class Reviews(models.Model):
 
     product = models.ForeignKey('Product', related_name='reviews', on_delete=models.CASCADE)
     name = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)
-    rating = models.IntegerField(default=1)
+    rating = models.IntegerField(default=1, choices=((i,i) for i in range(1, 6)))
     review = models.TextField(max_length=600, null=True, blank=True)
     date = models.DateField(auto_now=True)
     time = models.TimeField(auto_now=True)
