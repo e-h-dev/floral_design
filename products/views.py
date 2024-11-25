@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from reviews.models import ReviewsAndRatings
 from .models import Product, Category, Reviews
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -65,25 +65,33 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    reviews = Reviews.objects.filter(product=product)
+
     if request.method == 'POST':
         rating = request.POST.get('rating')
         comment = request.POST.get('comment', '')
 
         if comment:
-            reveiw = Reviews.objects.create(
+            reviews = Reviews.objects.create(
                 product=product,
                 rating=rating,
-                comment=comment,
+                # comment=comment,
                 name=request.user
             )
 
-            return redirect('product', pk=product_id)
+            messages.success(request, 'You have rated this item!')
+        else:
+            messages.error(request,'Someting went wrong')
+
+    template = 'products/product_detail.html'
+
 
     context = {
         "product": product,
+        'reviews': reviews,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, template, context)
 
 @login_required
 def add_product(request):
@@ -152,3 +160,29 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product successfully deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def review_product(request):
+    """
+    A view to to add reviews and tratings to products
+    """
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You have sccessfully reviewed this product')
+            return redirect(reverse('home'))
+        else:
+            messages.error(request, 'Failed to review product. Please check your form is valid')
+
+    else:
+        form = ReviewForm()
+
+    template = 'products/review_product.html'
+    context = {
+        'form':form,
+    }
+
+    return render(request, template, context)

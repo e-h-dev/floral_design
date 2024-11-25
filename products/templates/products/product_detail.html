@@ -105,27 +105,16 @@
                     <h2>Reviews</h2>
 
                     {% if request.user.is_authenticated %}
-                        <form action="." method="POST">
-                            {% csrf_token %}
-                            <div>
-                                <label for="rating">Rating</label>
-                                <select name="rating" id="rating">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="comment">Your Review</label>
-                                <textarea name="comment" id="comment"></textarea>
-                            </div>
-                            <div>
-                                <button>Submit</button>
-                            </div>
-                        </form>
+                        <a href="{% url 'review_product' %}">Review this product</a>
                     {% endif %}
+
+                    {% for review in reviews %}
+                        <p>{{ review.name }}</p>
+                        <p>{{ review.rating }}</p>
+                        <p>{{ review.review }}</p>
+                        <p>{{ review.date }}</p>
+                        <p>{{ review.time }}</p>
+                    {% endfor %}
                 </div>
             </div>
         </div>
