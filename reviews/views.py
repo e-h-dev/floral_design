@@ -6,11 +6,20 @@ from django.contrib.auth.decorators import login_required
 from .models import ReviewsAndRatings
 from .forms import ReviewForm
 
+# def see_reviews(request):
 
+#     reviews = ReviewsAndRatings.objects.all()
+
+#     context = {
+#         'reviews': reviews,
+#     }
+
+#     return render(request, 'reviews/add_review.html', context)
 
 def reviews(request):
 
     #product = get_object_or_404(Product, pk=item_id)
+    see_reviews = ReviewsAndRatings.objects.all()
     
     if request.method == 'POST':
         form = ReviewForm(request.POST)
@@ -28,6 +37,7 @@ def reviews(request):
     template = 'reviews/add_review.html'
     context = {
         'form': form,
+        'see_reviews': see_reviews,
     }
 
     return render(request, template, context)

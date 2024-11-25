@@ -18,3 +18,6 @@ class ReviewsAndRatings(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_review(self):
+        return self.review

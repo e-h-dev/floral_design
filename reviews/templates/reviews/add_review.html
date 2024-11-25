@@ -38,6 +38,27 @@
                 </form>
             </div>
         </div>
+        {% for review in see_reviews %}
+            <div class="row">
+                <div class="col-12">
+                    {{ review.name }}
+                </div>
+                <div class="col-12"></div>
+                    {% if review.five_star_rating %}
+                    <p>Well done this has 5 stars</p>
+                    {% else %}
+                    <p>The rating is not 5 stars</p>
+                    {% endif %}
+                </div>
+                <div class="col-12">
+                    {{ review.review }}
+                </div>
+                <div class="col-12"></div>
+                    {{ review.date }}
+                    {{ review.time }}
+                </div>
+            </div>
+        {% endfor %}
     </div>
     
 {% endblock %}

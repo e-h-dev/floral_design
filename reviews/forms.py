@@ -4,7 +4,7 @@ from .models import ReviewsAndRatings
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = ReviewsAndRatings
-        exclude = ('user',)
+        fields = '__all__'
 
     def __init__(self, *args, **kwargs):
         """
