@@ -33,5 +33,5 @@ class ReviewForm(forms.ModelForm):
         products = Product.objects.all()
 
         # self.fields['products'].choices = name
-        # for field_name, field in self.fields.items():
-        #     field.widget.attrs['class'] = 'shadow form-background'
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'shadow form-background'
