@@ -399,6 +399,21 @@ h2{
     width:90%;
 }
 
+.image-box{
+    height:200px;
+}
+
+.out-of-stock{
+    background-color: var(--side-color-opaque);
+    border-radius: 20px;
+}
+
+.out-of-stock p{
+    font-size: 2rem;
+    margin-top: 80px; 
+    margin-left: 30px;
+}
+
 .add-basket-btn{
     width:50%;
     height:33px;

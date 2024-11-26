@@ -55,14 +55,14 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card main-print border-style mt-3 mb-3">
                                 {% if product.out_of_stock %}
-                                <div class="image-box" style="height:300px; width:250px; background-color: rgba(128, 97, 97, 0.4);">
-                                    <p style="margin-top: 150px; margin-left: 80px;">Out of Stock</p>
+                                <div class="image-box out-of-stock shadow">
+                                    <p >Out of Stock</p>
                                 </div>
                                 {% else %}
-                                    <div class="image-box" style="height:300px; width:250px; margin-left: 25px; margin-top: 100px;">
+                                    <div class="image-box">
                                         {% if product.image %}
                                             <a href="{% url 'product_detail' product.id %}">
-                                                <img class="card-img-center img-fluid" style="background-position: cover;" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                                <img class="card-img-center img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                             </a>
                                         {% else %}
                                             <a href="{% url 'product_detail' product.id %}">
@@ -74,16 +74,20 @@
                                 <div class="card-body mt-5 pb-0">
                                     <h6 class="mb-0 font-weight-bold text-center">{{ product.name }}</h6>
                                 </div>
-                                <div class="card-body pb-0" style="height:50px;">
+                                <div class="pb-1" style="height:50px;">
                                     <p class="mb-0 side-print" style="font-size: small;">{{ product.mini_description }}</p>
+                                </div>
+                                <div class="pb-1" style="height:50px;">
                                     <a class="border-1 main-print" style="font-size: large;" href="{% url 'product_detail' product.id %}">view more.</a>
                                 </div>
                                 {% if product.category %}
-                                <p class="small mt-1 mp-0">
-                                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-mute">
-                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                    </a>
-                                </p>
+                                <div class="pb-1" style="height:50px;">
+                                    <p class="small mt-1 mp-0">
+                                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-mute">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
+                                </div>
                                 {% endif %}
                                 <div class="row">
                                     {% if product.out_of_stock %}
