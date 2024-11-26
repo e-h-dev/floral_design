@@ -126,7 +126,8 @@ WSGI_APPLICATION = 'floral_design.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATBASE = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse('postgresql://neondb_owner:2e5XYEGBMQdh@ep-shy-band-a2z3bwdc.eu-central-1.aws.neon.tech/cupid_drive_aloha_440381')
+        #'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
