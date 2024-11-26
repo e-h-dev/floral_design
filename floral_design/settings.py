@@ -29,9 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['floral-design-abd35de492a3.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['floral-design-abd35de492a3.herokuapp.com', '8000-ehdev-floraldesign-e9576ycje1s.ws.codeinstitute-ide.net']
 
-#8000-ehdev-floraldesign-e9576ycje1s.ws.codeinstitute-ide.net
 
 
 # Application definition
@@ -126,8 +125,10 @@ WSGI_APPLICATION = 'floral_design.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATBASE = {
-        'default': dj_database_url.parse('postgresql://neondb_owner:2e5XYEGBMQdh@ep-shy-band-a2z3bwdc.eu-central-1.aws.neon.tech/cupid_drive_aloha_440381')
-        #'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': dj_database_url.parse(os.environ.get('DATABASE_URL')),
+        }
     }
 else:
     DATABASES = {
