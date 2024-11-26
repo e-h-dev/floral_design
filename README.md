@@ -33,6 +33,8 @@
 - [Bugs](#bugs)
 - [Credits](#credits)
 
+
+
 # User Experience (UX)
 
 Floral Design is a Business to Consumer (B2C) e-commerce site.
@@ -76,6 +78,20 @@ The sites primary audience will be people who want to be able to shop for a rang
 
 
 # Design
+
+## Colour Scheme
+
+I designed my colour scheme, based on the Floral Design logo. The design I recieved from my client, this logo was previously used by my client for advertising and other buissness needs. Based on the colour of the logo I have designed the website. The pink colour gives users the feeling, they are visitong a safisticated flower e-comerce site. The grey color has a pink undertone wich matches well the main pink colour of the logo.
+
+- I have used `#e6423d` for the most header and nav texts of the web pages.
+- I have used `#806161` for side texts and paragraphs.
+- I have used `rgba(230, 66, 61, 0.5)` as an opaque version of the main text colour.
+- I have used `rgba(128, 97, 97, 0.4)` as an opaque version of the side text colour.
+- I have used `rgba(230, 66, 61, 0.3)` for the lighter opaque colour of the footer.
+- I have used plain white `#fff` for the white text in the dark background sections of the web pages.
+- I have used plain white `#fff` for the white background for many sections of the web pages.
+
+![Floral Design colour scheme image](assets/readme-images/colour-scheme.png)
 
 ## Wireframes
 
