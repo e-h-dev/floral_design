@@ -20,6 +20,7 @@ style="width: 700px;
             </script>
         {% endblock %}
 
+project rationale?????
 
 blank space in forms to be removed
 

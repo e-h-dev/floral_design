@@ -33,6 +33,16 @@
 - [Bugs](#bugs)
 - [Credits](#credits)
 
+## Introduction
+
+Floral Design is a B2C e-commerce store which is built on a buissness in the making, my wife is currently working on opening a flower buissnes. The site at the moment is not for real purchases, but is built with the potential to become fully funtional in the future. The website is designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling ready made flower arrangements to consumers online. However it has to be noted that this site does not yet sell the products.
+
+
+## Home Page
+![Home page]
+
+### Strategy
+* Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business, many of us are now opting for online shopping. Floral Design aims to offer flexible online shopping to its customers.
 
 
 # User Experience (UX)
