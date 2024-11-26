@@ -103,6 +103,29 @@ I designed my colour scheme, based on the Floral Design logo. The design I recie
 
 ![Floral Design colour scheme image](assets/readme-images/colour-scheme.png)
 
+### Typography
+
+* The main font used in this website is Federo. This font is clear to read yet decrative, giving the customer a unique experiance when browsing the products and pages of the site. The font is available in a wide range of weights. The user will never have to strain to read any section.
+
+- - -
+
+* The font is imported from google fonts. [Federo](https://fonts.google.com/?query=Federo) It is used via the import link at the head of the [stylesheet](static/css/base.css). This links all the text across the pages of the website to the appropriate style and font.
+
+* The decrotive font used in this website is Merienda. This font is decrative, giving the customer a unique experiance of a bespoke flower e-comerce site. The font is used for informaiton on the hero image and for the text of the shop now button.
+
+- - -
+
+* The font is imported from google fonts. [Merienda](https://fonts.google.com/?query=Merienda) It is used via the import link at the head of the [stylesheet](static/css/base.css). This links all the text across the pages of the website to the appropriate style and font.
+
+### Imagery
+
+For the hero images i have used two very different images of flower designs, these images on the home cann be changed by clicking on the arrows to the right and left of the hero image. The functions to change images are with [javascript](static/js/base.js). The images come from [pixabay](https://pixabay.com/).
+
+### Product Image
+
+The product images are from a range of sources. Some a from an original photo shoot created by my client for a previous advertisment. Some are flower designs created around the time I was creating the website. Some come from [pixabay](https://pixabay.com/)
+
+
 ## Wireframes
 
 <details>
@@ -113,42 +136,15 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 ### Home Page
 
-#### Desktop
 
-![Home Page](assets/wireframes/home-desktop-wireframe.png)
-
----
-
-#### Tablet
-
-![Home Page](assets/wireframes/home-tablet-wireframe.png)
+![Home Page](assets/wireframes/home-wireframe.png)
 
 ---
-
-#### Mobile
-
-![Home Page](assets/wireframes/home-mobile-wireframe.png)
-
----
-
 
 ### Products Page
 
-#### Desktop
 
-![Products Page](assets/wireframes/products-desktop-wireframe.png)
-
----
-
-#### Tablet
-
-![Products Page](assets/wireframes/products-tablet-wireframe.png)
-
----
-
-#### Mobile
-
-![Products Page](assets/wireframes/products-mobile-wireframe.png)
+![Products Page](assets/wireframes/products-wireframe.png)
 
 ---
 
