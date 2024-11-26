@@ -12,8 +12,8 @@
 - [Third Milestone Project](#third-milestone-project)
 - [Floral Design](#floral-design)
 - [Table of Contents](#table-of-contents)
-- [Project Rationale](#project-rationale)
 - [About](#about)
+- [Strategy](#strategy)
 - [User Experience (UX)](#user-experience-ux)
 - [Design](#design)
   - [Colour Scheme](#colour-scheme)
@@ -33,7 +33,7 @@
 - [Bugs](#bugs)
 - [Credits](#credits)
 
-## Introduction
+## About
 
 Floral Design is a B2C e-commerce store which is built on a buissness in the making, my wife is currently working on opening a flower buissnes. The site at the moment is not for real purchases, but is built with the potential to become fully funtional in the future. The website is designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling ready made flower arrangements to consumers online. However it has to be noted that this site does not yet sell the products.
 
@@ -105,6 +105,10 @@ I designed my colour scheme, based on the Floral Design logo. The design I recie
 
 ## Wireframes
 
+<details>
+
+  <summary>Click here to view Wireframes:</summary>
+
 Wireframes were created for mobile, tablet and desktop using [balsamiq.](https://balsamiq.com/)
 
 ### Home Page
@@ -147,6 +151,8 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 ![Products Page](assets/wireframes/products-mobile-wireframe.png)
 
 ---
+
+</details>
 
 # Bugs
 
