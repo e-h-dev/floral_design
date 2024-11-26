@@ -62,7 +62,7 @@
                                     <div class="image-box" style="height:300px; width:250px; margin-left: 25px; margin-top: 100px;">
                                         {% if product.image %}
                                             <a href="{% url 'product_detail' product.id %}">
-                                                <img class="card-img-center img-fluid" height="250px" width="200px" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                                <img class="card-img-center img-fluid" style="background-position: cover;" src="{{ product.image.url }}" alt="{{ product.name }}">
                                             </a>
                                         {% else %}
                                             <a href="{% url 'product_detail' product.id %}">
@@ -71,10 +71,10 @@
                                         {% endif %}
                                     </div>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <h6 class="mb-0 font-weight-bold">{{ product.name }}</h6>
+                                <div class="card-body mt-5 pb-0">
+                                    <h6 class="mb-0 font-weight-bold text-center">{{ product.name }}</h6>
                                 </div>
-                                <div class="card-body pb-0">
+                                <div class="card-body pb-0" style="height:50px;">
                                     <p class="mb-0 side-print" style="font-size: small;">{{ product.mini_description }}</p>
                                     <a class="border-1 main-print" style="font-size: large;" href="{% url 'product_detail' product.id %}">view more.</a>
                                 </div>
@@ -107,7 +107,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-row">
+                                                <div class="form-row ml-4">
                                                     <div class="col-12">
                                                         <input type="submit" class="main-print add-basket-btn" value="Add to Basket">
                                                     </div>
@@ -120,7 +120,7 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                            <p class="lead mb-0 text-center font-weight-bold">£{{ product.price }}</p>
                                         </div>
                                     </div>
                                     {% if request.user.is_superuser %}
