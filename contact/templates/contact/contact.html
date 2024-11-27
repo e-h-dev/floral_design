@@ -29,15 +29,15 @@
                 <form action="{% url 'contact' %}" method="POST" class="mt-3" id="contact-form">
                     {% csrf_token %}
                     <label for="id_name">Full Name *</label>
-                    <input type="text" name="name" maxlength="20" class="shadow form-background form-control" required="True" id="id_name">
+                    <input type="text" name="name" maxlength="20" pattern=".*\S+.*" class="shadow form-background form-control" required="True" id="id_name">
                     <label for="id_email">Email *</label>
                     <input type="email" name="email" maxlength="20" class="shadow form-background textinput form-control" required="True" id="id_email">
                     <label for="id_phone">Phone Number *</label>
-                    <input type="text" name="phone" maxlength="254" class="shadow form-background textinput form-control" required="True" id="id_phone">
+                    <input type="text" name="phone" maxlength="254" pattern=".*\S+.*" class="shadow form-background textinput form-control" required="True" id="id_phone">
                     <label for="id_message">Write your message below *</label>
-                    <textarea type="text" name="message" maxlength="600" class="shadow form-background textinput form-control" required="True" id="id_message"></textarea>
-                    <label for="id_added_info">Any added informaiton fill in below</label>
-                    <textarea type="text" name="added_info" maxlength="600" class="shadow form-background textinput form-control" id="id_added_info"></textarea>
+                    <textarea type="text" name="message" maxlength="600" pattern=".*\S+.*" class="shadow form-background textinput form-control" required="True" id="id_message"></textarea>
+                    <label for="id_added_info">Any added information fill in below</label>
+                    <textarea type="text" name="added_info" maxlength="600" pattern=".*\S+.*" class="shadow form-background textinput form-control" id="id_added_info"></textarea>
                     <button class="button submit-btn" type="submit">
                         Submit
                     </button>
