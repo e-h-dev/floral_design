@@ -498,6 +498,36 @@ option:hover{
     color:var(--main-color)
 }
 
+.reviews-header{
+    margin: 30px;
+    border-bottom: 1px solid var(--side-color);
+    width:fit-content;
+}
+
+.review-button{
+    background-color: var(--main-color);
+    color:var(--white-color);
+    padding:10px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+.review-button:hover{
+    color:var(--main-color);
+    font-size: 1.3rem;
+    background-color:var(--white-color);
+}
+
+.review-box{
+    width:500px;
+}
+
+.review-spacing{
+    position: relative;
+    top:3px;
+}
+
 
 /* ----------------------------------------basket app styles */
 

@@ -47,3 +47,8 @@ deploy
 README.
 
 testing
+
+in settings.py change
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+to
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
