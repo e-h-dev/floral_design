@@ -648,6 +648,19 @@ option:hover{
     color:var(--side-color)
 }
 
+/* -------------------------profile page styles */
+.profile-row-size{
+    width:90%;
+}
+
+.profile-col-size{
+    width:35%;
+}
+
+.profile-form{
+    width:80%;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -710,7 +723,7 @@ option:hover{
     }
 
     .menu-image{
-        align-items: center;
+        margin-left: 30%;
     }
 
     h2{
@@ -726,6 +739,48 @@ option:hover{
         left:40%;
         width:20%;
         font-size: 1.5rem;
+    }
+
+    /* messages */
+
+    .toast-body{
+        margin-left: 50px;
+    }
+
+    /* products page  */
+
+    .image-box{
+        height:280px;
+    }
+
+    /* products-detail page */
+    .mobile-push{
+        position:relative;
+        left: 50%;
+    }
+
+    .mobile-image-position{
+        position:relative;
+        top:120px;
+    }
+
+    /* basket */
+
+    .mobile-resize{
+        width:120px;
+    }
+
+    .remove-item{
+        left:280px;
+    }
+
+    .form-control-sm{
+        width:80px;
+    }
+
+    /* product-form */
+    .add-edit-cancel-btn{
+        left:-50px;
     }
 
 }

@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 push-down offset-lg-2">
-                <div class="image-container my-5">
+                <div class="image-container mobile-image-position my-5">
                     {% if product.image %}
                         <div>
                             <img class="card-img-center img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -28,7 +28,7 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mobile-push">
                 <div class="product-details-container mb-5 mt-md-5">
                     <h4 class="mb-0 main-print font-weight-bold">{{ product.name }}</h4>
                 </div>
