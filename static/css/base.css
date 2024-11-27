@@ -387,6 +387,10 @@ h2{
     margin-top: 20px;
 }
 
+.menu-image-1{
+    background-image:url('/media/IMG_0002.JPG') cover cover ;
+}
+
 
 /* ------------------------------------products app styles */
 
