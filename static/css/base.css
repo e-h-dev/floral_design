@@ -653,12 +653,32 @@ option:hover{
     width:90%;
 }
 
-.profile-col-size{
-    width:35%;
-}
 
 .profile-form{
     width:80%;
+    color:var(--side-color);
+    font-family: var(--main-font);
+}
+
+.profile-form input{
+    background-color: var(--main-color-opaque);
+    border-radius: 20px;
+}
+
+.profile-btn{
+    background-color: var(--main-color);
+    color:var(--white-color);
+    font-family: var(--main-font);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border:none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.profile-btn:hover{
+    background-color: var(--white-color);
+    color:var(--main-color);
 }
 
 /* -------------------------------- Media Queries */
@@ -844,6 +864,7 @@ label{
     margin-top: 20px;
     margin-bottom: 5px;
 }
+
 
 /* contact form */
 
