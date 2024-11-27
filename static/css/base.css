@@ -503,6 +503,10 @@ option:hover{
     color:var(--main-color)
 }
 
+.review-row-size{
+    width:1200px;
+}
+
 .reviews-header{
     margin: 30px;
     border-bottom: 1px solid var(--side-color);
@@ -776,6 +780,7 @@ option:hover{
 
     /* products-detail page */
 
+
     .image-container{
         position:absolute;
         left:10%;
@@ -790,6 +795,14 @@ option:hover{
     .mobile-image-position{
         position:relative;
         top:120px;
+    }
+
+    .review-row-size{
+        width:700px;
+    }
+
+    .mobile-star-size{
+        font-size: small;
     }
 
     /* basket */
