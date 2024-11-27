@@ -148,6 +148,41 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 ---
 
+### Product Detail page
+
+![Product Deatil page](assets/wireframes/product-detail-wireframe.png)
+
+---
+
+
+### Basket page
+
+![Basket page](assets/wireframes/basket-wireframe.png)
+
+---
+
+
+### Checkout page
+
+![Checkout page](assets/wireframes/checkout-wireframe.png)
+
+---
+
+
+### All Forms
+
+#### All pages on the website, which have forms will all have similar layout.
+
+* Sign up
+* Log in
+* Contact form
+* Add Review
+* Admin product add and edit
+
+![Formspage](assets/wireframes/forms-wireframe.png)
+
+---
+
 </details>
 
 # Bugs
