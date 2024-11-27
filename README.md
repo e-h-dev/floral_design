@@ -185,6 +185,20 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 </details>
 
+
+### Data Schema
+
+<details>
+  <summary>Click here to view the data schema:</summary>
+
+Due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
+
+- I created the schema using the website [drawsql](https://drawsql.app/). The schema shows the data layout and how it is used across the various apps in the website, using ids and foreign keys.
+
+![Database Schema](assets/readme-images/drawSQL-data-schema.png)
+
+</details>
+
 # Bugs
 
 * Navbar not showng in mobile
