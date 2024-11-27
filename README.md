@@ -166,3 +166,5 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 * Messages would not close on login and logout
 
+* Username input bug on reviews form
+
