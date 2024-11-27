@@ -25,9 +25,10 @@
                     {% csrf_token %}
                     
                     <div>
-                        <select name="name" class="shadow form-background select form-control" required="" id="id_name">
-                            <option value="1" selected="">{{ user.username}}</option>
-                        </select>
+                        <!-- <select name="name" class="shadow form-background select form-control" required="" id="id_name">
+                            <option value="{{ user.username }}" selected="">{{ user.username }}</option>
+                        </select> -->
+                        <input type="text" id="id_name" name="name" value="{{ user.username }}" class="shadow form-background select form-control">
                         {{ form.product | as_crispy_field }}
                     </div>
                     {{ form.rating | as_crispy_field }}

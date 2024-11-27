@@ -35,7 +35,7 @@ class Reviews(models.Model):
         verbose_name_plural = "Reviews"
 
     product = models.ForeignKey('Product', related_name='reviews', on_delete=models.CASCADE)
-    name = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)
+    name = models.CharField(max_length=254)
     rating = models.IntegerField(default=1, choices=((i,i) for i in range(1, 6)))
     review = models.TextField(max_length=600, null=True, blank=True)
     date = models.DateField(auto_now=True)
