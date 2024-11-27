@@ -486,6 +486,7 @@ option:hover{
 /*------------------------------- product_detail-page */
 
 /* override some bootstrap styles */
+
 .form-control{
     color:var(--main-color);
     border: var(--main-color-opaque);
@@ -774,6 +775,13 @@ option:hover{
     }
 
     /* products-detail page */
+
+    .image-container{
+        position:absolute;
+        left:10%;
+        top:30%;
+    }
+
     .mobile-push{
         position:relative;
         left: 50%;
