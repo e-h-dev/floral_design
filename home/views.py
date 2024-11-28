@@ -9,6 +9,6 @@ def index(request):
 def privacy(request):
     return render(request, 'home/privacy.html')
 
-def customer_enquiries(request):
+def delivery_info(request):
 
-    return render(request, 'home/customer_enquiries.html')
+    return render(request, 'home/delivery_info.html')

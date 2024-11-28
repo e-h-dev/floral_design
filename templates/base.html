@@ -20,7 +20,9 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+            <!-- favicon link -->
             <link rel="icon" href="{% static 'favicon/favicon.ico' %}">
+            <!-- link to main css file -->
             <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %}
 
@@ -40,22 +42,26 @@
         <title>Floral Design {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
-        <div class="wrapper">
-            <header class="container-fluid fixed-top">
+        <header class="container-fluid fixed-top">
+            <!-- logo section of navbar -->
                 <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex">
                     <div class="col-2">
                         <a href="{% url 'home' %}">
                             <div class="logo"></div>
                         </a>
                     </div>
+                    <!-- link to html file for mobile nav -->
                     {% include 'includes/mobile-nav-header.html' %}
                     <nav class="navbar sm-right navbar-expand-lg d-block d-lg-none offset-10 mt-5 navbar-light nav-top w-10">
+                        <!-- button to toggle menu on mobile -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler nav-top"><i class="fa-solid fa-bars"></i></span>
                         </button>
+                        <!-- link for second row of nav inks on big screens -->
                         {% include 'includes/bottom-header.html' %}
                     </nav>
                     <div class="col-10 my-10 d-none d-lg-block py-1 py-lg-0">
+                        <!-- search form -->
                         <div class="row nav-row pt-3">
                             <form method="GET" action="{% url 'products' %}" class="search-bar-container">
                                 <div class="input-group w-100">
@@ -69,6 +75,7 @@
                                     </div>
                                 </div>
                             </form>
+                            <!-- user login and profile  -->
                             <div class="my-auto py-1 text-center py-lg-0 nav-top account">
                                 <a class=" nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div class="text-center">
@@ -93,6 +100,7 @@
                                     {% endif %}
                                 </div>
                             </div>
+                            <!-- link for shopping basket -->
                             <div class="nav-top basket">
                                 <a class="{% if grand_total %}font-weight-bold{% else %}{% endif %} nav-link" href="{% url 'view_basket' %}">
                                 <div class="text-center">
@@ -125,6 +133,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- delivery information display -->
                 <div id="delivery-banner" class="row delivery-banner">
                     <h4 class="main-print my-1">
                         <strong><span class="delivery-flag">
@@ -132,9 +141,10 @@
                         </span></strong><i class="fa-solid fa-truck-fast van"></i>
                     </h4>                        
                 </div>
-            </header>
-            {% if messages %}
-                <div class="message-container">
+        </header>
+        <!-- container for all pop up messages -->
+        {% if messages %}
+            <div class="message-container">
                     {% for message in messages %}
                         {% with message.level as level %}
                             {% if level == 40 %}
@@ -148,29 +158,30 @@
                             {% endif %}   
                         {% endwith %}
                     {% endfor %}
-                </div>
-            {% endif %}
+            </div>
+        {% endif %}
 
-            {% block page_header %}
-            {% endblock %}
+        {% block page_header %}
+        {% endblock %}
 
-            {% block content %}
-            {% endblock %}
-        </div>
+        {% block content %}
+        {% endblock %}
         <footer>
             <div class="container-fluid">
                 <div class="row mt-3 mr-2 ml-2">
                     <div class="col-12 col-md-4">
+                        <!-- first column of footer -->
                         <h5 class="main-print text-center">
                             Floral Design
                         </h5>
                         <a href="{% url 'privacy' %}" target="_blank" class="side-print text-center pt-5">
                             <p><i class="fa-solid fa-user-lock"></i> Privacy Notice</p>
                         </a>
-                        <a href="" class="side-print text-center pt-5">
+                        <a href="{% url 'delivery_info' %}" class="side-print text-center pt-5">
                             <p><i class="fa-solid fa-truck-fast"></i> Delivery Info</p>
                         </a>
                     </div>
+                    <!-- contact section of footer -->
                     <div class="col-12 col-md-4">
                         <h5 class="main-print text-center"><i class="fa-regular fa-address-book"></i> Contact Us</h5>
                         <a href="{% url 'contact' %}" class="side-print text-center">
@@ -178,6 +189,7 @@
                         </a>
                         <p class="side-print text-center"><i class="fa-solid fa-phone"></i> 0161 712 9021</p>
                     </div>
+                    <!-- payment section of footer -->
                     <div class="col-12 col-md-4">
                         <h5 class="main-print text-center"><i class="fa-regular fa-credit-card"></i> Payments</h5>
                         <p class="text-center side-print">All payments genarated by <a href="https://stripe.com/" target="_blank">Stripe</a></p>
@@ -199,6 +211,7 @@
         </footer>
 
         {% block postloadjs %}
+        <!-- functions to load and remove messages -->
             <script type="text/javascript">
                 $('.toast').toast('show');
                 $('.message-container').click(function () {
