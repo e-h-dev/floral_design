@@ -725,12 +725,28 @@ option:hover{
 
     /* nav menu dropdown */
 
-    .navbar-expand-lg{
-        position:absolute;
-        top:-10px;
-        background-color: var(--white-color);
-        padding: 0;
-        margin-left: 360px;
+    .basket{
+        position:relative;
+        left:100px;
+        top:10px
+    }
+
+    .user{
+        position:relative;
+        top: 10px;
+        left:80px;
+    }
+
+    .search{
+        position:relative;
+        top:12px;
+        left:60px;
+    }
+
+    .sm-right{
+        position: absolute;
+        left:700px;
+        margin-left: 0;
     }
 
     .search-bar {
@@ -856,10 +872,6 @@ option:hover{
         margin-top: 10px;
     }
 
-    /* .sm-right{
-        position: absolute;
-        left:50px;
-    } */
 
     .logo{
         height:100px;
