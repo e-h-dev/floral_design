@@ -12,6 +12,273 @@
 
 ## Floral Design is responsive to all devices.
 
+<details>
+
+  <summary>Click here to view Responsive pages:</summary>
+
+### Home page
+
+![Desktop Home page](assets/readme-images/responsive-images/desktop-home.png)
+
+---
+
+![tablet Home page](assets/readme-images/responsive-images/tablet-home.png)
+
+
+---
+
+
+![mobile Home page](assets/readme-images/responsive-images/mobile-home.png)
+
+---
+
+### Products page
+
+![Desktop products page](assets/readme-images/responsive-images/desktop-products.png)
+
+---
+
+![tablet products page](assets/readme-images/responsive-images/tablet-products.png)
+
+
+---
+
+
+![mobile products page](assets/readme-images/responsive-images/mobile-products.png)
+
+
+---
+
+
+### Product Detail page
+
+
+![Desktop product detail page](assets/readme-images/responsive-images/desktop-product-details.png)
+
+---
+
+![tablet product detail page](assets/readme-images/responsive-images/tablet-product-details.png)
+
+
+---
+
+
+![mobile product detail page](assets/readme-images/responsive-images/mobile-product-details.png)
+
+
+---
+
+
+### Basket Page
+
+![Desktop basket page](assets/readme-images/responsive-images/desktop-basket.png)
+
+---
+
+![tablet basket page](assets/readme-images/responsive-images/tablet-basket.png)
+
+
+---
+
+
+![mobile basket page](assets/readme-images/responsive-images/mobile-basket.png)
+
+
+---
+
+
+### Checkout page
+
+![Desktop checkout page](assets/readme-images/responsive-images/desktop-checkout.png)
+
+---
+
+![tablet checkout page](assets/readme-images/responsive-images/tablet-checkout.png)
+
+
+---
+
+
+![mobile checkout page](assets/readme-images/responsive-images/mobile-checkout.png)
+
+
+---
+
+
+### Checkout Success page
+
+![Desktop checkout-success page](assets/readme-images/responsive-images/desktop-checkout-success.png)
+
+---
+
+![tablet checkout-success page](assets/readme-images/responsive-images/tablet-checkout-success.png)
+
+
+---
+
+
+![mobile checkout-success page](assets/readme-images/responsive-images/mobile-checkout-success.png)
+
+
+---
+
+
+### Product Management Page
+
+![Desktop product-management page](assets/readme-images/responsive-images/desktop-product-management.png)
+
+---
+
+![tablet product-management page](assets/readme-images/responsive-images/tablet-product-management.png)
+
+
+---
+
+
+![mobile product-management page](assets/readme-images/responsive-images/mobile-product-management.png)
+
+
+---
+
+
+### Profile Page
+
+
+![Desktop profile page](assets/readme-images/responsive-images/desktop-profile.png)
+
+---
+
+![tablet profile page](assets/readme-images/responsive-images/tablet-profile.png)
+
+
+---
+
+
+![mobile profile page](assets/readme-images/responsive-images/mobile-profile.png)
+
+
+---
+
+
+### Review page
+
+
+![Desktop review page](assets/readme-images/responsive-images/desktop-review.png)
+
+---
+
+![tablet review page](assets/readme-images/responsive-images/tablet-review.png)
+
+
+---
+
+
+![mobile review page](assets/readme-images/responsive-images/mobile-review.png)
+
+
+---
+
+
+### Contact Page
+
+
+![Desktop contact page](assets/readme-images/responsive-images/desktop-contact.png)
+
+---
+
+![tablet contact page](assets/readme-images/responsive-images/tablet-contact.png)
+
+
+---
+
+
+![mobile contact page](assets/readme-images/responsive-images/mobile-contact.png)
+
+
+---
+
+
+### Sign in Page
+
+
+![Desktop sign-in page](assets/readme-images/responsive-images/desktop-sign-in.png)
+
+---
+
+![tablet sign-in page](assets/readme-images/responsive-images/tablet-sign-in.png)
+
+
+---
+
+
+![mobile sign-in page](assets/readme-images/responsive-images/mobile-sign-in.png)
+
+
+
+---
+
+
+### Sign out Page
+
+
+![Desktop sign-out page](assets/readme-images/responsive-images/desktop-sign-out.png)
+
+---
+
+![tablet sign-out page](assets/readme-images/responsive-images/tablet-sign-out.png)
+
+
+---
+
+
+![mobile sign-out page](assets/readme-images/responsive-images/mobile-sign-out.png)
+
+
+---
+
+
+### Sign Up page
+
+
+![Desktop sign-up page](assets/readme-images/responsive-images/desktop-sign-up.png)
+
+---
+
+![tablet sign-up page](assets/readme-images/responsive-images/tablet-sign-up.png)
+
+
+---
+
+
+![mobile sign-up page](assets/readme-images/responsive-images/mobile-sign-up.png)
+
+
+---
+
+
+### Delivery page
+
+
+![Desktop delivery page](assets/readme-images/responsive-images/desktop-delivery.png)
+
+---
+
+![tablet delivery page](assets/readme-images/responsive-images/tablet-delivery.png)
+
+
+---
+
+
+![mobile delivery page](assets/readme-images/responsive-images/mobile-delivery.png)
+
+
+---
+
+</details>
+
+
+
+
 
 ## AUTOMATED TESTING
 
