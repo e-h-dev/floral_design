@@ -295,32 +295,32 @@ There are various from pages on the website.
 
 * Contact page: Any shopper can send a message to the admin via the Contact form.
 
-![contact page]()
+![contact page](assets/readme-images/page-images/contact-page.png)
 
 * Reviews Page: All registered users can leave a review and rating on any product.
 
-![Reviews page]()
+![Reviews page](assets/readme-images/page-images/review-page.png)
 
 * Add and edit products: The shop owner can add or edit any priduct at any time using the form to add or edit products. The form includes uploding images and a checkbox to show if a product is out of stock.
 
-![Add product form]()
+![Add product form](assets/readme-images/page-images/product-management-page.png)
 
 
 ### Profile Page
 
 This is a page accesable to every user, the user's inforation can be stroed and a record f all ast orders are listed in the proifile.
 
-![Profile Page]()
+![Profile Page](assets/readme-images/page-images/profile-page.png)
 
 ### Sign in, register and sign out
 
 Three simple pages allow the user to sign in and out and for new users to register for an account.
 
-![sign in page]()
+![sign in page](assets/readme-images/page-images/sign-in%20-page.png)
 
-![sign out page]()
+![sign out page](assets/readme-images/page-images/sign-out-page.png)
 
-![register page]()
+![register page](assets/readme-images/page-images/register-page.png)
 
 
 ### Delivery page
