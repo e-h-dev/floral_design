@@ -293,6 +293,7 @@ I have been mindful during coding, to ensure that the website is as accessible f
 | Number | Bug | Failed Attempt to fix | How I fixed the bug |
 | :--- | :--- | :--- | :--- |
 | 1 | Navbar not showng in mobile. | N/A | After a lot of looking over the code and using devtools, I realised that the includes file link was below the main content in `base.html`. I replaced the link and the nav bar showed in mobile. |
+| 2 | Every time I loaded the products page the console showed an error (could not implement a js event listener) | N/A | I realised the js file was loaded on the base template, but the id for event the listener was in index.html, the console picked this up as an error when any other page was loaded. To fix this i only connected the js file to index.html. |
 
 * Product images not loading
 
