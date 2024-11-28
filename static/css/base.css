@@ -725,6 +725,10 @@ option:hover{
 
     /* nav menu dropdown */
 
+    .navbar-collapse{
+        background-color: var(--white-color);
+    }
+
     .basket{
         position:relative;
         left:100px;
@@ -895,11 +899,13 @@ option:hover{
         left:50px;
     }
 
-    .navbar-expand-lg{
-        /* top:-30px;
-        right:10px; */
-        display:none;
+    .sm-right{
+        position: absolute;
+        left:350px;
+        top:-20px;
+        margin-left: 0;
     }
+
 
     .hero{
         height:45vh;
