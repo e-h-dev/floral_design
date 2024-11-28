@@ -9,6 +9,7 @@
     <div class="hero-sentance">
         <h1>Flowers for all occasions</h1>
     </div>
+    <!-- chevron arrows to change hero image (right and left) -->
     <div class="arrow-left" id="left-arrow-1">
         <i class="fa-solid fa-circle-chevron-left"></i>
     </div>
@@ -21,7 +22,9 @@
     <div class="arrow-right" id="right-arrow-2">
         <i class="fa-solid fa-circle-chevron-right"></i>
     </div>
+    <!-- shop now button loads the all products page -->
     <a href="{% url 'products' %}" class="shop-now-btn">Shop Now</a>
+    <!-- indicators showing change of hero image -->
     <div class="picture-picker-1" id="picture-picker-1">
         <i class="fa-solid fa-circle"></i>
     </div>
@@ -30,6 +33,7 @@
     </div>
 </div>
 <hr>
+<!-- container for category image links below hero images -->
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-lg-4">
@@ -65,6 +69,8 @@
         var picturePicker1 = document.getElementById("picture-picker-1");
         var picturePicker2 = document.getElementById("picture-picker-2");
         var hero = document.getElementById("hero");
+
+        // function to change default hero image when user clicks on arrow or circle indicator
             function change(){
                 hero.style.backgroundImage="url('https://floral-design.s3.eu-north-1.amazonaws.com/media/flower-setting.jpg')"
                 hero.style
@@ -76,7 +82,8 @@
                 picturePicker2.innerHTML='<i class="fa-solid fa-circle"></i>'
                 $('.hero-sentance').html("<h1>Fresh flowers daily</h1>")
             }
-
+            
+            // function to change back default hero image when user clicks on arrow or circle indicator
             function change2(){
                 hero.style.backgroundImage="url('https://floral-design.s3.eu-north-1.amazonaws.com/media/orchid-pink.jpg')"
                 leftArrow2.style.display="none"
