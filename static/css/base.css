@@ -263,7 +263,6 @@ footer{
     top:1%;
     border-radius: 5px;
     border: solid white 3px;
-    box-shadow: inset;
     background-size: 100% 100%;
     background-position: center center;
     animation: shrink 5s;
@@ -384,10 +383,6 @@ h2{
     width:300px;
     margin-left:50px;
     margin-top: 20px;
-}
-
-.menu-image-1{
-    background-image:url('/media/IMG_0002.JPG') cover cover ;
 }
 
 
