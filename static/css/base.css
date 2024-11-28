@@ -723,19 +723,14 @@ option:hover{
     }
     
 
-    .mobile-nav-margins{
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 30px;
-    }
-
     /* nav menu dropdown */
 
     .navbar-expand-lg{
         position:absolute;
         top:-10px;
         background-color: var(--white-color);
-        padding: 20px;
+        padding: 0;
+        margin-left: 360px;
     }
 
     .search-bar {
@@ -862,26 +857,26 @@ option:hover{
         left:50px;
     } */
 
-    /* .logo{
-        display:none;
-    } */
+    .logo{
+        height:100px;
+    }
 
     .basket{
         position:relative;
-        left:5px;
-        top:10px
+        left:15px;
+        top:12px
     }
 
     .user{
         position:relative;
-        top: 15px;
-        left:10px;
+        top: 12px;
+        left:30px;
     }
 
     .search{
         position:relative;
         top:15px;
-        left:70px;
+        left:50px;
     }
 
     .navbar-expand-lg{
