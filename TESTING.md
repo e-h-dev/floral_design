@@ -87,7 +87,7 @@ The css check came back with no errors,
 
  ### Home Page
 
- ![Home page](assets/readme-images/)
+ ![Home page](assets/readme-images/test-images/lighthouse-home.png)
 
 
  ### Products Page

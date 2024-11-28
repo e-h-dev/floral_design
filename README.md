@@ -263,18 +263,71 @@ After adding a prodcut to the basket a confirmation message is displayed.
 
 ![Success message](/assets/readme-images/page-images/success-message.png)
 
-### Sign up and Sign in pages
+### Product detail page
 
-The sign up and sign in pages are of the same design; both are a simple form, asking the user to enter username and password. In the sign-up form the user is prompted to include an email address.
+The Product datail page simply displays one product at a time giving it a description, below is a is a select box the shopper can use to select quantity of products anf the add the products to the basket. 
+The Reviews are diplated in a clear manner below and tgere is a review button available to users loggen in.
 
-![image of sign-in and sign-up pages]()
+![image product detail page](assets/readme-images/page-images/product-details-page.png)
+
+### Basket Page
+
+The basket page shows all the items in the basket dispalying the price, sub total if more than one of each item is included, the delivey costs and the gran total. There is a small paragraph displayed if the shopper did not reach the free delivery threshold tellinh the shopper how much more to spend to get free delivery.
+Below that is the button to secure checkout.
+
+![image of basket page](assets/readme-images/page-images/basket-page.png)
+
+### Checkout Page
+
+The checkout page displays a summary of the basket and costs. The is a form to fill for payment and delivery deatails. At the bottom is the stripe credit card from after filling in the form the submit payment btton is clicked. The from style on the checkout page is delibratly different to he forms accross the site, to defrenchiate that the form eill lead to a charge. This is a better UX practice.
+
+![image of checkout page](assets/readme-images/page-images/checkout-page.png)
+
+### Checkout confirmaiton Page
+
+This is a simplr page confirming the payment and all purchase details to the user.
+
+![image of checkout confirmaiton Page](assets/readme-images/page-images/checkout-success-page.png)
+
+### Form pages
+
+There are various from pages on the website.
+
+* Contact page: Any shopper can send a message to the admin via the Contact form.
+
+![contact page]()
+
+* Reviews Page: All registered users can leave a review and rating on any product.
+
+![Reviews page]()
+
+* Add and edit products: The shop owner can add or edit any priduct at any time using the form to add or edit products. The form includes uploding images and a checkbox to show if a product is out of stock.
+
+![Add product form]()
 
 
-### Users page (admin only)
+### Profile Page
 
-The users page is only accessible when the admin has signed in. On the page, the admin can view all signed up users, their email address and the admin can search each user and view the trips added by that user. Admin can delete any user from the database.
+This is a page accesable to every user, the user's inforation can be stroed and a record f all ast orders are listed in the proifile.
 
-![image of users page (admin only)](/assets/page-images/users-page.png)
+![Profile Page]()
+
+### Sign in, register and sign out
+
+Three simple pages allow the user to sign in and out and for new users to register for an account.
+
+![sign in page]()
+
+![sign out page]()
+
+![register page]()
+
+
+### Delivery page
+
+This page can be accesed  from the footer, it displays floral design's delivery policy.
+
+![deivery page](assets/readme-images/page-images/delivery-page.png)
 # Accessibility
 
 I have been mindful during coding, to ensure that the website is as accessible friendly as possible. This has been achieved by:
