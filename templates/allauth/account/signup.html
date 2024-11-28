@@ -7,7 +7,7 @@
 {% block inner_content %}
 <h1 class="main-print">{% trans "Sign Up" %}</h1>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<p class="main-print">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
@@ -15,8 +15,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+  <button class="login-btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
 </form>
-<a href="{% url 'home' %}" class="login-home-btn rounded-2">Home</a>
 
 {% endblock %}

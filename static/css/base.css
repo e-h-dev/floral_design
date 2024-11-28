@@ -685,6 +685,48 @@ option:hover{
     color:var(--main-color);
 }
 
+/* sign in, register and sign out pages */
+
+.signup input,
+.login input{
+    background-color: var(--main-color-opaque);
+    border-radius: 20px;
+    width:100%;
+    height:40px;
+    outline: none;
+    border:none;
+    padding:10px;
+}
+
+.signup input:focus,
+.signup input:focus,
+.login input:focus,
+.login input:focus{
+    background-color: var(--white-color);
+    border:solid 1px var(--main-color)
+}
+
+.login input[type="checkbox"]{
+    position:relative;
+    top:5px;
+    right:2px;
+    height:20px;
+    width:20px;
+}
+
+.login-btn{
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+    border-radius: 20px !important;
+}
+
+.login-btn:hover{
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border:none;
+    border-radius: 10px !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
