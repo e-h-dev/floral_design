@@ -14,6 +14,7 @@
 {% block content %}
     <hr>
     <div class="container-fluid">
+        <!-- holds product image and info -->
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 push-down offset-lg-2">
                 <div class="image-container mobile-image-position my-5">
@@ -45,12 +46,14 @@
                 <div class="row">
                     <div class="col">
                         <p class="lead mb-0 text-left font-weight-bold main-print">£{{ product.price }}</p>
+                        <!-- edit and delete product buttons for admin -->
                         {% if request.user.is_superuser %}
                             <small class="ml-3">
                                 <a href="{% url 'edit_product' product.id %}">Edit</a>
                                 <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                             </small>
                         {% endif %}
+                        <!-- add product to basket function -->
                         <form action="{% url 'add_to_basket' product.id %}" method="POST" class="form">
                             {% csrf_token %}
                             <div class="form-row mb-2">
@@ -83,6 +86,7 @@
                                 </div>
                             </div>
                             <div class="form-row mt-5">
+                                <!-- link back to products page -->
                                 <div class="col-12">
                                     <a href="{% url 'products' %}" class="main-print add-basket-btn">
                                         <span>
@@ -102,9 +106,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="ml-5 mt-6">
+                    <!-- product review display -->
                     <h2>Reviews</h2>
 
                     {% if request.user.is_authenticated %}
+                    <!-- button to write review if logged in -->
                         <div class="mb-3">
                             <a class="review-button side-print mb-3" href="{% url 'review_product' %}">Review this product</a>
                         </div>
@@ -123,6 +129,7 @@
                                 </div>
                                 <div class="row review-spacing p-3">
                                     <p class="main-print mobile-star-size">
+                                        <!-- displays number of stars corresponding to users rating input value -->
                                             Product rating: 
                                             {% if review.rating == 1 %}
                                                 <i class="fa-solid fa-star"></i>

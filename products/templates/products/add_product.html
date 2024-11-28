@@ -20,6 +20,7 @@
             </div>
         </div>
         <div class="row">
+            <!-- form for admin to add products -->
             <div class="col-12 col-md-6">
                 <form action="{% url 'add_product' %}" method="POST" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
@@ -37,6 +38,7 @@
 {% block postloadjs %}
     {{ block.super }}
     <script>
+        // function for loading new images
         $('#new-image').change(function() {
             var file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);

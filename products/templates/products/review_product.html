@@ -3,6 +3,7 @@
 
 {% block extra_title %} - Add Product{% endblock %}
 
+<!-- pushes down page below nav bar -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row mt-5">
@@ -21,13 +22,10 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-6">
+                <!-- form to add review and rate products -->
                 <form action="{% url 'review_product' %}" method="POST" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                    
                     <div>
-                        <!-- <select name="name" class="shadow form-background select form-control" required="" id="id_name">
-                            <option value="{{ user.username }}" selected="">{{ user.username }}</option>
-                        </select> -->
                         <input type="text" id="id_name" name="name" value="{{ user.username }}" class="shadow form-background select form-control">
                         {{ form.product | as_crispy_field }}
                     </div>
