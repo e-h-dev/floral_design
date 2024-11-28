@@ -286,6 +286,12 @@ I have been mindful during coding, to ensure that the website is as accessible f
 
 - - -
 
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+
+- - -
+
 # Bugs
 
 ## solved bugs
