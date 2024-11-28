@@ -24,6 +24,8 @@ project rationale?????
 
 blank space in forms to be removed
 
+fix messages and basket on small mobile devices
+
 DONE - crop large images
 
 DONE - create visibilty option in products

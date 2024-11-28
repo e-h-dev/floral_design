@@ -759,6 +759,10 @@ option:hover{
         width:90vw;
       }
 
+    footer{
+        display: none;
+    }
+
     .hero{
         width:97vw;
         height:60vh;
@@ -917,6 +921,48 @@ option:hover{
       .menu-image{
         margin-left: 40px;
       }
+
+
+      /* product detial page */
+
+    .mobile-push{
+        position:relative;
+        left: 0;
+    }
+
+    .image-container{
+        position:absolute;
+        left:25%;
+        top:80px;
+        width:50%;
+        height:50%;
+    }
+    
+    .description{
+        position:absolute;
+        top:300px;
+        padding:20px;
+    }
+
+    .sm-push{
+        position:absolute;
+        top:700px;
+    }
+
+    .sm-shopping{
+        position: relative;
+        top:-50px;
+    }
+
+    .sm-add{
+        position:relative;
+        top:-25px;
+        left:200px;
+    }
+
+    .reviews-section{
+        display:none;
+    }
 }
 
 /* -------------------------form styles */

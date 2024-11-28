@@ -44,7 +44,7 @@
                         </a>
                     </p>
                 {% endif %}
-                <div class="row">
+                <div class="row sm-push">
                     <div class="col">
                         <p class="lead mb-0 text-left font-weight-bold main-print">£{{ product.price }}</p>
                         <!-- edit and delete product buttons for admin -->
@@ -88,14 +88,14 @@
                             </div>
                             <div class="form-row mt-5">
                                 <!-- link back to products page -->
-                                <div class="col-12">
+                                <div class="col-12 sm-shopping">
                                     <a href="{% url 'products' %}" class="main-print add-basket-btn">
                                         <span>
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span>Keep Shopping</span>
                                     </a>
-                                    <input type="submit" class="main-print add-basket-btn" value="Add to Basket">
+                                    <input type="submit" class="main-print add-basket-btn sm-add" value="Add to Basket">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid reviews-section">
             <div class="row">
                 <div class="ml-5 mt-6">
                     <!-- product review display -->
