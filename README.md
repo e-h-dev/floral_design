@@ -294,20 +294,15 @@ I have been mindful during coding, to ensure that the website is as accessible f
 | :--- | :--- | :--- | :--- |
 | 1 | Navbar not showng in mobile. | N/A | After a lot of looking over the code and using devtools, I realised that the includes file link was below the main content in `base.html`. I replaced the link and the nav bar showed in mobile. |
 | 2 | Every time I loaded the products page the console showed an error (could not implement a js event listener) | N/A | I realised the js file was loaded on the base template, but the id for event the listener was in index.html, the console picked this up as an error when any other page was loaded. To fix this i only connected the js file to index.html. |
+| 3 | The brackets on the basket page which dispalys the number of items in the basket was empty even when basket was full. | N/A | I had not created the product_count context key correctly, a quick fix sorted the bug. |
+| 4 | After a message was loded closing it closed th emessage but the opaque background reamained till the page was reloaded. | I first set the jquery logic to reload the page automatically when close is clicked. I idd not like this method as it took longer to remove the background than the message. | I removed the initial close logig and created a new event listenet to close the entire message wrapper when a click event is activated. |
+| 5 | The success message after login in or out would not be removed with the jquery close logic. | I thought the bug had something to do with the allauth functionality, I spen a long time troubleshooting with allauth. I found no way to fix the bug. | After time i realised that the bug came to any message in a view built to redirect to the home page. I checked the index script tag and realised I forgot to include `{{ block.super }}`. Therefore the message close logic on the base javascript was overidden, by includiing the above tag the bug was fixed. |
+| 6 | For the Product review form the name seviton was a drop down witht he name of all users, to fill the form ne of th euser names must be selected. This is not save and a terrible example of UX. | I cjanged the form input from cripy form to a manual form input, where the user could either enter his name or th username can be a value of the input box in both cases the form rendred an error. | I change dhte name model from a foreinkey to a plain char input migrated the change and gave the name input value in th etreview form the value of `{{user.username}}` and the bug was fixed. |
+| 7 | I was fixing the styles of the navbar in mobile, after commiting the changes and pushing them to github, the nav bar on the deployed site became double. | N/A | A quick check revealed, I had mitakenly removed one letter from the class `d-lg-none`, this caused the mobile navbar to show on desktop. I fixed the class and recommited, the bug was fixed. |
 
 * Product images not loading
 
-* Dev tools showing error in js file
-
-* bug in product_count tag
-
-* bug in message remove jquery
-
 * opening checkout template rendred form error from checkout/views.py
-
-* Messages would not close on login and logout
-
-* Username input bug on reviews form
 
 # Technologies Used
 
