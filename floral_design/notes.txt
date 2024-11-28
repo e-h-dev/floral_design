@@ -24,7 +24,7 @@ project rationale?????
 
 blank space in forms to be removed
 
-crop large images
+DONE - crop large images
 
 DONE - create visibilty option in products
 
@@ -42,7 +42,7 @@ clean code
 
 comment code
 
-deploy
+DONE = deploy
 
 README.
 
