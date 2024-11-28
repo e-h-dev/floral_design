@@ -206,6 +206,86 @@ Due to the data being used for the project I have opted to use a relational data
 
 </details>
 
+# Styles
+
+## CSS
+
+ * A considerable proportion of the styles in Floral Design, are built on the available styles in [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/). I have written my code, to override much of the generic Bootstrap styles, to fit in with the theme of floral design. The way I have done this was by targeting the specific elements of the html which have bootstrap styles. I then checked the element in devtools. On the side bar in devtools there is an option to select styles, I selected the styles and clicked on the bootstrap css link, opening the relevant section of the bootstrap css file. I can then see all the styles attributed to the specific bootstrap class and update it accordingly.
+
+
+# Trip Discoverer Pages
+
+![responsive image]()
+
+## Features
+
+The website is comprised of 
+* a Home page, 
+* a sign-up page
+* a sign in page
+* a products page
+* a products detail page
+* a basket page
+* a checkout page
+* a checkout confirmation page
+* a review form page
+* a contact forom page
+* and a product management page fro admin use only.
+
+
+All Pages on the website are responsive and have:
+
+* A favicon in the browser tab.
+
+![favicon](/media/favicon.ico)
+
+* The website logo is at the top of every page. The logo is also a link to the home page.
+  ![floral design Logo](/media/logo.png)
+
+### The Home (Trips) Page
+
+The home page of Floral Design displays the sites name/logo as a title and then a nav bar shows the links to view pruducts user settings and the basket, on mobile the links are in the side toggle. Below the navbar is the hero image, the hero image can be changed usng the right and left arrow on the side of the image. At the top of the image is the search bar, users can search for a product using any word, related to the product they may be looking for. Below the hero image, are three links to the main categories of available products.
+
+![image of home page](/assets/readme-images/page-images/home-page.png)
+
+
+
+### Products page
+The products page can be accessed in various ways:
+* Clicking the shop now button on the home page
+* Through any of the products menu links in th enav bar
+* Clicking on on e of the images below the hero image.
+The products page displays the products, there is an optoon to filter the order of dispaly by price, name etc. each product display shows the price the name an image an a smaal limited description. Clicking on the image will link the user to the products page, there is an option to click the add to basket button and the product will go straight into the basket.
+
+![Products page](/assets/readme-images/page-images/products-page.png)
+
+After adding a prodcut to the basket a confirmation message is displayed.
+
+![Success message](/assets/readme-images/page-images/success-message.png)
+
+### Sign up and Sign in pages
+
+The sign up and sign in pages are of the same design; both are a simple form, asking the user to enter username and password. In the sign-up form the user is prompted to include an email address.
+
+![image of sign-in and sign-up pages]()
+
+
+### Users page (admin only)
+
+The users page is only accessible when the admin has signed in. On the page, the admin can view all signed up users, their email address and the admin can search each user and view the trips added by that user. Admin can delete any user from the database.
+
+![image of users page (admin only)](/assets/page-images/users-page.png)
+# Accessibility
+
+I have been mindful during coding, to ensure that the website is as accessible friendly as possible. This has been achieved by:
+
+* Using semantic HTML.
+* Using a hover state on all buttons on the site, to make it clear to the user that they are hovering over a button.
+* Using an active class to show the user which page is currently being used, by a highlighted nav link.
+* Ensuring that there is a sufficient colour contrasts throughout the site.
+
+- - -
+
 # Bugs
 
 ## solved bugs
