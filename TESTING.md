@@ -311,7 +311,7 @@ The css check came back with no errors,
 
 ![css checker](assets/readme-images/validation-images/css-validation.png)
 
-## Lighthouse testing
+
 
 * All pages of the website have been through lighthouse tests and passed with scores above 70 and 80.
 ### Home page
@@ -534,7 +534,7 @@ The css check came back with no errors,
 
   <summary>For lighthouse images click here</summary>
 
- I put all pages throught he lighthluse validation and they passed with at least 70% many with over 80%.
+ I put all pages throught he lighthluse validation and they passed with at least 70 many with over 80.
 
  
  ### Home Page
