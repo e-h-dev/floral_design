@@ -1,18 +1,16 @@
 # Fourth Milestone Project
 
-![floral design logo](media/logo.png)
+![floral design logo](media/)
 
 # Floral Design
-
 
 ## Link to live website
 
 [floral design](https://floral-design-abd35de492a3.herokuapp.com/)
 
-
 ## Table of Contents
 
-- [Third Milestone Project](#third-milestone-project)
+- [Fourth Milestone Project](#fourth-milestone-project)
 - [Floral Design](#floral-design)
 - [Table of Contents](#table-of-contents)
 - [About](#about)
@@ -31,28 +29,26 @@
   
 - [Accessibility](#accessibility)
 - [Technologies used](#technologies-used)
-- [Deployment and Local Developement](#deployment-and-local-development)
+- [Deployment and Local Development](#deployment-and-local-development)
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Credits](#credits)
 
 ## About
 
-Floral Design is a B2C e-commerce store which is built on a buissness in the making, my wife is currently working on opening a flower buissnes. The site at the moment is not for real purchases, but is built with the potential to become fully funtional in the future. The website is designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling ready made flower arrangements to consumers online. However it has to be noted that this site does not yet sell the products.
-
+Floral Design is a B2C e-commerce store which is built on a business in the making, my wife is currently opening a flower business. The site now is not for real purchases but is built with the potential to become fully functional in the future. The website is designed and implemented with Python and Django, HTML, CSS and some JavaScript. It specialises in selling ready-made flower arrangements to consumers online. However, it has to be noted that this site does not yet sell the products.
 
 ## Home Page
 ![Home page](assets/readme-images/responsive-images/desktop-home.png)
 
 ### Strategy
-* Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business, many of us are now opting for online shopping. Floral Design aims to offer flexible online shopping to its customers.
-
+* Floral Design is a B2C type of business. Although most customers shopping for flowers will prefer to come in the shop. There is a growing trend of online flower purchases and many of us are now opting for online shopping. Floral Design aims to offer flexible online shopping to its customers, and provide a virtual online experience on par to shopping from the high street..
 
 # User Experience (UX)
 
 Floral Design is a Business to Consumer (B2C) e-commerce site.
 
-The sites primary audience will be people who want to be able to shop for a range of flower arangements and designs, in one place.
+The sites primary audience will be for customers who want to find a range of flower arrangements and designs, in one place.
 
 ## User Stories
 
@@ -67,10 +63,10 @@ The sites primary audience will be people who want to be able to shop for a rang
 | **REGISTRATION & USER ACCOUNTS** |
 | 6 | Site User | Easily register for an account| Have a personal account and profile |
 | 7 | Site User | Easily log in or out | Access account information |
-| 8 | Site User | Have a personalised user profile | View order history and order confirmations, and save  payment information |
+| 8 | Site User | Have a personalised user profile | View order history and order confirmations, and save payment information |
 | **REVIEWING PRODUCTS** |
 | 9 | Site Owner | Have a place for customer ratings and reviews. | To attract new customers to buy our 5 star rated products. |
-| 10 | Site User | Have an ability to review and rate products | To inform other users of the advanteges os disadvantages of any product. |
+| 10 | Site User | Have an ability to review and rate products | To inform other users of the advantages and disadvantages of any product. |
 | 11 | Shopper | Have customer rating and reviews | To see the how content past customers are, with each product. |
 | **SORTING & SEARCHING** |
 | 12 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
@@ -90,32 +86,36 @@ The sites primary audience will be people who want to be able to shop for a rang
 | 24 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
 | 25 | Store Owner | Delete a product | Remove items that are no longer for sale |
 
-
 # Design
 
 ## Colour Scheme
 
-I designed my colour scheme, based on the Floral Design logo. The design I recieved from my client, this logo was previously used by my client for advertising and other buissness needs. Based on the colour of the logo I have designed the website. The pink colour gives users the feeling, they are visitong a safisticated flower e-comerce site. The grey color has a pink undertone wich matches well the main pink colour of the logo.
+I designed my colour scheme, based on the Floral Design logo. The design I received from my client, this logo was previously used by my client for advertising and other business needs. Based on the colour of the logo I have designed the website. The pink colour gives users the feeling, they are visiting a sophisticated flower e-commerce site. The grey colour has a pink undertone which matches well the main pink colour of the logo.
 
 - I have used `#e6423d` for the most header and nav texts of the web pages.
 - I have used `#806161` for side texts and paragraphs.
-- I have used `rgba(230, 66, 61, 0.5)` as an opaque version of the main text colour.
-- I have used `rgba(128, 97, 97, 0.4)` as an opaque version of the side text colour.
+- I have used `rgab(230, 66, 61, 0.5)` as an opaque version of the main text colour.
+- I have used `rgab(128, 97, 97, 0.4)` as an opaque version of the side text colour.
 - I have used `rgba(230, 66, 61, 0.3)` for the lighter opaque colour of the footer.
 - I have used plain white `#fff` for the white text in the dark background sections of the web pages.
 - I have used plain white `#fff` for the white background for many sections of the web pages.
 
 ![Floral Design colour scheme image](assets/readme-images/colour-scheme.png)
 
-### Typography
+## Typography
 
-* The main font used in this website is Federo. This font is clear to read yet decrative, giving the customer a unique experiance when browsing the products and pages of the site. The font is available in a wide range of weights. The user will never have to strain to read any section.
+### Main Font
+
+* The main font used in this website is Federo. This font is clear to read yet decorative, giving the customer a unique experience when browsing the products and pages of the site. The font is available in a wide range of weights. The user will never have to strain to read any section.
+
+* The font is imported from google fonts. [Federo](https://fonts.google.com/?query=Federo) It is imported via the import link at the head of the [stylesheet](static/css/base.css). This links all the text across the pages of the website to the appropriate style and font.
 
 - - -
 
-* The font is imported from google fonts. [Federo](https://fonts.google.com/?query=Federo) It is used via the import link at the head of the [stylesheet](static/css/base.css). This links all the text across the pages of the website to the appropriate style and font.
+### Decorative font
 
-* The decrotive font used in this website is Merienda. This font is decrative, giving the customer a unique experiance of a bespoke flower e-comerce site. The font is used for informaiton on the hero image and for the text of the shop now button.
+
+* The decorative font used in this website is Merienda. This font is decorative, giving the customer a unique experience of a bespoke flower e-commerce site. The font is used for information on the hero image and for the text of the shop now button.
 
 - - -
 
@@ -123,12 +123,19 @@ I designed my colour scheme, based on the Floral Design logo. The design I recie
 
 ### Imagery
 
-For the hero images i have used two very different images of flower designs, these images on the home cann be changed by clicking on the arrows to the right and left of the hero image. The functions to change images are with [javascript](static/js/base.js). The images come from [pixabay](https://pixabay.com/).
+For the hero images i have used two very different images of flower designs, these images on the home can be changed by clicking on the arrows to the right and left of the hero image. The functions to change images are with [javascript](static/js/base.js). The images come from [pixabay](https://pixabay.com/).
+
+#### Hero image 1
+
+![hero image 1](media/orchid-pink.jpg)
+
+#### Hero image 2
+
+![hero image 2](media/flower-setting.jpg)
 
 ### Product Image
 
-The product images are from a range of sources. Some a from an original photo shoot created by my client for a previous advertisment. Some are flower designs created around the time I was creating the website. Some come from [pixabay](https://pixabay.com/)
-
+The product images are from a range of sources. Some a from an original photo shoot created by my client for a previous advertisement. Some are flower designs created around the time I was creating the website. Some come from [pixabay](https://pixabay.com/)
 
 ## Wireframes
 
@@ -140,13 +147,11 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 ### Home Page
 
-
 ![Home Page](assets/wireframes/home-wireframe.png)
 
 ---
 
 ### Products Page
-
 
 ![Products Page](assets/wireframes/products-wireframe.png)
 
@@ -158,20 +163,17 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 ---
 
-
 ### Basket page
 
 ![Basket page](assets/wireframes/basket-wireframe.png)
 
 ---
 
-
 ### Checkout page
 
 ![Checkout page](assets/wireframes/checkout-wireframe.png)
 
 ---
-
 
 ### All Forms
 
@@ -189,7 +191,6 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 </details>
 
-
 ### Data Schema
 
 <details>
@@ -198,7 +199,7 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 Due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
 
 - I created the schema using the website [drawsql](https://drawsql.app/).
-- The schema shows the data layout and how it is used across the various apps in the website, using ids and foreign keys. Each app is an indepnedanrt entity but they work together by use of connecting keys. For example a product can become the content of a basket, simply by applying  the product to the basket with a foreign key (id from another line of data). In the chart I have shown the connections between the diffrent apps and models, from the chart one can see how the data bases interact with one another.
+- The schema shows the data layout and how it is used across the various apps in the website, using ids and foreign keys. Each app is an indepnedanrt entity but they work together by use of connecting keys. For example a product can become the content of a basket, simply by applying  the product to the basket with a foreign key (id from another line of data). In the chart I have shown the connections between the diffrent apps and models, from the chart, one can see how the data interacts across models and apps.
 
 ![Database Schema](assets/readme-images/drawSQL-data-schema.png)
 
@@ -209,7 +210,6 @@ Due to the data being used for the project I have opted to use a relational data
 ## CSS
 
  * A considerable proportion of the styles in Floral Design, are built on the available styles in [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/). I have written my code, to override much of the generic Bootstrap styles, to fit in with the theme of floral design. The way I have done this was by targeting the specific elements of the html which have bootstrap styles. I then checked the element in devtools. On the side bar in devtools there is an option to select styles, I selected the styles and clicked on the bootstrap css link, opening the relevant section of the bootstrap css file. I can then see all the styles attributed to the specific bootstrap class and update it accordingly.
-
 
 # Trip Discoverer Pages
 
@@ -227,9 +227,8 @@ The website is comprised of
 * a checkout page
 * a checkout confirmation page
 * a review form page
-* a contact forom page
-* and a product management page fro admin use only.
-
+* a contact form page
+* and a product management page for admin use only.
 
 All Pages on the website are responsive and have:
 
@@ -242,29 +241,28 @@ All Pages on the website are responsive and have:
 
 ### The Home (Trips) Page
 
-The home page of Floral Design displays the sites name/logo as a title and then a nav bar shows the links to view pruducts user settings and the basket, on mobile the links are in the side toggle. Below the navbar is the hero image, the hero image can be changed usng the right and left arrow on the side of the image. At the top of the image is the search bar, users can search for a product using any word, related to the product they may be looking for. Below the hero image, are three links to the main categories of available products.
+The home page of Floral Design displays the sites name/logo as a title and then a nav bar shows the links to view products user settings and the basket, on mobile the links are in the side toggle. Below the navbar is the hero image, the hero image can be changed using the right and left arrow on the side of the image. At the top of the image is the search bar, users can search for a product using any word, related to the product they may be looking for. Below the hero image, are three links to the main categories of available products.
 
 ![image of home page](/assets/readme-images/page-images/home-page.png)
-
 
 
 ### Products page
 The products page can be accessed in various ways:
 * Clicking the shop now button on the home page
-* Through any of the products menu links in th enav bar
+* Through any of the products menu links in th e nav bar
 * Clicking on on e of the images below the hero image.
-The products page displays the products, there is an optoon to filter the order of dispaly by price, name etc. each product display shows the price the name an image an a smaal limited description. Clicking on the image will link the user to the products page, there is an option to click the add to basket button and the product will go straight into the basket.
+The products page displays the products, there is an option to filter the order of display by price, name etc. each product display shows the price the name an image and a small limited description. Clicking on the image will link the user to the products page, there is an option to click the add to basket button and the product will go straight into the basket.
 
 ![Products page](/assets/readme-images/page-images/products-page.png)
 
-After adding a prodcut to the basket a confirmation message is displayed.
+After adding a product to the basket a confirmation message is displayed.
 
 ![Success message](/assets/readme-images/page-images/success-message.png)
 
 ### Product detail page
 
-The Product datail page simply displays one product at a time giving it a description, below is a is a select box the shopper can use to select quantity of products anf the add the products to the basket. 
-The Reviews are diplated in a clear manner below and tgere is a review button available to users loggen in.
+The Product detail page simply displays one product at a time giving it a description, below is a is a select box the shopper can use to select quantity of products and the add the products to the basket. 
+The Reviews are displayed in a clear manner below and there is a review button available to users logging in.
 
 ![image product detail page](assets/readme-images/page-images/product-details-page.png)
 
@@ -277,15 +275,15 @@ Below that is the button to secure checkout.
 
 ### Checkout Page
 
-The checkout page displays a summary of the basket and costs. The is a form to fill for payment and delivery deatails. At the bottom is the stripe credit card from after filling in the form the submit payment btton is clicked. The from style on the checkout page is delibratly different to he forms accross the site, to defrenchiate that the form eill lead to a charge. This is a better UX practice.
+The checkout page displays a summary of the basket and costs. The is a form to fill for payment and delivery details. At the bottom is the stripe credit card from after filling in the form the submit payment button is clicked. The from style on the checkout page is deliberately different to the forms across the site, to differentiate that the form will lead to a charge. This is a better UX practice.
 
 ![image of checkout page](assets/readme-images/page-images/checkout-page.png)
 
-### Checkout confirmaiton Page
+### Checkout confirmation Page
 
-This is a simplr page confirming the payment and all purchase details to the user.
+This is a simple page confirming the payment and all purchase details to the user.
 
-![image of checkout confirmaiton Page](assets/readme-images/page-images/checkout-success-page.png)
+![image of checkout confirmation Page](assets/readme-images/page-images/checkout-success-page.png)
 
 ### Form pages
 
@@ -299,14 +297,13 @@ There are various from pages on the website.
 
 ![Reviews page](assets/readme-images/page-images/review-page.png)
 
-* Add and edit products: The shop owner can add or edit any priduct at any time using the form to add or edit products. The form includes uploding images and a checkbox to show if a product is out of stock.
+* Add and edit products: The shop owner can add or edit any product at any time using the form to add or edit products. The form includes uploading images and a checkbox to show if a product is out of stock.
 
 ![Add product form](assets/readme-images/page-images/product-management-page.png)
 
-
 ### Profile Page
 
-This is a page accesable to every user, the user's inforation can be stroed and a record f all ast orders are listed in the proifile.
+This page is accessible to every user, the user's information can be stored and a record of all last orders are listed in the profile.
 
 ![Profile Page](assets/readme-images/page-images/profile-page.png)
 
@@ -320,12 +317,11 @@ Three simple pages allow the user to sign in and out and for new users to regist
 
 ![register page](assets/readme-images/page-images/register-page.png)
 
-
 ### Delivery page
 
-This page can be accesed  from the footer, it displays floral design's delivery policy.
+This page can be accessed  from the footer, it displays floral design's delivery policy.
 
-![deivery page](assets/readme-images/page-images/delivery-page.png)
+![delivery page](assets/readme-images/page-images/delivery-page.png)
 # Accessibility
 
 I have been mindful during coding, to ensure that the website is as accessible friendly as possible. This has been achieved by:
@@ -349,17 +345,17 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 | Number | Bug | Failed Attempt to fix | How I fixed the bug |
 | :--- | :--- | :--- | :--- |
-| 1 | Navbar not showng in mobile. | N/A | After a lot of looking over the code and using devtools, I realised that the includes file link was below the main content in `base.html`. I replaced the link and the nav bar showed in mobile. |
+| 1 | Navbar not showing in mobile. | N/A | After a lot of looking over the code and using devtools, I realised that the includes file link was below the main content in `base.html`. I replaced the link and the nav bar showed in mobile. |
 | 2 | Every time I loaded the products page the console showed an error (could not implement a js event listener) | N/A | I realised the js file was loaded on the base template, but the id for event the listener was in index.html, the console picked this up as an error when any other page was loaded. To fix this i only connected the js file to index.html. |
-| 3 | The brackets on the basket page which dispalys the number of items in the basket was empty even when basket was full. | N/A | I had not created the product_count context key correctly, a quick fix sorted the bug. |
-| 4 | After a message was loded closing it closed th emessage but the opaque background reamained till the page was reloaded. | I first set the jquery logic to reload the page automatically when close is clicked. I idd not like this method as it took longer to remove the background than the message. | I removed the initial close logig and created a new event listenet to close the entire message wrapper when a click event is activated. |
-| 5 | The success message after login in or out would not be removed with the jquery close logic. | I thought the bug had something to do with the allauth functionality, I spen a long time troubleshooting with allauth. I found no way to fix the bug. | After time i realised that the bug came to any message in a view built to redirect to the home page. I checked the index script tag and realised I forgot to include `{{ block.super }}`. Therefore the message close logic on the base javascript was overidden, by includiing the above tag the bug was fixed. |
-| 6 | For the Product review form the name seviton was a drop down witht he name of all users, to fill the form ne of th euser names must be selected. This is not save and a terrible example of UX. | I cjanged the form input from cripy form to a manual form input, where the user could either enter his name or th username can be a value of the input box in both cases the form rendred an error. | I change dhte name model from a foreinkey to a plain char input migrated the change and gave the name input value in th etreview form the value of `{{user.username}}` and the bug was fixed. |
-| 7 | I was fixing the styles of the navbar in mobile, after commiting the changes and pushing them to github, the nav bar on the deployed site became double. | N/A | A quick check revealed, I had mitakenly removed one letter from the class `d-lg-none`, this caused the mobile navbar to show on desktop. I fixed the class and recommited, the bug was fixed. |
+| 3 | The brackets on the basket page which displays the number of items in the basket was empty even when basket was full. | N/A | I had not created the product_count context key correctly, a quick fix sorted the bug. |
+| 4 | After a message was loaded closing it closed the message, but the opaque background remained till the page was reloaded. | I first set the jquery logic to reload the page automatically when close is clicked. I did not like this method, since it took longer to remove the background than the message. | I removed the initial close logic and created a new event listener to close the entire message wrapper when a click event is activated. |
+| 5 | The success message after login in or out would not be removed with the jquery close logic. | I thought the bug had something to do with the allauth functionality, I spent a long time troubleshooting with allauth. I found no way to fix the bug. | After time i realised that the bug came to any message in a view built to redirect to the home page. I checked the index script tag and realised I forgot to include `{{ block.super }}`. Therefore the message close logic on the base javascript was overridden, by includiing the above tag the bug was fixed. |
+| 6 | For the Product review form the name input was a drop down with the names of all users, to fill the form one of the usernames must be selected. This is not safe and a terrible example of UX. | I changed the form input from crispy form, to a manual form input, where the user could either enter his name or the username can be a value of the input box in both cases the form rendered an error. | I change the ‘name’ model from a foreign key to a plain char input, migrated the change and gave the name input value in the review form, the value of `{{user.username}}` and the bug was fixed. |
+| 7 | I was fixing the styles of the navbar in mobile, after committing the changes and pushing them to GitHub, the nav bar on the deployed site became double. | N/A | A quick check revealed, I had mistakenly removed one letter from the class `d-lg-none`, this caused the mobile navbar to show on desktop. I fixed the class and recommitted, the bug was fixed. |
 
 * Product images not loading
 
-* opening checkout template rendred form error from checkout/views.py
+* opening checkout template rendered form error from checkout/views.py
 
 # Technologies Used
 
@@ -371,7 +367,7 @@ HTML, CSS, JavaScript, Python
 
 sqlite3 for development.
 
-Code Institute postgresql database for deployed site.
+Code Institute PostgreSQL database for deployed site.
 
 ### Frameworks Used
 
@@ -391,7 +387,7 @@ Code Institute postgresql database for deployed site.
 
 [django_crispy_forms](https://pypi.org/project/django-crispy-forms/) - provides a tag and filter that lets you quickly render forms
 
-[gunicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server
+[unicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server
 
 [pillow](https://pypi.org/project/Pillow/) - Python imaging library
 
@@ -403,10 +399,9 @@ Code Institute postgresql database for deployed site.
 
 [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
 
-
 ### Programs Used
 
-[Am I Responsive](https://ui.dev/amiresponsive) - To create the responsive images of the site on a variety of device sizes.
+Mobile Simulator: A google chrome extension - To create the responsive images of the site on a variety of device sizes.
 
 [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
@@ -445,7 +440,6 @@ The project is deployed using Heroku. To deploy the project:
 #### **Create the Live Database**
 
 We have been using the sqlite3 database in development, however this is only available for use in development so we will need to create a new external database which can be accessed by Heroku.
-
 
 #### **Heroku app setup**
 
@@ -571,7 +565,6 @@ We have been using the sqlite3 database in development, however this is only ava
 
 #### **Set up AWS hosting for static and media files**
 
-
 1. Sign up or login to your [aws amazon account](https://aws.amazon.com) on the top right by using the manage my account button and then navigate to S3 to create a new bucket.
 2. The bucket will be used to store our files, so it is a good idea to name this bucket the same as your project. Select the region closest to you. In the object ownership section we need to select ACLs enabled and then select bucket owner preferred. In the block public access section uncheck the block public access box. You will then need to tick the acknowledge button to make the bucket public. Click create bucket.
 3. Click the bucket you've just created and then select the properties tab at the top of the page. Find the static web hosting section and choose enable static web hosting, host a static website and enter index.html and error.html for the index and error documents (these won't actually be used.)
@@ -679,7 +672,6 @@ We have been using the sqlite3 database in development, however this is only ava
     STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
     ```
 
-
 ## Credits
 
 ### Media
@@ -697,5 +689,6 @@ I would like to acknowledge the following:
 * Code institute - For all the help and well-structured lessons making this project possible after only three months of learning HTML.
 
 * Code institute Tutors - For the amazing help when i experianced various difficulties along the way.
+
 
 
