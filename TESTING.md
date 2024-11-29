@@ -250,7 +250,7 @@ The CSS check came back with no errors,
 
 ## Lighthouse Testing
 
-* All pages of the website have been through lighthouse tests and passed with scores above 70 and 80.
+* All pages of the website have been through lighthouse tests and passed with scores above 70 and 80 (excluding performance for home page 67).
 ### Home page
 
 ![Home](assets/readme-images/lighthouse-images/lighthouse-home.png)
