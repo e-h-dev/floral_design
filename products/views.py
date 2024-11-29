@@ -170,7 +170,7 @@ def delete_product(request, product_id):
 @login_required
 def review_product(request):
     """
-    A view to to add reviews and tratings to products
+    A view to add reviews and ratings to products
     """
     if request.method == 'POST':
         form = ReviewForm(request.POST)
