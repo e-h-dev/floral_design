@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class Contact(models.Model):
     name = models.CharField(max_length=20, null=True, blank=True)
     email = models.EmailField(max_length=20, null=True, blank=True)
@@ -13,5 +12,3 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
-
-    

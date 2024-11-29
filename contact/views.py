@@ -10,7 +10,8 @@ def contact(request):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.success(request, 'You message has been sent, we will get back to \
+            messages.success(request, 'You message has been\
+            sent, we will get back to \
                 within two working days.')
             return redirect('home')
         else:
@@ -18,7 +19,6 @@ def contact(request):
             return redirect('home')
     else:
         contact_form = ContactForm()
-    
 
     template = 'contact/contact.html'
 
@@ -26,6 +26,3 @@ def contact(request):
         'contact_form': contact_form
     }
     return render(request, template, context)
-
-
-
