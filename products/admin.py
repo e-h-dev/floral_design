@@ -14,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('-price',)
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         "name",

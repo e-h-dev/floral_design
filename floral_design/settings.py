@@ -28,10 +28,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-#DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['floral-design-abd35de492a3.herokuapp.com', '8000-ehdev-floraldesign-e9576ycje1s.ws.codeinstitute-ide.net']
-
+ALLOWED_HOSTS = ['floral-design-abd35de492a3.herokuapp.com',
+                 '8000-ehdev-floraldesign-e9576ycje1s.ws.\
+                 codeinstitute-ide.net']
 
 
 # Application definition
@@ -43,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites', #for social media login
+    'django.contrib.sites',  # for social media login
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -53,7 +54,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
-    
+
     'crispy_forms',
     'storages',
 ]
@@ -83,7 +84,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -107,7 +108,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SITE_ID = 1 #for social media login
+SITE_ID = 1  # for social media login
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -142,16 +143,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+        UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+        MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+        CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+        NumericPasswordValidator',
     },
 ]
 
@@ -186,7 +191,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'floral-design'
     AWS_S3_REGION_NAME = 'eu-north-1'
@@ -194,18 +199,15 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-
-    #Static files and media storage locations
+    # Static files and media storage locations
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
-
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-   
 
 
 # Default primary key field type
@@ -218,7 +220,7 @@ LOW_COST_DELIVERY_AMOUNT = 40
 STANDARD_DELIVERY_PERCENTAGE = 2
 HIGH_DELIVERY_PERCENTAGE = 5
 
-#Stripe
+# Stripe
 STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')

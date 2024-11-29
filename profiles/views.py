@@ -20,7 +20,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile successfully Updated')
         else:
-            messages.error(request, 'Failed to update profile. Please check your form is valid')
+            messages.error(request, 'Failed to update profile.\
+            Please check your form is valid')
 
     else:
 
@@ -40,7 +41,6 @@ def profile(request):
 @login_required
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
-
 
     template = 'checkout/checkout_success.html'
     context = {

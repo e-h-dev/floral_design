@@ -17,7 +17,8 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
@@ -34,9 +35,11 @@ class Reviews(models.Model):
     class Meta:
         verbose_name_plural = "Reviews"
 
-    product = models.ForeignKey('Product', related_name='reviews', on_delete=models.CASCADE)
+    product = models.ForeignKey('Product', related_name='reviews',
+                                on_delete=models.CASCADE)
     name = models.CharField(max_length=254)
-    rating = models.IntegerField(default=1, choices=((i,i) for i in range(1, 6)))
+    rating = models.IntegerField(default=1,
+                                 choices=((i, i) for i in range(1, 6)))
     review = models.TextField(max_length=600, null=True, blank=True)
     date = models.DateField(auto_now=True)
     time = models.TimeField(auto_now=True)

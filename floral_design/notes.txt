@@ -20,9 +20,6 @@ style="width: 700px;
             </script>
         {% endblock %}
 
-project rationale?????
-
-blank space in forms to be removed
 
 fix messages and basket on small mobile devices
 
@@ -31,10 +28,6 @@ DONE - crop large images
 DONE - create visibilty option in products
 
 DONE - (REVIEWS) or add another unique fearture to products model
-
-position hero image on mobile with background-position:cover
-
-background-size:center
 
 DONE - create reviews app
 
@@ -49,6 +42,8 @@ DONE = deploy
 README.
 
 testing
+
+final check through criteria
 
 in settings.py change
 ACCOUNT_EMAIL_VERIFICATION = 'none'
