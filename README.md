@@ -1,6 +1,6 @@
 # Fourth Milestone Project
 
-![floral design logo](media/)
+![Home page](assets/readme-images/responsive-images/desktop-home.png)
 
 # Floral Design
 
@@ -13,6 +13,7 @@
 - [Fourth Milestone Project](#fourth-milestone-project)
 - [Floral Design](#floral-design)
 - [Table of Contents](#table-of-contents)
+- [Project Rationale](#project-rationale)
 - [About](#about)
 - [Strategy](#strategy)
 - [User Experience (UX)](#user-experience-ux)
@@ -49,10 +50,6 @@
 
 Floral Design is a B2C e-commerce store which is built on a business in the making, my wife is currently opening a flower business. The site now is not for real purchases but is built with the potential to become fully functional in the future. The website is designed and implemented with Python and Django, HTML, CSS and some JavaScript. It specialises in selling ready-made flower arrangements to consumers online. However, it has to be noted that this site does not yet sell the products.
 
-
-
-## Home Page
-![Home page](assets/readme-images/responsive-images/desktop-home.png)
 
 ### Strategy
 * Floral Design is a B2C type of business. Although most customers shopping for flowers will prefer to come in the shop. There is a growing trend of online flower purchases and many of us are now opting for online shopping. Floral Design aims to offer flexible online shopping to its customers, and provide a virtual online experience on par to shopping from the high street..
@@ -226,7 +223,6 @@ Due to the data being used for the project I have opted to use a relational data
 
 # Trip Discoverer Pages
 
-![responsive image]()
 
 ## Features
 

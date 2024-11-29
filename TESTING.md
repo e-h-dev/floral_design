@@ -314,7 +314,7 @@ The CSS check came back with no errors,
 
   <summary>Click to view python tests</summary>
 
- * After putting all .py file to the linter test, they passed with no errors
+* After putting all .py file to the linter test, they passed with no errors
 
 ### Project level App
 
