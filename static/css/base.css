@@ -943,6 +943,13 @@ option:hover{
         margin-left: 0;
     }
 
+    /* messgaes */
+
+    .toast-body{
+        margin-left: 60px;
+        width:300px;
+    }
+
 
     .hero{
         height:45vh;
