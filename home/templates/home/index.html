@@ -71,28 +71,36 @@
         var hero = document.getElementById("hero");
 
         // function to change default hero image when user clicks on arrow or circle indicator
+            var leftArrow1 = document.getElementById("left-arrow-1");
+        var leftArrow2 = document.getElementById("left-arrow-2");
+        var rightArrow1 = document.getElementById("right-arrow-1");
+        var rightArrow2 = document.getElementById("right-arrow-2");
+        var picturePicker1 = document.getElementById("picture-picker-1");
+        var picturePicker2 = document.getElementById("picture-picker-2");
+        var hero = document.getElementById("hero");
+
+        // function to change default hero image when user clicks on arrow or circle indicator
             function change(){
-                hero.style.backgroundImage="url('https://floral-design.s3.eu-north-1.amazonaws.com/media/flower-setting.jpg')"
-                hero.style
-                leftArrow1.style.display="none"
-                leftArrow2.style.display="block"
-                rightArrow2.style.display="block"
-                rightArrow1.style.display="none"
-                picturePicker1.innerHTML='<i class="fa-regular fa-circle"></i>'
-                picturePicker2.innerHTML='<i class="fa-solid fa-circle"></i>'
-                $('.hero-sentance').html("<h1>Fresh flowers daily</h1>")
+                hero.style.backgroundImage="url('https://floral-design.s3.eu-north-1.amazonaws.com/media/flower-setting.jpg')";
+                leftArrow1.style.display="none";
+                leftArrow2.style.display="block";
+                rightArrow2.style.display="block";
+                rightArrow1.style.display="none";
+                picturePicker1.innerHTML='<i class="fa-regular fa-circle"></i>';
+                picturePicker2.innerHTML='<i class="fa-solid fa-circle"></i>';
+                ('.hero-sentance').html("<h1>Fresh flowers daily</h1>");
             }
             
             // function to change back default hero image when user clicks on arrow or circle indicator
             function change2(){
-                hero.style.backgroundImage="url('https://floral-design.s3.eu-north-1.amazonaws.com/media/orchid-pink.jpg')"
-                leftArrow2.style.display="none"
-                leftArrow1.style.display="block"
-                rightArrow1.style.display="block"
-                rightArrow2.style.display="none"
-                picturePicker2.innerHTML='<i class="fa-regular fa-circle"></i>'
-                picturePicker1.innerHTML='<i class="fa-solid fa-circle"></i>'
-                $('.hero-sentance').html("<h1>Flowers for all occasions</h1>")
+                hero.style.backgroundImage="url('https://floral-design.s3.eu-north-1.amazonaws.com/media/orchid-pink.jpg')";
+                leftArrow2.style.display="none";
+                leftArrow1.style.display="block";
+                rightArrow1.style.display="block";
+                rightArrow2.style.display="none";
+                picturePicker2.innerHTML='<i class="fa-regular fa-circle"></i>';
+                picturePicker1.innerHTML='<i class="fa-solid fa-circle"></i>';
+                ('.hero-sentance').html("<h1>Flowers for all occasions</h1>");
             }
             
         leftArrow2.addEventListener('click', change2);
