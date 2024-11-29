@@ -5,6 +5,9 @@ from .forms import ContactForm
 
 
 def contact(request):
+    """
+    Handles contact message instance
+    """
 
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)

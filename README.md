@@ -34,9 +34,22 @@
 - [Bugs](#bugs)
 - [Credits](#credits)
 
+
+# Project Rationale
+
+* Floral Design's primary objective is to provide a convenient and enjoyable shopping experience, for customers looking to purchase unique items.
+* A clean website which is pleasing to the eye will attract customers to browse for flowers from the comfort of their home, allowing them to choose flowers without going to traditional flower markets. 
+* The functionality of the website allows anyone to make a full purchase, pay for their items and have them delivered.
+* The website is designed with the user in mind, making it intuitive and quite simple for anyone to feel confident and comfortable browsing and purchasing the products.
+* The app is currently has a robust review and rating functionality, I would in the future implement logic which will allow users to edit and delete their reviews and a way for users to communicate with one another.
+* The website does have a fully functioning CRUD capability; the site owner can edit and delete products as well as render products out of stock.
+* In summary the Floral Design is a unique website which works with the philosophy of less is more, the smaller scope of the website the easier it is for users to navigate and find what they are looking for.
+
 ## About
 
 Floral Design is a B2C e-commerce store which is built on a business in the making, my wife is currently opening a flower business. The site now is not for real purchases but is built with the potential to become fully functional in the future. The website is designed and implemented with Python and Django, HTML, CSS and some JavaScript. It specialises in selling ready-made flower arrangements to consumers online. However, it has to be noted that this site does not yet sell the products.
+
+
 
 ## Home Page
 ![Home page](assets/readme-images/responsive-images/desktop-home.png)
@@ -353,9 +366,6 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 | 6 | For the Product review form the name input was a drop down with the names of all users, to fill the form one of the usernames must be selected. This is not safe and a terrible example of UX. | I changed the form input from crispy form, to a manual form input, where the user could either enter his name or the username can be a value of the input box in both cases the form rendered an error. | I change the ‘name’ model from a foreign key to a plain char input, migrated the change and gave the name input value in the review form, the value of `{{user.username}}` and the bug was fixed. |
 | 7 | I was fixing the styles of the navbar in mobile, after committing the changes and pushing them to GitHub, the nav bar on the deployed site became double. | N/A | A quick check revealed, I had mistakenly removed one letter from the class `d-lg-none`, this caused the mobile navbar to show on desktop. I fixed the class and recommitted, the bug was fixed. |
 
-* Product images not loading
-
-* opening checkout template rendered form error from checkout/views.py
 
 # Technologies Used
 

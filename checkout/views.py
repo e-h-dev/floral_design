@@ -15,6 +15,9 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
+    """
+    Creates basket session when user posts product to basket
+    """
     if request.method == 'POST':
         basket = request.session.get('basket', {})
 
@@ -29,6 +32,7 @@ def checkout(request):
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
+        # logic for basket contents and quantity
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save()
