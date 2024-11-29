@@ -21,7 +21,7 @@ style="width: 700px;
         {% endblock %}
 
 
-fix messages and basket on small mobile devices
+DONE fix messages and basket on small mobile devices
 
 DONE - crop large images
 
@@ -41,7 +41,7 @@ DONE = deploy
 
 README.
 
-testing
+Done need prooftesting
 
 final check through criteria
 

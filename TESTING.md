@@ -288,6 +288,8 @@ I used [W3C Validator](https://validator.w3.org/) to validate the HTML on all pa
 
 * I will attach the home and products page HTML validator as samples to all the pages of the site, which passed the same tests.
 
+
+
 ---
 
 ### Home page
@@ -309,6 +311,66 @@ The css check came back with no errors,
 
 ![css checker](assets/readme-images/validation-images/css-validation.png)
 
+## Lighthouse testing
+
+* All pages of the website have been through lighthouse tests and passed with scores above 70 and 80.
+### Home page
+
+![Home](assets/readme-images/lighthouse-images/lighthouse-home.png)
+
+### products page
+
+![products](assets/readme-images/lighthouse-images/lighthouse-products.png)
+
+
+### basket page
+
+![basket](assets/readme-images/lighthouse-images/lighthouse-basket.png)
+
+### checkout page
+
+![checkout](assets/readme-images/lighthouse-images/lighthouse-checkout.png)
+
+
+### checkout success page
+
+![checkout success](assets/readme-images/lighthouse-images/lighthouse-checkout-success.png)
+
+### reviews page
+
+![reviews](assets/readme-images/lighthouse-images/lighthouse-review.png)
+
+
+### contact page
+
+![contact](assets/readme-images/lighthouse-images/lighthouse-contact.png)
+
+
+### sign up page
+
+![sign up](assets/readme-images/lighthouse-images/lighthouse-sign-up.png)
+
+
+### sign in page
+
+![sign in](assets/readme-images/lighthouse-images/lighthouse-sign-in.png)
+
+
+### sign out page
+
+![sign out](assets/readme-images/lighthouse-images/lighthouse-sign-out.png)
+
+
+### Product management page
+
+![Product management](assets/readme-images/lighthouse-images/lighthouse-product-management.png)
+
+
+### delivery page
+
+![delivery](assets/readme-images/lighthouse-images/lighthouse-delivery.png)
+
+
 
 ### Jshint Java Script test
 
@@ -319,6 +381,10 @@ The css check came back with no errors,
  - - -
 
 ## Python linter test
+
+<display>
+
+  <summary>Click to view</summary>
 
  * After putting all .py file to the linter test, they passed with no errors
 
@@ -534,8 +600,8 @@ The css check came back with no errors,
 
 ## User Stories
 
-| User Story ID | User | Should be able to ... | To ... | Test done | Pass/Fail |
-| :--- | :--- | :--- | :---|
+| User Story ID | User | Should be able to | To | Test done | Pass/Fail |
+| :--- | :--- | :--- | :---| :---| :---|
 | **VIEWING & NAVIGATION** |
 | 1 | Shopper | View a list of products| Select something to purchase | Opened products page and put item in basket. | Pass |
 | 2 | Shopper | View a specific category of products | Quickly find products I'm interested in without having to search through all products. | Selected specific category, only a few items were displayed. | Pass |
