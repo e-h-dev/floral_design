@@ -23,8 +23,7 @@ def basket_contents(request):
 
     if total < settings.FREE_DELIVERY_AMOUNT:
         if total < settings.LOW_COST_DELIVERY_AMOUNT:
-            delivery = total * Decimal
-            (settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+            delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         else:
             delivery = total * Decimal(settings.HIGH_DELIVERY_PERCENTAGE / 100)
 
