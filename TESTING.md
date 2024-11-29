@@ -351,13 +351,116 @@ The css check came back with no errors,
 
  #### views.py
 
+ ![views.py](assets/readme-images/python-linter-tests/products-views-py.png)
+
  #### models.py
+
+ ![models.py](assets/readme-images/python-linter-tests/products.models.py.png)
 
  #### admin.py
 
- #### forms.py
+ ![admin.py](assets/readme-images/python-linter-tests/products-admin-py.png)
 
  #### urls.py
+
+ ![url.py](assets/readme-images/python-linter-tests/products-urls-py.png)
+
+ - - - 
+
+ ### Profile app
+
+ #### views.py
+
+![views.py](assets/readme-images/python-linter-tests/profiles-view-py.png)
+
+ #### models.py
+
+ ![models.py](assets/readme-images/python-linter-tests/profiles-models-py.png)
+
+
+ #### forms.py
+
+ ![forms.py](assets/readme-images/python-linter-tests/profiles-forms-py.png)
+
+ #### urls.py
+
+ ![urls.py](assets/readme-images/python-linter-tests/profiles-urls-py.png)
+
+ - - -
+
+
+### Basket app
+
+
+#### views.py
+
+![views.py](assets/readme-images/python-linter-tests/basket-views.png)
+
+ #### models.py
+
+![contexts.py](assets/readme-images/python-linter-tests/basket-contexts.png)
+
+ #### admin.py
+
+ ![urls.py](assets/readme-images/python-linter-tests/basket-urls.png)
+
+ - - -
+
+### Checkout app
+
+#### views.py
+
+![views.py](assets/readme-images/python-linter-tests/checkout-views.png)
+
+ #### models.py
+
+ ![models.py](assets/readme-images/python-linter-tests/checkout-models.png)
+
+ #### admin.py
+
+ ![admin.py](assets/readme-images/python-linter-tests/checkout-admin.png)
+
+ #### forms.py
+
+ ![forms.py](assets/readme-images/python-linter-tests/checkout-forms.png)
+
+ #### signals.py
+
+ ![signals.py](assets/readme-images/python-linter-tests/checkoout-signals.png)
+
+ #### urls.py
+
+ ![urls.py](assets/readme-images/python-linter-tests/checkout-urls.png)
+
+
+ - - -
+
+### Contact App
+
+#### views.py
+
+![views.py](assets/readme-images/python-linter-tests/contact-views.png)
+
+ #### models.py
+
+ ![models.py](assets/readme-images/python-linter-tests/contact-models.png)
+
+ #### admin.py
+
+ ![admin.py](assets/readme-images/python-linter-tests/contact-admin.png)
+
+ #### forms.py
+
+ ![forms.py](assets/readme-images/python-linter-tests/contact-forms.png)
+
+ #### urls.py
+
+ ![urls.py](assets/readme-images/python-linter-tests/contact-urls.png)
+
+
+ - - -
+
+
 
  ## Lighthouse validation
 
