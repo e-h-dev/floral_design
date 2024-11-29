@@ -1,7 +1,7 @@
 # Floral Design - Tests
 
 ## CONTENTS
-* [Site responsiveness](#floral-esign-is-responsive-to-all-devices)
+* [Site responsiveness](#floral-design-is-responsive-to-all-devices)
 * [AUTOMATED TESTING](#automated-testing)
   * [W3C Validator](#w3c-validator)
   * [Lighthouse](#lighthouse)
@@ -310,7 +310,7 @@ The CSS check came back with no errors,
 
 ## Python linter test
 
-<display>
+<details>
 
   <summary>Click to view python tests</summary>
 
