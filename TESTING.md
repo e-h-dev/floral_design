@@ -327,7 +327,7 @@ I used [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) to validate 
 
 The css check came back with no errors, 
 
-![css checker]
+![css checker](assets/readme-images/validation-images/css-validation.png)
 
 
 ### Jshint Java Script test
@@ -350,8 +350,13 @@ The css check came back with no errors,
 
  ## Lighthouse validation
 
- - All pages have been tested by lighthouse and have passed all the criteria.
+ <details>
 
+  <summary>For lighthouse images click here</summary>
+
+ I put all pages throught he lighthluse validation and they passed with at least 70% many with over 80%.
+
+ 
  ### Home Page
 
  ![Home page](assets/readme-images/test-images/lighthouse-home.png)
@@ -369,6 +374,47 @@ The css check came back with no errors,
  ### Checkout Page
 
 ![Checkout page](assets/readme-images/test-images/lighthouse-checkout.png)
+
+
+### Checkout success
+
+ ![Checkout success page](assets/readme-images/test-images/lighthouse-checkout-success.png)
+
+
+ ### Product management
+
+![Products management](assets/readme-images/test-images/lighthouse-product-management.png)
+
+ ### Reviews Page
+
+ ![Reviews Page](assets/readme-images/test-images/lighthouse-review.png)
+
+
+ ### Contact Page
+
+![Contact page](assets/readme-images/test-images/lighthouse-contact.png)
+
+
+### Sign In
+
+![Sign in](assets/readme-images/test-images/lighthouse-sign-in.png)
+
+### Sign Up
+
+![Sign Up](assets/readme-images/test-images/lighthouse-sign-up.png)
+
+### Sign out
+
+![Sign out](assets/readme-images/test-images/lighthouse-sign-out.png)
+
+
+### Delivery Page
+
+![Delivery page](assets/readme-images/test-images/lighthouse-delivery.png)
+
+---
+
+</details>
 
 # Testing use stories
 
