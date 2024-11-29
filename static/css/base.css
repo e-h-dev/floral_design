@@ -985,7 +985,7 @@ option:hover{
       }
 
 
-      /* product detial page */
+      /* product detail page */
 
     .mobile-push{
         position:relative;
@@ -1025,6 +1025,12 @@ option:hover{
     .reviews-section{
         display:none;
     }
+
+    /* basket */
+    .mobile-none{
+        display: none;
+    }
+
 }
 
 /* -------------------------form styles */
