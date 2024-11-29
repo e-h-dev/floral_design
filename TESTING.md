@@ -286,44 +286,24 @@
 
 I used [W3C Validator](https://validator.w3.org/) to validate the HTML on all pages of the website.
 
-I used [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) to validate the CSS file.
-
-### Home page
-
-![Home page validation](/assets/readme-images/test-images/home-page-validation.png)
-
-### Products page
-
-
-### Product details page
-
-
-### Basket Page
-
-
-### Checkout page
-
-
-### Checkout Success page
-
-
-### Sign in page
-
-
-### Contact Page
-
-
-### Add Review Page
-
-
-### Add Product Page
-
-
-### Edit Product Page
+* I will attach the home and products page HTML validator as samples to all the pages of the site, which passed the same tests.
 
 ---
 
+### Home page
+
+![Home page validation](assets/readme-images/validation-images/home-page-validation.png)
+
+### Products page
+
+![Products page validation](assets/readme-images/validation-images/products-validator.png)
+
+
+
+
 ### CSS checker
+
+I used [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) to validate the CSS file.
 
 The css check came back with no errors, 
 
@@ -332,21 +312,52 @@ The css check came back with no errors,
 
 ### Jshint Java Script test
 
- * My code is written using ES6 JavaScript syntax. The let key word was flagged as a warning by jshint.
- * No other warnings were present.
- * script.js
+ * The JavaScript code all past the JShint test.
 
- ![JavaScript test](/assets/validation-images/js-python-validation-images/js-validation.png)
+ ![JavaScript test](/assets/readme-images/validation-images/javascript-validated.png)
  
  - - -
 
- ### Python linter test
+## Python linter test
 
- * After putting my app.py file to the linter test, it passed with no errors
+ * After putting all .py file to the linter test, they passed with no errors
 
- ![Python linter test](/assets/validation-images/js-python-validation-images/python-linter-validation.png)
+### Project level App
+
+#### Settings.py
+
+ ![Settings.py](assets/readme-images/python-linter-tests/settings.py.png)
+
+ #### urls.py
+
+ ![urls.py](assets/readme-images/python-linter-tests/project-urls.py.png)
 
  - - -
+
+ ### Home app
+
+ #### views.py
+
+ ![views.py](assets/readme-images/python-linter-tests/home-views.py.png)
+
+ #### urls.py
+
+ ![urls.py](assets/readme-images/python-linter-tests/home-urls.py.png)
+
+
+ - - -
+
+ ### Products app
+
+ #### views.py
+
+ #### models.py
+
+ #### admin.py
+
+ #### forms.py
+
+ #### urls.py
 
  ## Lighthouse validation
 
@@ -416,7 +427,7 @@ The css check came back with no errors,
 
 </details>
 
-# Testing use stories
+# Testing user stories
 
 ## User Stories
 
@@ -443,14 +454,13 @@ The css check came back with no errors,
 | 15 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase | Used the search bar. | Pass |
 | 16 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available | Clear display of searched for items and number of resutls on top of products page. | Pass |
 | **PURCHASING & CHECKOUT** |
-| 17 | Shopper | Easily select the quantity of a product when purchasing it | Ensure no accidental selection of the wrong product or quantity |
-| 18 | Shopper | View items in bag to be purchased | Identify the total cost, and the items of the purchase |
-| 19 | Shopper | Adjust the quantity of individual items in the bag| Easily make changes to the purchase before checkout |
-| 20 | Shopper | Easily enter payment information | Check out swiftly and easily |
-| 21 | Shopper | Feel personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
-| 22 | Shopper | View an order confirmation after checkout | Verify that no mistakes have been made |
-| 23 | Shopper | Receive an email confirmation after checking out | Keep a record of the purchase |
+| 17 | Shopper | Easily select the quantity of a product when purchasing it | Ensure no accidental selection of the wrong product or quantity | The products are dispalyed and described clearly, the shopper would not acciently select the wrong item. | Pass |
+| 18 | Shopper | View items in bag to be purchased | Identify the total cost, and the items of the purchase | Total cost and number of items ore clearly displayed, both in the basket and by checkout. | Pass |
+| 19 | Shopper | Adjust the quantity of individual items in the bag| Easily make changes to the purchase before checkout | Simple quntity adjuster in the basket. | Pass |
+| 20 | Shopper | Easily enter payment information | Check out swiftly and easily | A very simpleand safe checout system using stripe. | Pass |
+| 21 | Shopper | Feel personal and payment information is safe and secure | Confidently provide the needed information to make a purchase | All personal information stored on the website, is only available for the user when logged in. | Pass |
+| 22 | Shopper | View an order confirmation after checkout | Verify that no mistakes have been made | A clear full page order confirmation, is displayed with all relavant informatn on. | Pass |
 | **ADMIN & STORE MANAGEMENT** |
-| 24 | Store Owner | Add a product | Add new items to my store |
-| 25 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
-| 26 | Store Owner | Delete a product | Remove items that are no longer for sale |
+| 23 | Store Owner | Add a product | Add new items to my store | A simple to use product mangement form allows for new products to be added to store. | Pass |
+| 24 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria | A simple to use product mangement form allows for update and edits on all products. | Pass |
+| 25 | Store Owner | Delete a product | Remove items that are no longer for sale | A delete button is available for admin only to delete any product. | Pass |
