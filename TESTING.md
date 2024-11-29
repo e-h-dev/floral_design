@@ -464,3 +464,141 @@ The css check came back with no errors,
 | 23 | Store Owner | Add a product | Add new items to my store | A simple to use product mangement form allows for new products to be added to store. | Pass |
 | 24 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria | A simple to use product mangement form allows for update and edits on all products. | Pass |
 | 25 | Store Owner | Delete a product | Remove items that are no longer for sale | A delete button is available for admin only to delete any product. | Pass |
+
+
+- - -
+
+## Full Testing
+
+Full testing was performed on the following devices:
+
+* Laptop:
+  * Lenovo
+  * HP
+* Mobile Devices:
+  * Android Tablet
+
+Each device assessed the site using the following browsers:
+
+* Google Chrome
+* Microsoft Edge
+* Opera
+
+Additional testing was taken by friends and family, on a variety of devices and screen sizes. They reported no issues whilst using the app.
+
+Each page was run through a mobile simulator extension (Images above) to showcase the entire siteon a variaty of devices.
+
+- - -
+
+## Manual testing 
+
+### Home Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home logo. | Link back to home page. | Clicked on logo. | Home page reloads. | Pass |
+| Home link. | Link back to home page. | Clicked on Home link. | Home page reloads. | Pass |
+| Sign in link. | Link to Sign in page. | Clicked on link. | Sign in page loads. | Pass |
+| Sign up link. | Link to Sign up page. | Clicked on link | Sign up page loads. | Pass |
+| Shop now link. | Link to products page. | Clicked on link. | Products page loads. | Pass |
+| Mobile nav links hamburger. | Toggles open nav bar on mobile devices. | Clicked on hamburger icon. | Side nav bar toggles open. | Pass |
+| Search bar. | User can type in search request, any product with the search criteria will load. | Type in search request. | Products with search criteria load. | Pass |
+
+### Products page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Product displays | All products should be displayed. | Page loaded. | All the products are displayed. | Pass |
+| Sort by filter. | Changes order of products display by price, caategory or name. | Select a sort by. | All products are listed in the requested order. | Pass |
+| Product Add to basket | Should add product to basket. | Click button. | Product added to basket. | Pass |
+| Category filter. | Buttons with category name displayed at top of page. | Select a button. | All products of that category load. | Pass |
+| Back to top scrolling button | When scrolling down the page, a button should appear. | Scrolled down page. | Button appeared. | Pass |
+| Back up button | Clicking on the button, should scroll page back to top. | Clicked on the button. | Page scrolled back to top. | Pass |
+
+### Products display page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Quantity Selector | Should alloe user to select a quntity of the product. | Selected quantity. | Basket updated. | Pass |
+| Add to basket | Should be able to add product to basket. | Click on add to basket button. | Product is added to basket. | Pass |
+| Edit link | Admin should be able to edit product, when clicking on edit button. | Clicked on edit trip button. | Edit product form opens. | Pass |
+| Delete link | Admin should be able to elete product, when clicking on delete. | Clicked on delete. | Product is removed from website. | Pass |
+| Add review | User should be able to review a product, when clicking on review button. | Clicked on review button. | Review product form opens. | Pass |
+
+- - -
+
+### Basket page
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Update basket in basket page | Should be able to add or remove items from basket page itself. | Clicked on the delete and update button. | Basket updated | Pass |
+| Checkout from basket | A user should be able to checkout from the basket | Clicked the checkout button | Checkout page loaded. | Pass |
+
+- - -
+
+### Checkout page
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Checkout and pay for items | A user should be able to pay for thier items with the website. | Filled in checkout form and payment details. | Payment successful | Pass |
+| Empty Basket | After checkout the basket should empty | Checked out | The basket emptied | Pass |
+
+ - - -
+
+### Review page
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Rate and review an item | A user should be revew an item purchased. | Fill i review form. | Review loads on that product's page. | Pass |
+| Rating stars | Number of stars to show on product review, should correspond to rating number user puts into the input form. | Added various differnt reviews with a product. | Number of stars corresponded with value user put into form. | Pass |
+- - -
+
+## Contact page
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Customer contact form | Customer should be able to contact owner via the website. | Filled in a contact from. | Conact message is submitted. | Pass |
+
+### Sign up Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Sign up form. | When loaded the page should have a form, which user information can be put in. | On page load form appears. | User information can be added. | Pass |
+| Sign up button. | When clicking on sign up button user should be added to data base and be signed in. | Clicked on sign up button. | User was added to data base and signed in. | Pass |
+- - -
+
+### Sign in Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Sign in link. | Link to Sign in page. | Clicked on link. | Sign in page loads. | Pass |
+| Sign in form. | When loaded the page should have a form, which user information can be put in. | On page load form appears | User information can be added. | Pass |
+| Sign in button. | When clicking on sign in button, user should be signed in. | Clicked on sign in button. | User was signed in. | Pass |
+
+ - - -
+
+### Sign out Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Sign out link. | Link to Sign out page. | Clicked on link. | Sign out page loads. | Pass |
+| Sign out button. | When clicking on sign in button, user should be signed out. | Clicked on sign out button. | User was signed out. | Pass |
+
+
+
+ ### Add product Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Add product form. | When loaded the page should have a form, where admin could add a new product. | On page load form appears. | Product information can be added. | Pass |
+| Add image button | When clicking on button file explorer should open to allow image upload. | Clicked on add image | File explorer opens, image loads to data base. | Pass |
+| Submit button. | When clicking on submit button, product should be added to data base and trips page display. | Clicked on submit button. | product was added. | Pass |
+ - - -
+
+ ### Edit product Page
+
+ | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Edit product form. | When loaded the page should have a form, where admin could edit a product. | On page load form appears. | Product information can be edited. | Pass |
+| Out of stock checkbox | When cjecked product should be dispalyed as out of stock on products page | Checked out of stock | Product was dispalyed as out of stock | Pass |
+| Add image button | When clicking on button file explorer should open to allow image upload. | Clicked on add image | File explorer opens, image loads to data base. | Pass |
+| Submit button. | When clicking on submit button, product should be added to data base and trips page display. | Clicked on submit button. | product was added. | Pass |
+
+
+- - -
