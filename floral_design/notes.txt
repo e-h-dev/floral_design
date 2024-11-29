@@ -39,7 +39,7 @@ comment code
 
 DONE = deploy
 
-README.
+DONE README.
 
 Done need prooftesting
 

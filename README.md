@@ -42,7 +42,7 @@ Floral Design is a B2C e-commerce store which is built on a buissness in the mak
 
 
 ## Home Page
-![Home page]
+![Home page](assets/readme-images/responsive-images/desktop-home.png)
 
 ### Strategy
 * Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business, many of us are now opting for online shopping. Floral Design aims to offer flexible online shopping to its customers.
@@ -197,7 +197,8 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 Due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
 
-- I created the schema using the website [drawsql](https://drawsql.app/). The schema shows the data layout and how it is used across the various apps in the website, using ids and foreign keys.
+- I created the schema using the website [drawsql](https://drawsql.app/).
+- The schema shows the data layout and how it is used across the various apps in the website, using ids and foreign keys. Each app is an indepnedanrt entity but they work together by use of connecting keys. For example a product can become the content of a basket, simply by applying  the product to the basket with a foreign key (id from another line of data). In the chart I have shown the connections between the diffrent apps and models, from the chart one can see how the data bases interact with one another.
 
 ![Database Schema](assets/readme-images/drawSQL-data-schema.png)
 
