@@ -185,7 +185,6 @@ input[name='q'] {
 }
 
 
-
 footer{
     position: relative;
     bottom:-25vh;
@@ -292,6 +291,7 @@ footer{
     left:12%;
 }
 
+/* arrows for changing hero image */
 
 .arrow-left{
     position: absolute;
@@ -337,6 +337,8 @@ footer{
 .picture-picker-2 {
     left:51%;
 }
+
+/* hero button link */
 
 .shop-now-btn {
     position: absolute;
@@ -633,6 +635,118 @@ option:hover{
 	color: var(--main-color-opaque)
 }
 
+/* ---------------------------------------------genaral form styles */
+
+.contact-header-h1{
+    font-size: 3rem;
+}
+
+.contact-header-h2{
+    position: relative;
+    left:35%;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--side-color);
+    width:300px;
+    padding-bottom: 10px;
+}
+
+.form-background{
+    background-color: var(--main-color-opaque);
+    border-radius: 20px;
+}
+
+.form-background:focus,
+.form-background:active{
+    border:solid 1px var(--side-color-opaque);
+    outline:none;
+}
+
+label{
+    font-family: var(--main-font);
+    color: var(--side-color);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+/*-------------------------- contact form */
+
+.submit-btn{
+    background-color: var(--main-color-opaque);
+    color:var(--white-color);
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    border-radius: 20px;
+    position: relative;
+    left:40%;
+}
+
+.submit-btn:hover{
+    background-color: var(--white-color);
+    border: solid 1px var(--side-color-opaque);
+}
+
+/* ------------------------------product form */
+
+.add-edit-btn,
+.add-edit-cancel-btn{
+    color:var(--white-color);
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 20px;
+    position: relative;
+    display:inline-block;
+    height:30px;
+    padding:10px 10px 30px;
+}
+
+.add-edit-btn{
+    background-color: var(--side-color);
+    right:20%;
+    top:3px;
+    width:120px;
+}
+.add-edit-cancel-btn{
+    background-color: var(--main-color);
+    width:80px;
+    right:60%;
+    padding:5px;
+}
+
+.add-edit-btn:hover,
+.add-edit-cancel-btn:hover{
+    background-color: var(--white-color);
+    color:var(--side-color);
+    border: 1px solid var(--side-color-opaque)
+}
+
+.btn-file{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-file input[type="file"]{
+    position: absolute;
+    top: -10px;;
+    right:0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 2px;
+    border-color: var(--side-color);
+}
+
+.custom-checkbox .custom-control-input~.custom-control-label::before {
+    background-color: var(--side-color);
+    border-color: var(--side-color);
+    border-radius: 2px;
+}
+
 /* ------------------------------------checkout app styles */
 
 .button{
@@ -647,7 +761,7 @@ option:hover{
     color:var(--side-color)
 }
 
-/* -------------------------profile page styles */
+/* -----------------------------------------------profile page styles */
 .profile-row-size{
     width:90%;
 }
@@ -680,7 +794,7 @@ option:hover{
     color:var(--main-color);
 }
 
-/* sign in, register and sign out pages */
+/* --------------------------------------sign in, register and sign out pages */
 
 .signup input,
 .login input{
@@ -722,7 +836,7 @@ option:hover{
     border-radius: 10px !important;
 }
 
-/* -------------------------------- Media Queries */
+/* ----------------------------------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -746,6 +860,8 @@ option:hover{
       }
 
   }
+
+/* media query for tablet sized devices */
 
 @media (max-width:830px) {
     .logo{
@@ -816,9 +932,6 @@ option:hover{
         width:90vw;
       }
 
-    footer{
-        display: none;
-    }
 
     .hero{
         width:97vw;
@@ -943,6 +1056,10 @@ option:hover{
         margin-left: 0;
     }
 
+    footer{
+        height:auto;
+    }
+
     /* messgaes */
 
     .toast-body{
@@ -1031,116 +1148,4 @@ option:hover{
         display: none;
     }
 
-}
-
-/* -------------------------form styles */
-
-.contact-header-h1{
-    font-size: 3rem;
-}
-
-.contact-header-h2{
-    position: relative;
-    left:35%;
-    font-size: 1.5rem;
-    border-bottom: 1px solid var(--side-color);
-    width:300px;
-    padding-bottom: 10px;
-}
-
-.form-background{
-    background-color: var(--main-color-opaque);
-    border-radius: 20px;
-}
-
-.form-background:focus,
-.form-background:active{
-    border:solid 1px var(--side-color-opaque);
-    outline:none;
-}
-
-label{
-    font-family: var(--main-font);
-    color: var(--side-color);
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-
-/* contact form */
-
-.submit-btn{
-    background-color: var(--main-color-opaque);
-    color:var(--white-color);
-    font-family: var(--main-font);
-    font-size: 1.5rem;
-    border-radius: 20px;
-    position: relative;
-    left:40%;
-}
-
-.submit-btn:hover{
-    background-color: var(--white-color);
-    border: solid 1px var(--side-color-opaque);
-}
-
-/* ------------------------------product form */
-
-.add-edit-btn,
-.add-edit-cancel-btn{
-    color:var(--white-color);
-    font-family: var(--main-font);
-    text-align: center;
-    font-size: 1rem;
-    border-radius: 20px;
-    position: relative;
-    display:inline-block;
-    height:30px;
-    padding:10px 10px 30px;
-}
-
-.add-edit-btn{
-    background-color: var(--side-color);
-    right:20%;
-    top:3px;
-    width:120px;
-}
-.add-edit-cancel-btn{
-    background-color: var(--main-color);
-    width:80px;
-    right:60%;
-    padding:5px;
-}
-
-.add-edit-btn:hover,
-.add-edit-cancel-btn:hover{
-    background-color: var(--white-color);
-    color:var(--side-color);
-    border: 1px solid var(--side-color-opaque)
-}
-
-.btn-file{
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.btn-file input[type="file"]{
-    position: absolute;
-    top: -10px;;
-    right:0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-}
-
-.custom-checkbox .custom-control-label::before {
-    border-radius: 2px;
-    border-color: var(--side-color);
-}
-
-.custom-checkbox .custom-control-input~.custom-control-label::before {
-    background-color: var(--side-color);
-    border-color: var(--side-color);
-    border-radius: 2px;
 }
