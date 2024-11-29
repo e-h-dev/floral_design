@@ -27,12 +27,11 @@
 - [Styles](#styles)
   - [CSS](#css)
 - [Floral Design Pages](#floral-design-pages)
-  
 - [Accessibility](#accessibility)
-- [Technologies used](#technologies-used)
-- [Deployment and Local Development](#deployment-and-local-development)
 - [Testing](#testing)
 - [Bugs](#bugs)
+- [Technologies used](#technologies-used)
+- [Deployment and Local Development](#deployment-and-local-development)
 - [Credits](#credits)
 
 
@@ -42,7 +41,7 @@
 * A clean website which is pleasing to the eye will attract customers to browse for flowers from the comfort of their home, allowing them to choose flowers without going to traditional flower markets. 
 * The functionality of the website allows anyone to make a full purchase, pay for their items and have them delivered.
 * The website is designed with the user in mind, making it intuitive and quite simple for anyone to feel confident and comfortable browsing and purchasing the products.
-* The app is currently has a robust review and rating functionality, I would in the future implement logic which will allow users to edit and delete their reviews and a way for users to communicate with one another.
+* The website has a robust review and rating functionality. I would in the future implement logic, which will allow users to edit and delete their reviews and a way for users to communicate with one another.
 * The website does have a fully functioning CRUD capability; the site owner can edit and delete products as well as render products out of stock.
 * In summary the Floral Design is a unique website which works with the philosophy of less is more, the smaller scope of the website the easier it is for users to navigate and find what they are looking for.
 
@@ -100,7 +99,7 @@ The sites primary audience will be for customers who want to find a range of flo
 
 ## Colour Scheme
 
-I designed my colour scheme, based on the Floral Design logo. The design I received from my client, this logo was previously used by my client for advertising and other business needs. Based on the colour of the logo I have designed the website. The pink colour gives users the feeling, they are visiting a sophisticated flower e-commerce site. The grey colour has a pink undertone which matches well the main pink colour of the logo.
+I designed my colour scheme, based on the Floral Design logo. I received the design from my client, this logo was previously used by my client for advertising and other business needs. I designed the website ased on the colour of the logo. The pink colour gives users the feeling, they are visiting a sophisticated flower e-commerce site. The grey colour has a pink undertone which complements the main pink colour of the logo.
 
 - I have used `#e6423d` for the most header and nav texts of the web pages.
 - I have used `#806161` for side texts and paragraphs.
@@ -133,7 +132,7 @@ I designed my colour scheme, based on the Floral Design logo. The design I recei
 
 ### Imagery
 
-For the hero images i have used two very different images of flower designs, these images on the home can be changed by clicking on the arrows to the right and left of the hero image. The functions to change images are with [javascript](static/js/base.js). The images come from [pixabay](https://pixabay.com/).
+For the hero images I have used two very different images of flower designs, these images on the home can be changed by clicking on the arrows to the right and left of the hero image. The functions to change images are with [javascript](static/js/base.js). The images come from [pixabay](https://pixabay.com/).
 
 #### Hero image 1
 
@@ -277,14 +276,14 @@ The Reviews are displayed in a clear manner below and there is a review button a
 
 ### Basket Page
 
-The basket page shows all the items in the basket dispalying the price, sub total if more than one of each item is included, the delivey costs and the gran total. There is a small paragraph displayed if the shopper did not reach the free delivery threshold tellinh the shopper how much more to spend to get free delivery.
+The basket page shows all the items in the basket displaying the price, sub total if more than one of each item is included, the delivey costs and the grand total. There is a small paragraph displayed if the shopper did not reach the free delivery threshold, telling the shopper how much more to spend to get free delivery.
 Below that is the button to secure checkout.
 
 ![image of basket page](assets/readme-images/page-images/basket-page.png)
 
 ### Checkout Page
 
-The checkout page displays a summary of the basket and costs. The is a form to fill for payment and delivery details. At the bottom is the stripe credit card from after filling in the form the submit payment button is clicked. The from style on the checkout page is deliberately different to the forms across the site, to differentiate that the form will lead to a charge. This is a better UX practice.
+The checkout page displays a summary of the basket and costs. The is a form to fill for payment and delivery details. At the bottom is the stripe credit card from after filling in the form the submit payment button is clicked. The form style on the checkout page is deliberately different to the forms across the site, to show that this form will lead to a charge. This is a better UX practice.
 
 ![image of checkout page](assets/readme-images/page-images/checkout-page.png)
 
