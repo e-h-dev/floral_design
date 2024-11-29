@@ -85,11 +85,10 @@ The sites primary audience will be people who want to be able to shop for a rang
 | 20 | Shopper | Easily enter payment information | Check out swiftly and easily |
 | 21 | Shopper | Feel personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
 | 22 | Shopper | View an order confirmation after checkout | Verify that no mistakes have been made |
-| 23 | Shopper | Receive an email confirmation after checking out | Keep a record of the purchase |
 | **ADMIN & STORE MANAGEMENT** |
-| 24 | Store Owner | Add a product | Add new items to my store |
-| 25 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
-| 26 | Store Owner | Delete a product | Remove items that are no longer for sale |
+| 23 | Store Owner | Add a product | Add new items to my store |
+| 24 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
+| 25 | Store Owner | Delete a product | Remove items that are no longer for sale |
 
 
 # Design
