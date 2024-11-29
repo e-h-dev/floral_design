@@ -932,6 +932,7 @@ label{
         width:90vw;
       }
 
+    /* home page styles */
 
     .hero{
         width:97vw;
@@ -1015,11 +1016,16 @@ label{
 
 
 @media (max-width:430px) {
+
+    /* general styles */
+
     .mobile-nav-margins{
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 5px;
     }
+
+    /* navbar styles */
 
     .nav-top{
         font-size: 10px;
@@ -1066,6 +1072,8 @@ label{
         margin-left: 60px;
         width:300px;
     }
+
+    /* home page styles */
 
 
     .hero{
